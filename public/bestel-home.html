@@ -1,0 +1,188 @@
+<!doctype html>
+<html class="no-js" lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Vettige vrijdag</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" href="../../vettige_vrijdag_slice/slice-master/apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/screen.css">
+  <!--[if lt IE 9]>
+  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+  <![endif]-->
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Rancho|Source+Sans+Pro&display=swap" rel="stylesheet">
+
+  <script src="http://localhost:35729/livereload.js?snipver=1"></script>
+</head>
+<body class="bg-light">
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please
+  <a href="http://browsehappy.com/">upgrade your browser</a>
+  to improve your experience and security.
+</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+
+<div class="mh-100vh">
+  <div class="container-fluid">
+    <div class="order-toggler d-lg-none" data-toggle="toggler">
+      <span class="sr-only">Toggle order</span>
+      <div class="d-flex flex-row">
+        <div class="dots">
+          <span class="icon-dot top-dot"></span>
+          <span class="icon-dot middle-dot"></span>
+          <span class="icon-dot bottom-dot"></span>
+        </div>
+        <div class="bars">
+          <span class="icon-bar top-bar"></span>
+          <span class="icon-bar middle-bar"></span>
+          <span class="icon-bar bottom-bar"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <nav class="col-md-4 fixed-bottom d-md-flex flex-row bg-dark nav navbar-dark h-md-100vh p-0 navbar-menu">
+        <div class="h-100 w-100 d-md-flex flex-md-column">
+          <div class="fixed-top bg-light p-md-static bg-md-dark">
+            <a href="bestel-home.html" class="navbar-brand d-flex justify-content-center pt-3 pt-md-0 my-md-5 mx-md-2 w-100">
+              <div class="d-flex align-items-center flex-column">
+                <img src="images/sumos_dark.svg" alt="Sumo's" class="d-md-none">
+                <img src="images/sumos_white.svg" alt="Sumo's" class="d-none d-md-inline-block">
+                <p class="text-center"><span class="d-md-none">Vettige vrijdag</span><span class="d-none d-md-inline">Vettige<br />vrijdag</span></p>
+              </div>
+            </a>
+          </div>
+
+          <div class="navbar-nav w-100 flex-row flex-md-column d-md-flex flex-grow-1">
+            <a href="bestel-categorie.html" class="flex-fill d-flex align-items-center nav-link nav-link-big nav-link-hamburger">
+              <span class="icon icon-hamburger-big d-none d-md-block"></span><span class="d-md-none icon mx-auto icon-hamburger-small"></span><span class="d-none d-md-block text">Hamburgers</span>
+            </a>
+            <a href="bestel-categorie.html" class="flex-fill d-flex align-items-center nav-link nav-link-big nav-link-snack">
+              <span class="icon icon-snack-big d-none d-md-block"></span><span class="d-md-none icon mx-auto icon-snack-small"></span><span class="d-none d-md-block text">Snacks</span>
+            </a>
+            <a href="bestel-categorie.html" class="flex-fill d-flex align-items-center nav-link nav-link-big nav-link-fries">
+              <span class="icon icon-fries-big d-none d-md-block"></span><span class="d-md-none icon mx-auto icon-fries-small"></span><span class="d-none d-md-block text">Frietjes</span>
+            </a>
+            <a href="bestel-categorie.html" class="flex-fill d-flex align-items-center nav-link nav-link-big nav-link-sauce">
+              <span class="icon icon-sauce-big d-none d-md-block"></span><span class="d-md-none icon mx-auto icon-sauce-small"></span><span class="d-none d-md-block text">Sausje</span>
+            </a>
+            <a href="bestel-categorie.html" class="flex-fill d-flex align-items-center nav-link nav-link-big nav-link-drink">
+              <span class="icon icon-drink-big d-none d-md-block"></span><span class="d-md-none icon mx-auto icon-drink-small"></span><span class="d-none d-md-block text">Drankjes</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="col-md-8 col-lg-5 offset-md-4 mh-100vh bg-wrapper bg-image bg-hungry">
+        <div class="content mt-md-4">
+          <h2 class="mr-5">Yes! ‘t Is weer vettige vrijdag!</h2>
+          <div class="here-menu">
+            <p>Stel hier je bestelling samen</p>
+            <div class="arrow arrow-menu-md d-none d-md-block">
+              <div class="arrow-body"></div>
+            </div>
+          </div>
+          <p class="here-order d-lg-none">Hier vind je jouw bestelling</p>
+        </div>
+
+        <div class="arrow arrow-order d-lg-none">
+          <div class="arrow-body"></div>
+        </div>
+
+        <div class="arrow arrow-menu d-md-none">
+          <div class="arrow-body"></div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 bg-secondary mh-100vh order text-white w-md-50 ml-md-auto w-lg-100 toggle-closed" data-toggle='toggling'>
+        <form action="" class="my-5">
+          <p class="text-center form-intro">Bestelling van</p>
+          <div class="form-group">
+            <label for="name" class="sr-only">Naam</label>
+            <input type="text" class="form-control name-field" name="name" id="name" placeholder="" required>
+            <small>Vul hier je naam in</small>
+          </div>
+
+          <div class="order-list-wrapper bg-white text-dark mb-3 mt-5 p-3 p-xl-4">
+            <!-- when there is no chosen item -->
+            <p class="mb-0 text-muted">Je hebt nog niets gekozen <img src="images/sad-sumo.svg" class="sad-sumo ml-2" alt=""></p>
+
+            <!-- when there are items chosen -->
+            <!-- <table class="table order-list mb-0">
+              <tbody>
+                <tr>
+                  <td class="order-list-item order-list-item-hamburger">2x Bicky cheeseburger</td>
+                  <td class="text-right"><span class="sr-only delete">Delete</span><i class="far fa-trash-alt" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                  <td class="order-list-item order-list-item-hamburger">Chickenburger</td>
+                  <td class="text-right"><span class="sr-only delete">Delete</span><i class="far fa-trash-alt" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                  <td class="order-list-item order-list-item-snack">Frikandel special</td>
+                  <td class="text-right"><span class="sr-only delete">Delete</span><i class="far fa-trash-alt" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                  <td class="order-list-item order-list-item-snack">Bitterballen</td>
+                  <td class="text-right"><span class="sr-only delete">Delete</span><i class="far fa-trash-alt" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                  <td class="order-list-item order-list-item-fries">Kleine friet</td>
+                  <td class="text-right"><span class="sr-only delete">Delete</span><i class="far fa-trash-alt" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                  <td class="order-list-item order-list-item-drink">Cola light</td>
+                  <td class="text-right"><span class="sr-only delete">Delete</span><i class="far fa-trash-alt" aria-hidden="true"></i></td>
+                </tr>
+              </tbody>
+            </table>-->
+          </div>
+
+          <label for="add" class="d-block">Toevoegen aan mijn bestelling</label>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="" aria-label="Add" id="add" aria-describedby="button-addon">
+            <div class="input-group-append">
+              <button class="btn btn-primary mb-3 px-3 h-100" type="button" id="button-addon">+</button>
+            </div>
+
+          </div>
+
+          <!-- show when at least one item is chosen -->
+
+          <!--<div class="d-flex justify-content-end">
+            <div class="btn-submit-wrapper">
+              <a href="besteld.html" type="submit" class="btn btn-submit btn-lg">Bestellen!</a>
+            </div>
+          </div>-->
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.0.min.js"
+  integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendors/jquery.min.js"><\/script>')</script>
+<script src="js/bundle.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function() {ga.q.push(arguments)}
+  ga.q = []
+  ga.l = +new Date
+  ga('create', 'UA-XXXXX-Y', 'auto')
+  ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+</html>

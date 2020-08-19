@@ -1,0 +1,153 @@
+$bar-height: 4px;
+
+@keyframes add-item-toggler {
+  50% {
+    transform: scale(2, 2);
+    opacity: 0;
+  }
+  99% {
+    transform: scale(0.001, 0.001);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0.001, 0.001);
+    opacity: 1;
+  }
+}
+
+nav.fixed-top {
+  box-shadow: 0 -5px 10px $dark;
+}
+
+.navbar-toggler {
+  position: fixed;
+  right: 45px;
+  top: 20px;
+}
+
+.order-toggler {
+  background-color: $secondary;
+  color: $white;
+  cursor: pointer;
+  padding: 0.8rem;
+  position: fixed;
+  right: 15px;
+  top: 20px;
+  z-index: 100000;
+
+  &:before {
+    content: '';
+    background-color: $secondary;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale(0.001, 0.001);
+    z-index: -3;
+  }
+
+  &.add-effect:before {
+    animation: add-item-toggler 0.8s ease-out;
+  }
+
+  .icon-dot,
+  .icon-bar {
+    background: $white;
+    display: block;
+    height: $bar-height;
+    width: $bar-height;
+    transition-duration: 0.25s;
+    transition-property: transform, opacity;
+  }
+
+  .icon-dot:not(:last-of-type),
+  .icon-bar:not(:last-of-type) {
+    margin-bottom: $bar-height;
+  }
+
+  .dots {
+    margin-right: $bar-height;
+  }
+
+  .icon-bar {
+    width: $bar-height*3;
+  }
+
+  &:hover {
+    background-color: darken($secondary, 10%);
+  }
+
+  &.toggle-open {
+    background-color: darken($secondary, 10%);
+
+    .top-dot,
+    .middle-dot,
+    .bottom-dot,
+    .middle-bar {
+      opacity: 0;
+      width: 0;
+    }
+
+    .dots {
+      margin-right: 0;
+    }
+
+    .top-bar,
+    .bottom-bar {
+      width: $bar-height * 5;
+    }
+
+    .top-bar {
+      transform: rotate(45deg);
+      transform-origin: 5% 170%;
+    }
+
+    .bottom-bar {
+      transform: rotate(-45deg);
+      transform-origin: 2% -70%;
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+
+  .navbar-collapse {
+    background-color: $light;
+    position: fixed;
+    top: 60px;
+    right: 45px;
+    box-shadow: 0 0 5px $dark;
+
+    .nav-item {
+      margin: 0 20px;
+
+      &:last-of-type {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(sm) {
+
+  .btn-change-menu,
+  .btn-history {
+    border: none;
+    border-bottom: 2px solid transparent;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+
+    &:hover {
+      border-bottom-color: $dark;
+    }
+  }
+
+  .btn-history {
+    right: 160px;
+  }
+}
+

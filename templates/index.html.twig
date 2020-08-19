@@ -1,0 +1,174 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Vettige vrijdag | Adminpagina{% endblock %}
+
+{% block bodyclass %}
+    class=
+    {% if is_granted('IS_AUTHENTICATED_REMEMBERED') and vettige_vrijdag is defined and not vettige_vrijdag is null %}"bg-light"
+    {% elseif not is_granted('IS_ANONYMOUS') %}"bg-light no-fries"
+    {% endif %}
+    data-toggle="switch-toggling" {% endblock bodyclass %}
+
+{% block body %}
+
+    {% block outdated_browser %}
+        {{ parent() }}
+    {% endblock outdated_browser %}
+    <!-- Add your site or application content here -->
+
+    <div class="adminpage mh-100vh">
+        <div class="container-fluid">
+            <nav class="fixed-top bg-light navbar navbar-expand-sm p-0">
+                <a href="{{ path('vettige_vrijdag') }}" class="navbar-brand d-flex justify-content-center pt-3 w-100">
+                    <div class="d-flex align-items-center flex-column">
+                        <img src="{{ asset('build/assets/images/sumos_dark.svg') }}" alt="Sumo's">
+                        <p class="text-center">Vettige vrijdag</p>
+                    </div>
+                </a>
+                {% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#admin-menu"
+                            aria-controls="admin-menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars" aria-hidden="true"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="admin-menu">
+                        <ul class="navbar-nav mr-auto mt-2 mt-sm-0">
+                            <li class="nav-item active">
+                                <a href="{{ path('change_menu_complex') }}" class="nav-link btn btn-sm btn-change-menu">Menu
+                                    aanpassen</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ path('vettige_vrijdag_previous') }}"
+                                   class="nav-link btn btn-sm btn-history">Vroeger</a>
+                            </li>
+                        </ul>
+                    </div>
+                {% endif %}
+            </nav>
+
+            <div class="row bg-wrapper mh-100vh bg-image bg-admin">
+                <div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-xl-6 offset-xl-3">
+                    <div class="content text-center">
+                        {% for key, messages in app.flashes %}
+                            {% for message in messages %}
+                                <div class="alert alert-{{ key }}">
+                                    {{ message }}
+                                </div>
+                            {% endfor %}
+                        {% endfor %}
+                        <p class="what-do-we-eat">Wat eten we vanmiddag?</p>
+                        {% if is_granted('IS_AUTHENTICATED_REMEMBERED') %}
+
+                            <!-- switch knop -->
+                            <label for="food-switch" class="switch-label">
+                                <input type="checkbox" class="switch" id="food-switch"
+                                       data-toggle="switch-toggler" {% if vettige_vrijdag is defined and not vettige_vrijdag is null %}checked disabled{% endif %}/>
+                                <div class="switch-out">
+                                    <div class="switch-in"></div>
+                                </div>
+                                    <div class="switch-label-text label-bread d-flex justify-content-center align-items-center">
+                                    <p>Bokes</p></div>
+                                <div class="switch-label-text label-fries d-flex justify-content-center align-items-center">
+                                    <p>FRIETEUH!</p></div>
+                            </label>
+
+                            {% if vettige_vrijdag is defined and not vettige_vrijdag is null %}
+                            <div class="d-no-fries-none mt-4">
+                                <div class="d-flex flex-column flex-md-row align-items-md-end">
+                                    <div class="flex-grow-1">
+                                        <p class="text-left">Goeie keuze! Hier is de bestellink</p>
+                                        <form action="">
+                                            <div class="input-group mb-3">
+
+                                                <input type="text" class="form-control" placeholder=""
+                                                       aria-label="Copy link" id="copy-link"
+                                                       aria-describedby="button-addon-copy"
+                                                       value=
+                                                       {% if vettige_vrijdag.slug is defined %}
+                                                       "{{  app.request.getSchemeAndHttpHost() }}{{  path('order_home', {slug: vettige_vrijdag.slug})}}" readonly data-copy="link"
+                                                        {% endif %}>
+                                                <div class="input-group-append">
+                                                    <div class="copy-tooltip">
+                                                        <button class="btn btn-primary mb-3 px-3 h-100"
+                                                                type="button"
+                                                                id="button-addon-copy" data-copy="button">
+                                                            <span class="tooltiptext" id="copy-tooltip-text"
+                                                                  data-copy="tooltip-text">Kopieer de link</span>
+                                                            Kopieer <i class="far fa-copy ml-2"
+                                                                       aria-hidden="true"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="btn-wrapper text-center">
+                                        <button type="button" class="btn btn-primary mb-3 ml-md-4 px-3"
+                                                data-toggle="modal" data-target="#order-closed">Bestelling bekijken
+                                        </button>
+
+                                        <!-- Modal -->
+                                        {% if vettige_vrijdag is defined %}
+                                            <div class="modal fade" id="order-closed" tabindex="-1" role="dialog"
+                                                 aria-labelledby="order-closed-label" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="order-closed-label">
+                                                                Bestelling
+                                                                {% if vettige_vrijdag.createdOn is defined %}
+                                                                {{ vettige_vrijdag.createdOn }}
+                                                                {% endif %}
+                                                                </h5>
+                                                            <button type="button" class="close" data-dismiss="modal"
+                                                                    aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body text-left">
+
+                                                            <!-- Change number to number of people who filled it in -->
+                                                            <p>Ingevuld door
+                                                                {% if vettige_vrijdag.orders is defined %}
+                                                                {{ vettige_vrijdag.orders|length }}
+                                                                {% else %}
+                                                                0
+                                                                {% endif %}
+                                                                personen:</p>
+                                                            <ul>
+                                                                {% if vettige_vrijdag.orders is defined %}
+                                                                {% for order in vettige_vrijdag.orders %}
+                                                                    <li>{{ order.customerName }}</li>
+                                                                {% endfor %}
+                                                                {% endif %}
+                                                            </ul>
+                                                            <div class="d-flex justify-content-center">
+                                                                <a href="{{ path('vettige_vrijdag_create_pdf', {'id' : vettige_vrijdag.id}) }}">
+                                                                <button class="btn btn-primary mx-2"><i
+                                                                                class="fa fa-download mr-2"
+                                                                                aria-hidden="true"></i>Download
+                                                                    </button>
+                                                                </a>
+                                                                <button id="close-vettige-vrijdag-button" class="btn btn-outline-primary px-3 btn-sm mx-2">
+                                                                    Bestelling afsluiten
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                            {% endif %}
+                        {% else %}
+                            <a href="{{ path('login') }}">Log eerst in </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock body %}

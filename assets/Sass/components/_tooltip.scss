@@ -1,0 +1,40 @@
+.copy-tooltip {
+  position: relative;
+  display: inline-block;
+
+  .tooltiptext {
+    background-color: $light-gray;
+    border-radius: 6px;
+    box-shadow: 0 0 5px lighten($dark, 10%);
+    bottom: 150%;
+    color: $dark;
+    right: 0;
+    margin-left: -75px;
+    opacity: 0;
+    padding: 0.5rem 0.75rem;
+    position: absolute;
+    transition: opacity 0.3s;
+    visibility: hidden;
+    z-index: 1;
+
+    &:after {
+      border: 5px solid $light-gray;
+      border-color: transparent transparent $light-gray $light-gray;
+      box-shadow: -6px 2px 6px 0 rgba(lighten($dark, 10%), 0.3);
+      content: "";
+      height: 0;
+      left: 50%;
+      margin-left: -0.5em;
+      position: absolute;
+      top: 100%;
+      transform: rotate(-45deg);
+      transform-origin: 0 0;
+      width: 0;
+    }
+  }
+
+  &:hover .tooltiptext {
+    opacity: 1;
+    visibility: visible;
+  }
+}

@@ -1,0 +1,41 @@
+.card.menu-item,
+.card.previous-orders {
+
+  .btn-outline-primary {
+    min-width: 120px;
+  }
+
+  &:hover,
+  &:active {
+    text-decoration: none;
+
+    .btn-outline-primary {
+      color: $white;
+      background-color: $primary;
+    }
+  }
+}
+
+.card.menu-item,
+.card.menu-item-edit,
+.card.previous-orders {
+  border: 2px solid  $dark;
+
+  .btn-outline-primary {
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-right-width: 0;
+  }
+}
+
+.card.menu-item-edit {
+
+  h1,
+  span {
+    width: 100%;
+  }
+
+  .btn {
+    cursor: pointer;
+  }
+}

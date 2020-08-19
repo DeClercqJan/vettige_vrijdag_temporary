@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Vettige vrijdag{% endblock %}
+
+{% block body %}
+
+    {% block outdated_browser %}
+        {{ parent() }}
+    {% endblock outdated_browser %}
+<!-- Add your site or application content here -->
+
+<div class="adminpage mh-100vh">
+    <div class="container-fluid">
+
+        <nav class="fixed-top bg-light">
+            <a href="bestel-home.html" class="navbar-brand d-flex justify-content-center pt-3">
+                <div class="d-flex align-items-center flex-column">
+                    <img src="{{ asset('build/assets/images/sumos_dark.svg') }}" alt="Sumo's">
+                    <p class="text-center">Vettige vrijdag</p>
+                </div>
+            </a>
+        </nav>
+
+        <div class="row mh-100vh bg-wrapper bg-image bg-404">
+            <div class="col-12">
+                <div class="content mt-md-4 text-center">
+
+                    <h1>Hier is geen eten.</h1>
+                    <p>Sorry, je zal ergens anders moeten zoeken...</p>
+
+                    <div class="wrapper">
+                        {% if vettige_vrijdag is defined and not vettige_vrijdag is null %}
+                        <a href="{{ path('order_home', {slug: vettige_vrijdag.slug}) }}" class="btn btn-primary btn-lg">Bestellen</a>
+                        {% endif %}
+                        <a href="{{ path('vettige_vrijdag') }}" class="btn btn-outline-primary btn-lg">Admin</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}
+

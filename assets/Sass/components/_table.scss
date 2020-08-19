@@ -1,0 +1,34 @@
+.table.order-list {
+  td {
+    border-top: none;
+
+    &.order-list-item {
+      position: relative;
+      padding-left: 40px;
+
+      &:before {
+        font-size: 2.5rem;
+        margin-top: -18px;
+        left: 7px;
+        position: absolute;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      &.order-list-item-hamburger:before {
+        @extend .icon-hamburger-small:before;
+      }
+
+      &.order-list-item-snack:before {
+        @extend .icon-snack-small:before;
+      }
+
+      &.order-list-item-fries:before {
+        @extend .icon-fries-small:before;
+      }
+
+      &.order-list-item-drink:before {
+        @extend .icon-drink-small:before;
+      }
+    }
+  }
+}

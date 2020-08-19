@@ -1,0 +1,101 @@
+<style>
+    .page {
+        page-break-before: always;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    table th {
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        padding: 10px 5px;
+    }
+
+    table td {
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        padding: 10px 5px;
+    }
+
+    tbody tr td {
+        text-align: center;
+    }
+
+    tbody tr td ul {
+        list-style-type: none;
+        padding: 5px 10px;
+    }
+</style>
+<div>
+    <div>
+        {% if vettige_vrijdag is defined %}
+        {% set array = [] %}
+        {% for order in vettige_vrijdag.orders %}
+            {% for orderline in order.orderlines %}
+                {% if orderline.product.name not in array|keys %}
+                    {% set array = array|merge({(orderline.product.name) : orderline.amount}) %}
+                {% else %}
+                    {% set array = array|merge({(orderline.product.name) : array[orderline.product.name] + orderline.amount}) %}
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+        <ul>
+            {% for key, value in array %}
+                <li>{{ value }} x {{ key }}</li></br>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="page">
+        {# preparing categories; needed to not have more recent category versions in columns #}
+        {% set categoryActuals = [] %}
+        {% for category in categories %}
+            {% for order in vettige_vrijdag.orders %}
+                {% for orderline in order.orderlines %}
+                    {% if orderline.product.category is same as (category) %}
+                        {% set categoryActuals = categoryActuals|merge([category]) %}
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+        {% endfor %}
+        {% set categoryActualsUniques = [] %}
+        {% for categoryActual in categoryActuals %}
+            {% if categoryActual not in categoryActualsUniques %}
+                {% set categoryActualsUniques = categoryActualsUniques|merge([categoryActual]) %}
+            {% endif %}
+        {% endfor %}
+        <table>
+            <thead>
+            <tr>
+                <th>Naam</th>
+                {% for categoryActualsUnique in categoryActualsUniques %}
+                    <th>{{ categoryActualsUnique }}</th>
+                {% endfor %}
+            </tr>
+            </thead>
+            <tbody>
+            {% for order in vettige_vrijdag.orders %}
+                <tr>
+                    <td>{{ order.customerName }}</td>
+                    {% for categoryActualsUnique in categoryActualsUniques %}
+                        <td>
+                            <ul>
+                                {% for orderline in order.orderlines %}
+                                    {% if orderline.product.category is same as (categoryActualsUnique) %}
+                                        <li>{{ orderline.product }} x {{ orderline.amount }}</li></br>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        </td>
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endif %}

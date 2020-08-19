@@ -1,0 +1,88 @@
+.adminpage {
+  transition: background-color 0.25s;
+
+  .content {
+    padding-top: 100px;
+  }
+
+  nav.fixed-top {
+    box-shadow: none;
+  }
+
+  .what-do-we-eat {
+    font-size: $font-size-lg;
+  }
+
+  .btn-wrapper .btn {
+    min-height: 56px;
+  }
+}
+
+.no-fries {
+  background-color: $light-gray !important;
+  color: $dark-gray;
+  cursor: url("../../images/sad-sumo-pointer.png") 0 0, auto; /* Legacy */
+  cursor: url("../../images/sad-sumo-pointer.svg") 0 0, auto; /* FF */
+  cursor: -webkit-image-set(url("../../images/sad-sumo-pointer.png") 1x, url("../../images/sad-sumo-pointer@2x.png") 2x) 0 0, auto; /* Webkit */
+
+  .d-no-fries-none {
+    display: none;
+  }
+
+  nav.bg-light {
+    background-color: $light-gray !important;
+    color: $dark-gray !important;
+
+    .navbar-brand p {
+      color: $dark-gray;
+    }
+  }
+
+  .bg-admin {
+    background-image: url("../../images/adminpage-bokes.svg");
+  }
+
+  .switch-label-text {
+    color: $orange-gray;
+
+    &.label-fries {
+      color: $white;
+    }
+  }
+
+  .btn-change-menu {
+    color: $dark-gray;
+
+    &:hover,
+    &:focus,
+    &:not(:disabled):not(.disabled):active {
+      border-bottom-color: $dark-gray
+    }
+  }
+
+  .navbar-collapse {
+    background-color: $light-gray;
+  }
+}
+
+.switch-label-text {
+  color: $white;
+
+  &.label-fries {
+    color: $orange;
+  }
+}
+
+@include media-breakpoint-up(md) {
+
+  .adminpage .what-do-we-eat {
+    font-size: $font-size-base * 1.7;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+
+  .adminpage .what-do-we-eat {
+    font-size: $font-size-base * 2;
+  }
+}

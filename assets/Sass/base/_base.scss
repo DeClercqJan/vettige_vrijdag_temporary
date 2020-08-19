@@ -1,0 +1,58 @@
+html {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+img {
+  max-width: 100%;
+}
+
+.mh-100vh {
+  min-height: 100vh;
+}
+
+.h-100vh {
+  height: 100vh;
+}
+
+.content-category {
+  margin-bottom: 75px;
+}
+
+.bg-light-gray {
+  background-color: $light-gray;
+}
+
+@include media-breakpoint-down(sm) {
+  .content {
+    padding-top: 100px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+
+  .bg-md-dark {
+    background-color: $dark !important;
+  }
+
+  .bg-md-none {
+    background-color: transparent !important;
+  }
+
+  .h-md-100vh {
+    height: 100vh;
+  }
+
+  .p-md-static {
+    position: static;
+  }
+
+  .w-md-50 {
+    width: 50% !important;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .w-lg-100 {
+    width: 100% !important;
+  }
+}

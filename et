@@ -1,0 +1,5144 @@
+[33mcommit b72d0f60d120d3861d215d08e9e886cb4fb03f1f[m[33m ([m[1;36mHEAD -> [m[1;32mfrontend[m[33m)[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Aug 10 15:00:04 2020 +0200
+
+    Move setting of historicalVersions of product to constructor
+
+[33mcommit 77c5316be2c73668448d74a7f585b3469b14b0c1[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Aug 10 14:56:39 2020 +0200
+
+    Have getters of arrayCollections properties return array
+
+[33mcommit 06b846b6366cb69b03f7100eb0c402efebe39b8d[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Aug 10 14:55:47 2020 +0200
+
+    Move setting of historicalVersions of category to constructor
+
+[33mcommit 420aa776be9d60d07ad403451c7937232aeb8250[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Aug 10 11:40:31 2020 +0200
+
+    Set historicalVersions (if any) on construct rather than using setter
+
+[33mcommit 4b91588d3ab65ed8b7679af39099450e2d3b883b[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Aug 10 11:36:27 2020 +0200
+
+    Display success messages on async updateCategoryNameOnly success
+    
+    Not using the Jquery of http://blog.michaelperrin.fr/2013/03/07/notification-flash-messages-for-json-responses-with-symfony2/
+
+[33mcommit 49e245205b7f733514c22baf59b6643342422504[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Aug 10 11:26:35 2020 +0200
+
+    Change logic of UpdateCategoryNameOnly response to use keys
+    
+    Making room to also send flash messages along with response
+    http://blog.michaelperrin.fr/2013/03/07/notification-flash-messages-for-json-responses-with-symfony2/
+
+[33mcommit a7f08f134b939283fb2ec58db21b9af056ca34b9[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Aug 10 11:23:46 2020 +0200
+
+    Create eventListener that adds flash messages to json response
+    
+    Apart from naming, exactly the same as
+    http://blog.michaelperrin.fr/2013/03/07/notification-flash-messages-for-json-responses-with-symfony2/
+
+[33mcommit b301f10a51d3691c932498b4c7e2f23f3804342f[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Aug 10 09:23:02 2020 +0200
+
+    Install Notifier
+    
+    composer require symfony/notifier
+
+[33mcommit a7e5a15fa5574e06e346c937244bad8dba656bb2[m[33m ([m[1;31morigin/frontend[m[33m)[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Aug 7 15:57:05 2020 +0200
+
+    Correct display of add category modal on yarn run production
+
+[33mcommit 79ce651b0a74ff3dcf62aee38dfb1f2c9951d4f7[m
+Merge: 09674fa 58ca676
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Aug 7 14:25:48 2020 +0200
+
+    Merge branch 'frontend' of https://git.sumocoders.be/vettige-vrijdag/jan-de-clercq into frontend
+
+[33mcommit 09674fa5f162ca5379bb719691b492d9c5d15e71[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Aug 7 14:24:49 2020 +0200
+
+    Make search field display correctly on run encore production
+
+[33mcommit 58ca67643aaeb808891728dcd557c40e3afdde78[m
+Author: StijnVrolijk <stijn.o.vrolijk@gmail.com>
+Date:   Fri Aug 7 13:23:29 2020 +0200
+
+    Fix shared dirs
+
+[33mcommit cefdafa5a70f061ac68dfead6c2f5bc99f8d2fb4[m
+Author: StijnVrolijk <stijn.o.vrolijk@gmail.com>
+Date:   Fri Aug 7 11:39:49 2020 +0200
+
+    Add some shared folders
+
+[33mcommit 3e45349aaad9f17578f0ce89b6d273205a634f7b[m
+Author: StijnVrolijk <stijn.o.vrolijk@gmail.com>
+Date:   Fri Aug 7 11:28:53 2020 +0200
+
+    Add a htaccess
+
+[33mcommit b5887de717aa1ad19b4bc96bb37c85264bcea12b[m
+Merge: fffda53 733293c
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Aug 7 10:12:52 2020 +0200
+
+    Merge branch 'frontend' of https://git.sumocoders.be/vettige-vrijdag/jan-de-clercq into frontend
+
+[33mcommit fffda53b30358958b1671de5425bd582a9c901f6[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Aug 7 10:10:06 2020 +0200
+
+    Add sane defaults to .env
+
+[33mcommit 733293cfcb13c4c069c59ddee2ed9b862bf90d41[m
+Author: StijnVrolijk <stijn.o.vrolijk@gmail.com>
+Date:   Fri Aug 7 09:56:43 2020 +0200
+
+    I sure hope this is the last one
+
+[33mcommit c27424b1d8aa880084ea19be3aa9bbac51838bca[m
+Author: StijnVrolijk <stijn.o.vrolijk@gmail.com>
+Date:   Fri Aug 7 09:53:28 2020 +0200
+
+    More production dependencies
+
+[33mcommit 4ce6e424a886ca92676aac17a1219df1a179bbee[m
+Author: StijnVrolijk <stijn.o.vrolijk@gmail.com>
+Date:   Fri Aug 7 09:50:52 2020 +0200
+
+    Require the profiler pack as a production dependency
+
+[33mcommit c6bbc0ef13df0d494593cc6f4f1bde7882010628[m
+Author: StijnVrolijk <stijn.o.vrolijk@gmail.com>
+Date:   Fri Aug 7 09:48:29 2020 +0200
+
+    symfony/dotenv is not a dev requirement
+
+[33mcommit 71c4c28b61fe2bdb401a312189a5da9b82b7adc1[m
+Author: StijnVrolijk <stijn.o.vrolijk@gmail.com>
+Date:   Fri Aug 7 09:37:43 2020 +0200
+
+    Add deployment
+
+[33mcommit 600241c384b1f55367fd6e1539b9b46d74180b3d[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Aug 6 18:30:28 2020 +0200
+
+    Change absolute path to relative path on ajax call updateModals
+
+[33mcommit 1994104b45eda9c0de248190dfdaddf6aa46f09a[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Aug 6 18:16:08 2020 +0200
+
+    Remove obsolete code from pdf template
+
+[33mcommit 076474785abd34c17f236d1d91e05a84d780abd5[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Aug 6 18:10:02 2020 +0200
+
+    Replace hardcoded localhost:port url's with relative / paths
+    
+    Tested using symfony local:server:start --port=8001 (instead of 8000)
+    Mostly in regular (not react) js files + 1 twig file
+    
+    In React files, this is centrally managed by MyProvider.js
+    In PHP, UrlGenerator, Router are used, based on route names
+
+[33mcommit 97fd876caa2c985880e225e5be29d7a4e9a19827[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Aug 6 18:04:11 2020 +0200
+
+    Create migration for versioning of cats/prods
+    
+    New copies + archiving odl versions,
+    instead of changing/updating the same record
+
+[33mcommit e4db6160c30519cfddc6cb12f9dee3d91890e901[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Aug 6 18:03:42 2020 +0200
+
+    Restore earlier migrations from Master branch
+
+[33mcommit dc7520c6409b637d7e6d28b2daf4782a7e4f5bdc[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Aug 6 15:59:21 2020 +0200
+
+    Make old pdf's don't display empty columns for new categories
+
+[33mcommit a85dc61889342dbd91084e6a53c2e2899e507703[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Aug 6 12:53:30 2020 +0200
+
+    Improve readability of print-out
+
+[33mcommit 09da31c8b4c5103ec3e5aed28138ae3b16d07611[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Aug 6 11:43:51 2020 +0200
+
+    Display only 1 error message at the same time
+
+[33mcommit 6569d686478e654fac1804b51e3963539ecd9331[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Aug 6 11:08:13 2020 +0200
+
+    Improve 404 error message on contenteditable
+    
+    Typing 'too' fast, javascript doesn't update the html quick enough and
+    because the id always changes on update (making copies), it makes api
+    calls to old resource
+    
+    Alternatively, standardizing API json responses (checking both
+    production and developments environments) would be better
+
+[33mcommit 193a94533febeff717107d3b2f031c2fe68928c2[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Aug 5 20:59:44 2020 +0200
+
+    Temp: restructured archiving cats/prods: almost done
+    
+    the good:
+    - commands are self-contained instead of reusing (and adapting) other
+    commands
+    - files stay where they are
+    - data tranfer objects stay as they were before
+    - Product now persists to Category
+    - succes flash messages are no longer an issue on contenteditable input
+    
+    the bad:
+    - contenteditable input sometimes fails
+    - error flash(?) messages are still displayed, which is good, but they
+    are weird [object object] e.g.
+
+[33mcommit da17b27b62dd7050d68605a839de400462348f4a[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Aug 5 16:48:56 2020 +0200
+
+    Temp: archive cats/prods on contenteditable input, reuse same image
+    
+    Bugs on typing 'too' fast: weird error flashes, not everything gets
+    archived
+    Also: flash messages on succes AFTER reload while created using AJAX
+
+[33mcommit 698cf66b1146f53d83c1ba7b3ead20870d25e17d[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Aug 5 11:22:35 2020 +0200
+
+    Temp: archive products on delete, also when parent category is removed
+
+[33mcommit 5e1a042c4218a2dfc0aaf6f64d9b2a073e2b0ef0[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Aug 5 11:02:54 2020 +0200
+
+    Change filter to check is_historical BOTH on category and product
+
+[33mcommit b2a3296f6c95338943b81b519a1bf908c73e2385[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Aug 5 10:43:33 2020 +0200
+
+    Temp: make new Product object on update and have bi-directional history
+    
+    if there are 4 fantas's
+    fanta2 knows historical versions: fanta1 + fanta2 (itself)
+    at the same time, hamburger2 is historicorical version of fanta 2
+    (itself) + fanta 3 + fanta 4
+    
+    (so exactly the same as earlier commit for Category
+
+[33mcommit 6b44527880cb855134c7d5bc63028cbe0dae5ade[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Aug 5 09:41:08 2020 +0200
+
+    Temp: instead of remove categories, update them to be isHistorical true
+
+[33mcommit 3435edb4932c6788564a85abe8e2dcd9353f7b81[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Aug 4 18:20:21 2020 +0200
+
+    Temp: updated/new category 'enherits' products from old version
+    
+    Pdf's work fine now. Old orders are displayed correctly even if
+    product is removed (from the newly copied products).
+    
+    ! Some obstacles have been removed in order to prove viability, but
+    should be 'restored'/altered
+
+[33mcommit 85baaad0ebbdd70d339b07b1821a5f1f30dc3d6c[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Aug 4 17:16:21 2020 +0200
+
+    Temp: make new Category object on update and have bi-directional history
+    
+    if there are 4 burgers
+    hamburger2  knows historical versions: hamburger1 + hamburger2 (itself)
+    at the same time, hamburger2 is historicorical version of hamburger 2
+    (itself) + hamburger 3 + hamburger 4
+
+[33mcommit 41393a33a971d92505da1bd318627f4633c1871a[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Aug 3 16:54:11 2020 +0200
+
+    Temp: failing to add old collection to collection new Category vers.
+    
+    Saving because will try to do stuff differently
+
+[33mcommit 9e264e0c35d1f055f12dbbedd5bb73fa28547268[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Aug 3 15:09:46 2020 +0200
+
+    Deactivate filter for "vettige_vrijdag_create_pdf" historical records
+
+[33mcommit 53ec23c0f8d2dc7136d9bbd770760b01376f5996[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Aug 3 14:49:06 2020 +0200
+
+    Temp: resolve problem and able to create new updated cat and archive old
+    
+    InversedBy created a Collection on $isHistoricalVersionOf property while
+    it should be a Category type.
+    
+    Still not fully functional:
+    - products also get archived, which is good. But current state is not
+    copied to new version
+    - creating pdf's results in odd behaviour: first page displays old
+    version correctly, lower section doesn't. Perhaps it's the filter
+
+[33mcommit 06882f640510008220bc2d87c0578b7203c01b55[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Aug 3 14:08:39 2020 +0200
+
+    Temp: able to create new version of category, but doesn't update old one
+    
+    Argument 1 passed to
+    Doctrine\Common\Collections\ArrayCollection::__construct() must be of
+    the type array, object given, called in
+    /var/www/vettige_vrijdag/vendor/doctrine/orm/lib/Doctrine/ORM/UnitOfWork.php
+    on line 647
+
+[33mcommit c4e8c3bfdfdeba9d079b7b4dd99bc5bd21c2c2bb[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 31 15:27:29 2020 +0200
+
+    Restore UpdateProductComplexController after earlier accidental delete
+
+[33mcommit 1c1db0a8fe11f37e02680fb94c3a763f803b722a[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 31 15:25:31 2020 +0200
+
+    Create filter if categoy is old object (ishistorical)
+
+[33mcommit 832836793e70a5402b4eade36739e13a291ca183[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 30 18:31:30 2020 +0200
+
+    Resolve merge conflict after pull origin frontend
+
+[33mcommit c814bbd53f403d6f5fa54dd653b840c74cfa6e6f[m
+Merge: fc6def6 d2ca4b5
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 30 18:31:07 2020 +0200
+
+    Merge branch 'frontend' of https://git.sumocoders.be/vettige-vrijdag/jan-de-clercq into frontend
+
+[33mcommit fc6def627a0fe8c941d622aa3cce9263a9931db6[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 30 18:19:30 2020 +0200
+
+    Update name only of product on contenteditable input
+
+[33mcommit 4c49bda6c524ed1813ace131d761591d8502c534[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 30 18:08:54 2020 +0200
+
+    Javascript to populate error template on contenteditable category input
+
+[33mcommit 3958c255c7c7a9450fd25ae302ddc916d2db1ea8[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 30 18:02:39 2020 +0200
+
+    Add template for via javascript update errors on contenteditable input
+
+[33mcommit b6f47f33075fc8c600eaf3736ba5ac30822286bc[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 30 18:01:29 2020 +0200
+
+    Clean up unncessary code UpdateCategoryNameOnly stuff
+
+[33mcommit 565e1cbdeca6c4a1230c493d32d735a8d3b63725[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 30 13:23:37 2020 +0200
+
+    Set category id as data-attribute on h1 (to use in contenteditable js)
+
+[33mcommit 7edd4e28340826aa5e200489a63161e237a5c0a7[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 30 13:21:56 2020 +0200
+
+    Display json result data in console
+
+[33mcommit 2137b3a571cc13eb982f522acf8b5406ea486b39[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 30 13:20:58 2020 +0200
+
+    Create UpdateCategoryNameOnlyHandler command handler
+
+[33mcommit a3ee9e31425fbebba10591d2ed94d16992d58923[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 30 13:20:34 2020 +0200
+
+    Create UpdateCategoryNameOnly command
+
+[33mcommit e09d8d1ea45eb2a049b4bf2e76163a2d68311291[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 30 13:19:42 2020 +0200
+
+    Create UpdateCategoryNamelOnlyComplexController
+
+[33mcommit ca7e2940055d4333ec71be65929f83eae1713913[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 30 11:05:31 2020 +0200
+
+    Temp: working simple example controller to update name onyl category
+
+[33mcommit bd2db14e80e2801ef18ee9727ae5b7ce4c76a2fa[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 30 11:02:35 2020 +0200
+
+    Send new category name/update contenteditable input change
+
+[33mcommit 0d88641987df60660c1dfa59b1d71d165bae13a4[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 29 15:10:37 2020 +0200
+
+    Display error message on erronous user order
+    
+    Most relevant: if user wants to submit from a still open browser window
+    even though the vettige vrijdag has been closed.
+
+[33mcommit eb3586fe9a5cef8de4f92c822ff8397ac0188175[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 29 11:18:38 2020 +0200
+
+    Forward errros when updating product to change_menu_complex
+
+[33mcommit 0a199e1d1c9082abefa286b98b2369b1644773b2[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 29 11:18:07 2020 +0200
+
+    Forward errors when updating category to change_menu_complex
+
+[33mcommit 76455c8d794ec701a9558fd1f42849181da8b944[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 29 11:17:16 2020 +0200
+
+    Forward errors when creating product to change_menu_complex
+
+[33mcommit fc010cb5b0c3af26b20bb4a80e4b7e6ef16d3e5d[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 29 11:16:49 2020 +0200
+
+    Correct parenthesis placement
+
+[33mcommit d9c1a2308c8daf6fb54f2c1b107623f5e68db0fa[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 29 11:05:01 2020 +0200
+
+    Move displaying of errors request parameters and flashes to fragments
+
+[33mcommit 1206dd7d911991e09c2c8f271e5cef4c5e3ce2ba[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 29 10:52:16 2020 +0200
+
+    Display form errors on change_menu_complex in bootstrap danger boxes
+
+[33mcommit d2ca4b5b013f78ef5e6c3588aa06050d1f6ade55[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 29 10:52:16 2020 +0200
+
+    Display form errors on change_menu_complex in bootstrap danger boxes
+
+[33mcommit ec480b7d1a149af8c628eb33c14488f7eae55bfa[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 29 10:50:30 2020 +0200
+
+    Forward errors to change_menu_complex on invalid create category
+    
+    Note that this means that CreateCategoryComplexController no longer
+    functions independently
+
+[33mcommit 82ebc6e8ca3d1b4f12ff83bc9895c5022facb445[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jul 28 19:53:30 2020 +0200
+
+    Temporary: get errors from validator create category in form fragment
+
+[33mcommit 6c93a981bf2c9be3530de836fc5df3813246a84a[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jul 28 18:59:33 2020 +0200
+
+    Reverse order of previous pdf's on overview page
+
+[33mcommit 07d502ece7074c7efccba8b6caef69e22a10778a[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jul 28 18:27:30 2020 +0200
+
+    Check for invalid json on submit error to protect against csrf
+
+[33mcommit 8f846b412cfe9b35dcc86c1ba55a8d58d582e380[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jul 28 18:26:17 2020 +0200
+
+    Create and apply event subscriber to prevent CSRF on api routes
+    
+    More or less copy-paste
+    https://symfonycasts.com/screencast/reactjs/csrf-protection
+
+[33mcommit 3d3b3ededbda05759e5342810f8f3f9e52e8f5c1[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 27 17:40:27 2020 +0200
+
+    Add check to make sure the right form is always loaded in add modal
+    
+    There was a 'bug' in that when 1) one either clicked the product or
+    category tab in the add modal and 2) closed the modal, then 3) the modal
+    loaded the last loaded form but not necessarily in the right nav tab.
+
+[33mcommit 782a9123af5b8f9079448ee3534e26fdc8708700[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 27 16:31:36 2020 +0200
+
+    Improve positioning etc. by moving classes to form fragment
+    
+    Note that there is still a slight difference on the element with the
+    modal-dialog class. On this screen, it is 500 x 694 while in the slice
+    it is 500 x 702
+    (https://vettigevrijdag.sumocoders.php72.sumocoders.eu/change-menu-complex.html).
+
+[33mcommit 0be4d8f5bba514e5e6fae9c7668c1e234f5e52eb[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 27 16:28:00 2020 +0200
+
+    Change background color category options in edit product modal to grey
+
+[33mcommit 36d122e45c28d430a5186453ae250f445e138041[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 27 15:26:45 2020 +0200
+
+    Correct top margin above form in modal
+
+[33mcommit befc90ffefeb60e8e975f6cd63acc0fba8c801f2[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 27 15:07:50 2020 +0200
+
+    Change background of option categories to grey when creatign product
+
+[33mcommit e9cbb95547daa96d1ef7cd32e5ed7ac5bf36b30b[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 27 15:06:51 2020 +0200
+
+    Add borders to modal form fields and such to add products or categories
+
+[33mcommit ba449673772500cd0f33ca3b0c405af1741debf6[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 27 14:57:23 2020 +0200
+
+    Correct size of remove submit button
+
+[33mcommit 836e71f9113b8869afce51c1ca021e38438bb955[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 27 14:36:32 2020 +0200
+
+    Add removeEffect on delete from basket but before rerender of page
+
+[33mcommit 751d962b2c0d4851a1b0ce2253214d8b6eb6a0ab[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 27 14:21:43 2020 +0200
+
+    Use default error_controller on development
+    
+    In order to have the red-ish syfmony error messages
+    These don't come standard with custom error controller
+    "Fortunately, the default ErrorController allows you to preview your
+    error pages during development."
+    https://symfony.com/doc/current/controller/error_pages.html#overriding-the-default-errorcontroller
+    Therefore one has to choose between viewing the custom 404 page and the
+    symfony errors
+
+[33mcommit 61b13b436a925e3a41ff26cc20b7a0ce681563a5[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 27 14:19:50 2020 +0200
+
+    Only display link to order_home on 404 page IF open vettige_vrijdag
+
+[33mcommit fb77e4d28db1dd70d89a843578edb19ed964ee5d[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 27 14:18:46 2020 +0200
+
+    Use __invoke() instead of show() in CustomErrorController
+
+[33mcommit 17455511281908e2f036709cfa6a7f709efef2f2[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 27 14:00:43 2020 +0200
+
+    Create custom error controller
+
+[33mcommit 180d8471f36206e91de331c162a0e02dd48fc21c[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 27 10:24:16 2020 +0200
+
+    Disable bokes/frietuh button if vettige vrijdag is open
+
+[33mcommit 43d62b280935ef10ab0ebe3c0e6ff76e68b88ee7[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 27 09:54:21 2020 +0200
+
+    Display sad background if not logged in as admin on index, even if there
+    is an open vettig_vrijdag
+
+[33mcommit 3c41df8c485e16bc0142e18181f3fb915453637c[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 27 09:53:53 2020 +0200
+
+    Correct return type of CreatedOnTrait
+
+[33mcommit 5a60c64e1af96391729e043fa6d6685df19d9006[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 24 16:00:01 2020 +0200
+
+    Remove obsolete code
+
+[33mcommit f9f045c921dbba68769f5f549df4c99530335e63[m
+Merge: bd54873 ba7b5e8
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 24 15:46:35 2020 +0200
+
+    Merge branch 'frontend' of https://git.sumocoders.be/vettige-vrijdag/jan-de-clercq into frontend
+
+[33mcommit bd54873d7cb6b71a439091a285ecde620d68f6cf[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 24 15:39:44 2020 +0200
+
+    Create and apply traits: NameTrait, UpdatedOnTrait, CreatedOnTrait
+
+[33mcommit 069b9ec7d418f4d6cfd8706a04d21bb4ce98ad44[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 24 15:25:10 2020 +0200
+
+    Create and apply IdTrait
+
+[33mcommit 8139201379bf4f940c780221562c9f002b42cb00[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 24 15:10:33 2020 +0200
+
+    Remove dummy twig code: Hamburgers cat en Hamburger prod
+
+[33mcommit 0136c4a4dff978a25ed729ecfa5ec9ee24bca452[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 24 14:50:23 2020 +0200
+
+    Change url from old version of change_menu to complex version
+
+[33mcommit 2fd027ff08fc0897d7f10b2d6d7a4709cb741c0e[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 24 14:49:59 2020 +0200
+
+    Remove old twig files
+
+[33mcommit 44090679e1d70cc47d144a37fffe8daca08bc6a5[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 24 14:44:32 2020 +0200
+
+    Remove old versions of controllers before ChangeMenuComplexController
+
+[33mcommit 34c3c6e527c454f2f2efa8f73b7060b0fb97ca52[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 24 14:37:50 2020 +0200
+
+    Add and display succes flash message after LoggedIn event
+
+[33mcommit 28269fd45fb1e45966207e28958a4eb9e7b60f23[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 24 14:04:56 2020 +0200
+
+    Make twig change_menu_complex able to display error messages as well
+    
+    Remvoe superfuous rendering of flash message on login_form
+
+[33mcommit ba7b5e816ad779a4aa5c660dc61607aa516d2cbb[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 24 14:04:56 2020 +0200
+
+    Make twig change_menu_complex able to display error messages as well
+
+[33mcommit 75ff2da8026e3b642e781655c6ac251d66cfef80[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 24 13:49:25 2020 +0200
+
+    Add flash message after ProductRemoved event
+
+[33mcommit 665eb72451934cc2e3c02919bed7c10ca9ee03c4[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 24 13:46:04 2020 +0200
+
+    Add flashmessage after CategoryRemoved event
+
+[33mcommit 358b94e8f00f50715abaad3ad9c24d7d50321fbf[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 24 13:39:56 2020 +0200
+
+    Move flash message after ProductUpdated from controller to event
+
+[33mcommit af885cd239208e18a62501b662bf45e692aafeb5[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 24 13:35:39 2020 +0200
+
+    Move flash message after CategoryUpdated from controller to event
+
+[33mcommit c8db58b6f5125119c0e9b06905d6f6c776282bff[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 24 13:24:53 2020 +0200
+
+    Move flash message on ProductCreated from controller to event
+
+[33mcommit a9316d85f0ce86bf658095db8d5feeb33f3b5873[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 24 13:19:02 2020 +0200
+
+    Display success message on change_menu_complex after CategoryCreated
+
+[33mcommit c5eaff2bf32a210d0c17aa50d38d49175bbe122f[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 24 13:18:09 2020 +0200
+
+    Correct earlier accidental delete of dispatch CreateCategory command
+
+[33mcommit 24c78f685cc3b6490870b724f8f07d830f0774ee[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 24 12:55:33 2020 +0200
+
+    Create separate EventBus
+
+[33mcommit e965deb22cf75eee0020ce272a2ddbf6f8f03eea[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 24 12:54:41 2020 +0200
+
+    Move setting succes category created flashbag message to command handler
+
+[33mcommit 145fddffc23a8669a897542c1094db3fb3e1e85a[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 24 12:53:01 2020 +0200
+
+    Create NotifyAdminInterface
+
+[33mcommit 75286b52b7d911fb420755a12015c5dd093f588f[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 24 12:51:17 2020 +0200
+
+    Correcnt name of interface from NotifyCustomer to NotifyAdminInterface
+
+[33mcommit 264a5e4364a2c83008a2f2f588e3f3244d83c50f[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 24 12:48:34 2020 +0200
+
+    Create CategoryCreatedEvent event
+
+[33mcommit 676b787f86eeeda3636c6e826aa662c63fbc965d[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 23 16:18:38 2020 +0200
+
+    Use javascript for scrollTo effect on click left navbar
+    
+    Instead of using anchor tags
+
+[33mcommit fd96ce77edb82412d2a5cf86ef1e514f1beed33e[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 23 15:29:58 2020 +0200
+
+    Correct a typo and placement of parenthesis
+
+[33mcommit cb600eaa8090474b1eab814f407c8e5131a31ba3[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 23 15:25:02 2020 +0200
+
+    Change 'remove' controllers to redirect to change_menu_complex
+
+[33mcommit fba2ad267314a94b197adbcffa241506b3d95681[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 23 15:22:57 2020 +0200
+
+    Correct remove item functionality
+
+[33mcommit d505a9fb6cdeee6a6ac7b57e3c99cb440b4b711a[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 23 15:19:52 2020 +0200
+
+    Create controller and twig for complex version create product
+
+[33mcommit aa8c9236deafe613b1aa5e89e66280e5a43170c1[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 23 15:18:33 2020 +0200
+
+    Add 'add' product or category functionality in modal tabs
+
+[33mcommit 86d61c018c1a4716d0a47206dd2074bb8941c625[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 23 12:09:46 2020 +0200
+
+    Load add category form fragment via ajax call in modal
+
+[33mcommit 15c9ea51fdedafe4284853e00bf4630e3c469185[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 23 12:06:57 2020 +0200
+
+    Create CreateCategoryComplexController
+
+[33mcommit 8fc2d95954eb90c99fea3a8017d3a436eae3683d[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 23 12:05:52 2020 +0200
+
+    Create create_category_complex twig form fragments
+
+[33mcommit 0a9dae7305234cba5bf80e5abc2f58574b2f1ed7[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 22 17:54:23 2020 +0200
+
+    Correctly display and have functional image tiles as category options
+
+[33mcommit f156fbaeeff4ec5ba4ea299aea662e459cead484[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 22 16:58:56 2020 +0200
+
+    Add preview of existig images on openign of modal to update category
+
+[33mcommit d13f049d7bcd8482d3ebad1f3d4b9e6ae77c019e[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 22 16:36:17 2020 +0200
+
+    Make update category complex modal work without javascript
+
+[33mcommit e8bbb3654c5c11f1a75c1fd53b4754d0b97cd55d[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 22 16:22:32 2020 +0200
+
+    Create _update_product_complex twig
+    
+    Does not correctly display images, but uses select options
+
+[33mcommit 8d68a80a189eea367173d1f7ae7cd5f2982ba959[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 22 16:22:02 2020 +0200
+
+    Create UpdateProductComplexController for modal
+
+[33mcommit 490edcb5ef845bca94351901fb8d989b61666ed4[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 22 16:21:22 2020 +0200
+
+    Add data attributes for the modal of product edit to use
+
+[33mcommit ee3927e4e7201a0c481d706fc4aeb86b984a35f6[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 22 16:20:20 2020 +0200
+
+    Correct typo
+
+[33mcommit b1482928a5d15edbef2937bdd68d771c09e02e75[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 22 16:18:20 2020 +0200
+
+    Load form to change product on loading modal
+
+[33mcommit f3c8325634988bbd893214a807495235061b4200[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 22 13:56:13 2020 +0200
+
+    Correct typo
+
+[33mcommit 1903ab8d75382d5876fa4d617c7e7f96e228aeb5[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 22 13:47:14 2020 +0200
+
+    Use javascript to deal with file input fields in modal
+
+[33mcommit 6d8cb9115b92f1e96a61fef5079bdc12bdafd3b2[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 22 13:37:58 2020 +0200
+
+    Move action, id attributes from twig to UpdateCategoryComplexController
+
+[33mcommit aa1f789a9bb82f2b97b653c1d0f5b058611aa483[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 20 17:12:44 2020 +0200
+
+    Embed update_category_complex form via ajax in modal
+
+[33mcommit c98a616dddc1e8166fff74c8972d65b17c86c285[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 20 17:05:04 2020 +0200
+
+    Add anchor tags change_menu_complex twig
+    
+    No Jquery needed
+
+[33mcommit 40382daa5432be2e368247d510df1b4b35c734fb[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 20 13:56:23 2020 +0200
+
+    Mvoe twig updateCategoryComplex to fragments
+
+[33mcommit a5cff40bffa4d19d6d21c582e56d4a8e9b2f3c7c[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 20 13:51:03 2020 +0200
+
+    Recreate part of UpdateCategoryController in complex version controller
+
+[33mcommit e2d593bd42388300c2939b878bf12a2b720cf452[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 20 13:48:45 2020 +0200
+
+    Recreate update_category in update_category_complex
+    
+    Moving code of several twig files into one, in order to work on it more
+    easily.
+
+[33mcommit c01c1c43b8f9799794b3d21459812e1e8cb8c357[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 20 13:30:30 2020 +0200
+
+    Reduce clutter on change_menu_complex twig before making modals dynamic
+
+[33mcommit 7252091b8e38cc5c63c49f23ae7ead3ba0c0e2f2[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 20 13:19:10 2020 +0200
+
+    Copy-paste shared logic of simple version to complex change_menu version
+
+[33mcommit b4578ebe87b0aa3fcdba916187b02149d0a44dcc[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 20 13:18:52 2020 +0200
+
+    Create ChangeMenuComplexController
+
+[33mcommit f913ddebaaa5de9378dab64a917630db1ae33073[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 17 20:53:43 2020 +0200
+
+    Change color of menu icon on mobile to black, also on update
+
+[33mcommit f924918b285bfe48f2bcda54aa7e80f31fed072d[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 17 20:45:04 2020 +0200
+
+    Correct spacing title
+    
+    Sideeffect of automatically running prettier and/or eslint. Now it
+    shouldn't be a problem anymore by typing in a template literal.
+
+[33mcommit 78185efec9dfd6539412c4ac3fd840e9d54c8fab[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 17 20:28:01 2020 +0200
+
+    Add proptypes
+
+[33mcommit 719c2dd5ea11d77406eba5b708e2224f59b44f9d[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 17 20:27:23 2020 +0200
+
+    Wrap OrderPageFunctions in withContext
+
+[33mcommit 2c910f5dd3c3f01447d61aab63440070fe5a54d7[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 17 19:35:41 2020 +0200
+
+    Delete code from underlying (under reactApp) twig file
+
+[33mcommit a41aa5d326416f9383bf30ce621affd25b4ab3d0[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 17 19:34:02 2020 +0200
+
+    Remove commented function
+
+[33mcommit 7a212f9404e5c506189a57e04931a1f4246f29a8[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 17 19:33:44 2020 +0200
+
+    Correct typo
+
+[33mcommit accd37efb221ea7246bb94d7f210aef3608d5a49[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 17 19:32:35 2020 +0200
+
+    Wrap components that use contenxt in HOC wrapper
+
+[33mcommit 5ebed16fe4742ba64b9d933549231e1e19d5c20c[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 17 16:19:21 2020 +0200
+
+    Move remembering of selected product via Search to Search component
+    
+    Belongs to that component and is not shared by other components
+    No longer works for products selected via "Da wil ik" button
+    Note that the it is first saved to setLocalStorage to deal with rerender
+    of component
+
+[33mcommit 00b4bf7ec9b79271b59cabc7ff872caf141f58f4[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 17 14:54:55 2020 +0200
+
+    Move confirmOrder stuff to OrderForm
+
+[33mcommit cdc3638d1c099fcdf634063b42356cd14b5ad12d[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 17 14:53:42 2020 +0200
+
+    Remove typo
+
+[33mcommit e0df5f8d5d0542fc35146bc22678b183ff06383e[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 17 13:46:52 2020 +0200
+
+    Correct number of + plus signs next to search field
+
+[33mcommit 6819548be55c706b02f7f6d1052b951edc87de83[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 17 13:46:27 2020 +0200
+
+    Correct config to remove proptypes on production build
+
+[33mcommit 888b801d1b9806211e0293a2e3ab3abd5b1fe720[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 17 13:42:52 2020 +0200
+
+    Import RegeneratorRuntime
+    
+    To handle error if building to support more browsers
+    
+        "browserslist": [
+            "> .05%"
+        ]
+
+[33mcommit 4598e4d0045578e014fa13d6ad32273e2fc72f5e[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 17 12:00:12 2020 +0200
+
+    Apply prettier and eslint to alles files + correct generated errors
+
+[33mcommit 0f5235424dc0a86271979762e473c6b44e7c53a2[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 17 11:51:29 2020 +0200
+
+    Configure prettier
+    
+    Following instructions
+    https://www.robinwieruch.de/minimal-react-webpack-babel-setup
+
+[33mcommit 2314fb4b8717f88a7545bb931febcf94078367ca[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 17 11:48:31 2020 +0200
+
+    Configure eslint for prettier and airbnb
+    
+    Started from settings https://symfonycasts.com/screencast/reactjs/eslint
+    + added instructions of blogposts series
+    https://www.robinwieruch.de/minimal-react-webpack-babel-setup
+
+[33mcommit c98ae5d4f8397a8957bec5c683507c6947b96a40[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 17 11:46:34 2020 +0200
+
+    Configure webpack to use Eslint
+    
+    Adapted from
+    https://www.robinwieruch.de/minimal-react-webpack-babel-setup to the way webpack.config.js was already structred
+
+[33mcommit 2f54fb5de2c21976c4fd84b33c32414783bd3daf[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 17 11:43:53 2020 +0200
+
+    Install Prettier, Eslint, Airbnb codeystles ... + dependencies
+    
+    yarn add eslint
+    yarn add --dev eslint-loader
+    yarn add --dev babel-loader ook maar nog eens gedaan
+    yarn add --dev babel-eslint
+    yarn add -peerdeps --dev eslint-config-airbnb
+    yarn add -peerdeps --dev eslint-plugin-jsx-a11y@^6.3.0
+    yarn add prettier
+    yarn add --dev eslint-config-prettier eslint-plugin-prettier
+
+[33mcommit 901a86553dfce1184c795bba79625b34f7f406a2[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 16 19:19:52 2020 +0200
+
+    Correct .eslint config
+
+[33mcommit d262414e7b3514bfc2d868b0203f5abaa7481550[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 16 19:16:54 2020 +0200
+
+    Clean up code: semicolons, comments, parentheses, naming, proptypes ...
+
+[33mcommit 14b14cedad640eca834c7939545727b613c9a2d3[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 16 19:12:30 2020 +0200
+
+    Create separate OrderLogo component
+
+[33mcommit 622886c44f7cbdc65afdb06c35dfcc7c6aaca09d[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 16 19:09:13 2020 +0200
+
+    Create separate ConfirmButton component
+
+[33mcommit 8968b239ed8225610af6c78ed595e0111c03988c[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 16 19:07:51 2020 +0200
+
+    Create separate functions to set/get localStorage
+
+[33mcommit d6419349361139a7810dfd11f29297d074288c4e[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 16 12:45:36 2020 +0200
+
+    Make transaction work in SubmitOrderController
+
+[33mcommit 8435267193a4455e44936f458255cfffacd45193[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 16 12:30:33 2020 +0200
+
+    Set links of underlying twig file to default
+    
+    So that the page just reloads if clicked before react renders
+
+[33mcommit cca0eb35a406ec76a20972714612d4edb22600f2[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 16 11:51:49 2020 +0200
+
+    Save to localStorage if the menu was closed/opened
+    
+    Can be improved on.
+    -Serves to keep menu open on mobile if a product gets deleted. Which is
+    the most important for user experience, I believe
+    -Yet it 'glitches' everytime, as the change is not instantaneous but you
+    -see the opening/closing
+    Also, if you close the tab, browser ... the menu may open open load,
+    which may not be the desired result.
+
+[33mcommit 780e683bb749a5a3367efc9ed3207dec2606768e[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 16 11:11:59 2020 +0200
+
+    Save current state of orderBasket to localStorage on item remove
+
+[33mcommit 41605533c9df4fc9b4afff54f8d3da477b709560[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 15 16:25:47 2020 +0200
+
+    Empty OrderBasket after confimration
+
+[33mcommit 213a23ab794ec40b996da011543936c59bf5a9f2[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 15 16:22:21 2020 +0200
+
+    Create reuable function to change color icons small screen part2
+    
+    See 5b911a1c
+
+[33mcommit f6b672bbdae2a2c6d32b4ffdfd55fe9028dd4a1a[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 15 16:15:09 2020 +0200
+
+    Save customerName input in localStorage
+
+[33mcommit 2ca1652faabc1828c4fd97835a086c2ba6526150[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 15 16:06:52 2020 +0200
+
+    Add orderBasket to localStorage
+
+[33mcommit 5b911a1c44bb03d283e2b80d0660575b20b7822f[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 15 15:18:10 2020 +0200
+
+    Create reuable function to change color icons small screen
+
+[33mcommit 9977dc38c2be846b17c653e51c11753530fb5477[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 15 14:06:02 2020 +0200
+
+    Make hamburgerMenu work on mobile
+
+[33mcommit 80baf2ac7b2daab43d3f0162f1688f5d9f389c25[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 15 14:02:35 2020 +0200
+
+    Change colour of all svg's to black on mobile
+
+[33mcommit d95380f50a08da642854c982f1459c85d3093bc6[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 15 11:46:16 2020 +0200
+
+    Display icons of categories on mobile
+    
+    Note: thus far only works with icons that have a different color than
+    the background.
+    To test, use the appended assets/images/sauce-sammZWART GEMAAKT.svg
+
+[33mcommit 7604646234bbd68c3fd244114dfe2874bbebeba0[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jul 14 20:11:54 2020 +0200
+
+    Clean up code, improve naming of variables ...
+
+[33mcommit a9d521e7f42835f9f1d0e7928dbf6094d8ebb50a[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jul 14 19:25:06 2020 +0200
+
+    Simplify add and remove to basket functions
+
+[33mcommit 96436882eb50512b0ba986647634872539c0e6a0[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jul 14 19:23:20 2020 +0200
+
+    Create function that can both register adding and removal products
+
+[33mcommit 76502921ec84cd52ee99dfe385b416560718dcd5[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jul 14 19:21:59 2020 +0200
+
+    Centralise registration if products has already been added (part2)
+
+[33mcommit 05dec4099a79dc6ac31f8fd7ef7667543035a051[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jul 14 19:19:34 2020 +0200
+
+    Display loading message if categories api request has not been resolved
+
+[33mcommit ae815f1733805803c7d0ddf1e1b8f2b12eff382e[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jul 14 19:17:09 2020 +0200
+
+    Centralise registration if products has already been added
+
+[33mcommit 13782a9153961df01376ec31655ab9371edac5ed[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jul 14 17:31:05 2020 +0200
+
+    Correct propType
+
+[33mcommit 1a32f6b798e576eec0bea7bfb5422d524106ee93[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jul 14 17:29:58 2020 +0200
+
+    Create register function to reuse on adding/removing from basket
+
+[33mcommit 38f93e3c2e044eef9e55280e7d5cd4cc72185e32[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jul 14 17:25:31 2020 +0200
+
+    Use callback and setState to register if product has been added/removed
+
+[33mcommit f080c744f30ea3605535c1382081aaaeb88f02bc[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jul 14 16:14:06 2020 +0200
+
+    Correct react error that a element cannot be child of table elements
+
+[33mcommit 049115aa0079ac55c56fb17868cd4a0d47baf00d[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jul 14 15:27:08 2020 +0200
+
+    Replace hardcoded url with variable url from context
+
+[33mcommit 8460eb8bbe672393f720f39e2c0e8acff2ecee55[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jul 14 15:22:25 2020 +0200
+
+    Send id's  over to handler functions instead of using events... property
+
+[33mcommit 1a87b0d147bae46ba6a88b09e79d8a96615a4918[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jul 14 15:19:29 2020 +0200
+
+    Improve display of admin home button if already open VettigeVrijdag
+
+[33mcommit 8adf6c7c32fa926e982b7bff4e2707f8208c8d4b[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jul 14 15:18:55 2020 +0200
+
+    Clean up code
+
+[33mcommit 98c138d4de666a1a3bb8429cbef1f7d5e807c327[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jul 14 15:04:32 2020 +0200
+
+    Improve display of search field
+    
+    - use value prop to display dropdown options without a blue-ish
+    background in favour of regular dropdown look.
+    - use previously selected productname as placeholder
+
+[33mcommit c81920aa1a3c1e56a544f023f1ef9d9ce0c690ee[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 13 15:40:26 2020 +0200
+
+    Clean up
+
+[33mcommit c1e20902527bd55aa46856cfe4de72fb8e963d0c[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 13 15:39:00 2020 +0200
+
+    Make + sign next to search bar add the last added searched product
+
+[33mcommit 26af18326c7dc776ecc8a19466bf3b03c05c451d[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 13 15:37:39 2020 +0200
+
+    Add proptypes
+
+[33mcommit 29cf441385da7e5250a9bf222caea8f3b9bfaf27[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 13 15:35:52 2020 +0200
+
+    Move state for customerName to lower level to not glitch
+
+[33mcommit 60afba6170fbc9cad1091f8ee945b765e2547e9f[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 13 15:26:55 2020 +0200
+
+    Change text if product has already been chosen, no matter how
+    
+    Can be by way of search field, the '+'-sign next to the search or the
+    point and click after having selected a category.
+
+[33mcommit c401d1f9d0160827d99387cdf511aaa298333a64[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 13 15:25:43 2020 +0200
+
+    Make context with links available to ORderPageFunctions
+
+[33mcommit ec7e2f8d7c3e6e6b74046ddb240e8d122ddbb63a[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 13 09:17:44 2020 +0200
+
+    Add slug of vettigeVrijdag to order homepage logo link
+
+[33mcommit b1d81ffc42cf32d7008a5a8ea4239f4b13ecb7ff[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 10 15:23:39 2020 +0200
+
+    Add proptypes to OrderPageComponents
+
+[33mcommit 9f82e8cc13c8c7116ffd2ab789cf01c7c16400dd[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 10 15:17:25 2020 +0200
+
+    Move state+function to OrderPageComponents
+    
+        // should be part of OrderpageFunctions, but glitches out; type one
+    letter and the inputfield is unselected so that you need to click again
+    for the second letter
+        //  therefore moved it here
+
+[33mcommit 17b47218e548fc6daf3c65cf67d502d59be19d78[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 10 14:45:38 2020 +0200
+
+    Refactor OrderPage in class w. functions and class w. components
+
+[33mcommit 8be0aa98dda92c0553a66f44aeed78e373bcd408[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 10 12:49:01 2020 +0200
+
+    Correct callback function to protect immutabilitty of state
+
+[33mcommit 62e03295e1bc9bf9f406facfe0ca3b9ad04c584a[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 9 17:55:39 2020 +0200
+
+    Reduce code duplication by importing Toggle class
+
+[33mcommit dc65c899c8cce9b97f78e691010cca5cd845b2f7[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 9 17:55:00 2020 +0200
+
+    Use callback function to protect immutabilitty of state
+    
+    Beter than making a copy
+    https://symfonycasts.com/screencast/reactjs/immutable-state
+
+[33mcommit ab8ef34e8c87f10a50fb0af251802c5113154908[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 9 16:49:48 2020 +0200
+
+    Share _remove_form twig reusable for categories and products
+
+[33mcommit 463ebf0a13c20f1a11d45b36154268194657edf6[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 9 16:39:33 2020 +0200
+
+    Add images of categories to left-menu on change-menu
+
+[33mcommit 72719c5b7d2ddb26cc83c11a1ecf84aa64e31dd9[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 9 13:45:35 2020 +0200
+
+    Replace Jquery with vanilla Javascript to remove prods/cats
+    
+    Can't easily select show.bs.modal with vanilla, though.
+
+[33mcommit 8bc839e96f74cdcd8ed623bc839ab23fb571740d[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 9 10:54:31 2020 +0200
+
+    Change remove logic: get form from RemoveProductController
+
+[33mcommit d3371bf76160b07ef9f4acd88bbb5c5de6560145[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 8 18:24:30 2020 +0200
+
+    Change remove logic: get form from RemoveCategoryController
+
+[33mcommit 9e0235968523001e96fcef630531f0aee1019feb[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 8 13:57:07 2020 +0200
+
+    Change text of product option if product is already in orderBasket
+
+[33mcommit 278cab62444de8bff77a9165ed6eabfbb8d5e2ab[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 8 11:06:45 2020 +0200
+
+    Add OrderLine orphans removal to Product
+    
+    In order to be able to delete categories and products
+    Otherwise error such as [2020-07-08 11:04:23] [23000][1451] Cannot
+    delete or update a parent row: a foreign key constraint fails
+    (`vettige_vrijdag`.`order_line`, CONSTRAINT `FK_9CE58EE14584665A`
+    FOREIGN KEY (`product_id`) REFERENCES `product` (`id`))
+    
+    Note that this removes any historical record
+
+[33mcommit ad20021129d6435849bfba1397821a65a57b9586[m
+Merge: 62e9fc0 144c464
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 8 10:32:49 2020 +0200
+
+    Merge branch 'master' of https://git.sumocoders.be/vettige-vrijdag/jan-de-clercq into frontend
+
+[33mcommit 62e9fc0fe845da603f70bcf71e37ced7caf558c8[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 8 10:29:08 2020 +0200
+
+    Move Jquery to handle remove cat and prod to separate file
+
+[33mcommit 546a7589d9dd129a7cb0a02cfab2aac1a14d2cec[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jul 7 21:19:16 2020 +0200
+
+    Update src to load logo's from assets
+
+[33mcommit e1c5dd10d0b8a86cec26564bff48793698cb73c6[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jul 7 21:14:31 2020 +0200
+
+    Add csrf token validation to ajax remove cat or prod actions
+
+[33mcommit 89a15cdf8edc8e7fd94f83cc7601eb4157f42e6d[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jul 7 18:00:12 2020 +0200
+
+    Clean up code
+
+[33mcommit 0be7918834de9757a6ad2548059a8542bf01e72d[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jul 7 17:58:19 2020 +0200
+
+    Create RemoveCategoryController and RemoveProductControlelr
+
+[33mcommit dab4d9f558d1ae700dfd80d3b747dbea511ca03f[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jul 7 17:57:14 2020 +0200
+
+    Add ajax requests on remove category and products
+
+[33mcommit dcc90904df279b7743359eb12b50d82bbef4c7e6[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jul 7 11:52:06 2020 +0200
+
+    Display in react images that make use of hashing for versioning
+
+[33mcommit 22202b54e37383a1117c5fa69e5878b4df798e7f[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 6 17:26:10 2020 +0200
+
+    Clean up code a bit
+
+[33mcommit 1aea66e572ba11d6083274524db9590f315a6d5b[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 6 17:23:13 2020 +0200
+
+    Give ORderBasketEmpty access to routes in context
+
+[33mcommit 771c087c098fa536e7e8e107f96925f35c2eb8fc[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 6 17:20:32 2020 +0200
+
+    Added links for images to list of routes in context
+
+[33mcommit cc5de5051a8ad1aea077a103f40613c08834e7db[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 6 16:47:50 2020 +0200
+
+    Added hamburger menu functionality
+
+[33mcommit 17e69834ab36771bec18b046e1601a7760dafb86[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 6 16:37:33 2020 +0200
+
+    Improved display menu items on medium screen devices
+
+[33mcommit 631643c5afb0570653be3d55ebcba346d8c14b25[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 6 16:16:01 2020 +0200
+
+    Correct usage of routes in context, excludingg use of slugs and ids
+
+[33mcommit 144c464e91b7a9a3c045a82d319b5f0ff9481066[m[33m ([m[1;31morigin/master[m[33m)[m
+Merge: f270caf ff51e48
+Author: Stijn Vrolijk <stijn.o.vrolijk@gmail.com>
+Date:   Mon Jul 6 15:07:51 2020 +0200
+
+    Merge branch 'orders' into 'master'
+    
+    Orders
+    
+    See merge request vettige-vrijdag/jan-de-clercq!4
+
+[33mcommit 66fb80d55ac1010a306a0dc2785117e2c9b09461[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 6 11:59:46 2020 +0200
+
+    Add variable routes from context to components
+
+[33mcommit d3574efa75e7bbbb7c82ed061f876d5130361611[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 6 10:53:10 2020 +0200
+
+    Pass context as prop to OrderNav
+
+[33mcommit 60d1b9adf90c2cf7316ffd793754204f36182e1d[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 6 10:38:10 2020 +0200
+
+    Add list of routes to context provider (dummy variables for now)
+
+[33mcommit 3999fdcafa5e1744e57a8493f827228dbf6c0164[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 6 10:36:43 2020 +0200
+
+    Added list of routes to context provider (dummy variables for now)
+
+[33mcommit cc28245e61ba94a3304132fbe4a3cc62d045c6af[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 6 09:57:22 2020 +0200
+
+    Simplify construction of array of options AsyncSelect
+
+[33mcommit abae78880d93dbf2cdebc4dabe0ca25f49296cd7[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jul 6 09:36:39 2020 +0200
+
+    Remove to do of sending categoryId over with selected products
+    
+    Originally, I thought it could eliminate forEach loops to find the
+    corrsponding product, but the loops would just change a bit.
+
+[33mcommit 91848a9ed8bfaedcdfe4d39e8fc794fcc314b7e8[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 3 19:24:31 2020 +0200
+
+    Save (temporarily) try-out Context example for future refernce
+    
+    https://www.toptal.com/react/react-context-api
+
+[33mcommit ca9fc1235230c5a9ee28c7bc3c2156140b0a816a[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 3 15:30:36 2020 +0200
+
+    Add note to indicate possible improvement regarding immutable state
+
+[33mcommit 13e1050dfe601661782c2e747300acf1c63b31e6[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 3 15:13:35 2020 +0200
+
+    Move ORderToggler to its own function 'component'
+
+[33mcommit 45eb0b05073957a59b552862f20ffcfa83e16320[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 3 15:11:58 2020 +0200
+
+    Clean up code OrderForm and Search components
+
+[33mcommit b0e305be1fea0f8db2a348230fb540fa87df11f4[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 3 15:00:37 2020 +0200
+
+    Move Search to its own component
+
+[33mcommit 3ade310a888e57b73122e0562ffe0729fd046c85[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 3 12:02:29 2020 +0200
+
+    Remove old code, in comments, completely from OrderBasketfilled.js
+
+[33mcommit 684318e0521928f0a54b514473bd3b35d0f2f87c[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 3 11:59:20 2020 +0200
+
+    Add default options to AsyncSelect component
+
+[33mcommit b0bc71b9b7328e4f6899f117f373e63da76bec52[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 3 11:04:33 2020 +0200
+
+    Add current state yarn.lock
+
+[33mcommit 4ffacbcbb840e9904de2ecc620fbf5178d07a8e3[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 3 11:02:38 2020 +0200
+
+    Uncomment not functioning livereload script from slice
+
+[33mcommit 63e94edea5a4346eabb2b1b849eee241968dadac[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 3 11:02:15 2020 +0200
+
+    Add missing migraton
+
+[33mcommit 5070ba75ff404b55f72ab9ba72b9c03b6f7bdc30[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 3 11:00:19 2020 +0200
+
+    Add current state composer.lock
+
+[33mcommit e5c2b22af10dfc61dcd869d6d1d0526dfaed81de[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 3 10:58:56 2020 +0200
+
+    Install react-select
+    
+    npm i react-select
+    Did not work with yarn
+    https://github.com/JedWatson/react-select/issues/3201
+
+[33mcommit 38ac3450940139bf1634028bb5890fd1ad845b4f[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 3 10:52:41 2020 +0200
+
+    Reinstall doctrine after error installing react-select
+    
+    https://github.com/doctrine/DoctrineMigrationsBundle/issues/301
+
+[33mcommit 8c8fbca6d9915ad9d13a93ce481806671f271216[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 3 10:48:33 2020 +0200
+
+    Apply class to display icons correctly in navbar
+
+[33mcommit c60917aabb38017b55fbb8f3c66b748c1ea69514[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 3 10:47:42 2020 +0200
+
+    Make search field able to add product to basket
+    
+    Note that there is much trashy code here and much to remove
+
+[33mcommit 119303362810450a2d81e1da313d43958d21d97a[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 3 10:45:55 2020 +0200
+
+    Make remove item from basket work and display corectly
+
+[33mcommit ae9a516bf8be707891837fbf8606fe2f64101a99[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jul 3 10:44:53 2020 +0200
+
+    Create class to display menu icons correctly
+
+[33mcommit 4f4f2a15adc0a96e1e53fbbebccd6582fe3f2182[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 2 23:12:10 2020 +0200
+
+    Add search field for product using select-react
+    
+    Not fully functional: still need to pass value of selected value. Now it
+    always passes hardcoded id of 1
+
+[33mcommit e55581b27da416dd9cde602dbaaf7f06c4d9b5e0[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 2 21:48:32 2020 +0200
+
+    Update fontawesome package.json
+
+[33mcommit d0e38d6f320ebaab8d35ac9f7ac9235984014de3[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 2 21:46:47 2020 +0200
+
+    Add real image/icon to OrderNav.js
+    
+    Renders too big
+
+[33mcommit b94f5b90d732f3c4f1835885aa3f2642b8536246[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 2 21:45:20 2020 +0200
+
+    Add missing semicolon on import statement
+
+[33mcommit 23d1ce64a10e3959641f71df717c609d6cb4600b[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 2 17:05:40 2020 +0200
+
+    Link 'bestellen sluiten' with close-vettige-vrijdag'
+
+[33mcommit 9c2f011b10c91410de6f142aebb54dde88d946bf[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jul 2 17:03:12 2020 +0200
+
+    Variably display bokes/frieten button and such
+
+[33mcommit ff51e48abdc8c71fdb299924ddfc9dca9beb8834[m[33m ([m[1;31morigin/orders[m[33m, [m[1;32morders[m[33m)[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 1 19:12:37 2020 +0200
+
+    Add error status message to json response
+
+[33mcommit 4273ed53de8829423ff41df12ac064f5b6fcd1df[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 1 19:08:54 2020 +0200
+
+    Return JsonResponse instead of throwing Exception
+
+[33mcommit 4aff4cc7968a529633f3cfefcd833e7a564491b7[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 1 18:58:07 2020 +0200
+
+    Move react links from 3_columns template to order-empty template
+
+[33mcommit 3010efc8ccffee7ea569e407fd568a8df7a57276[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 1 18:57:02 2020 +0200
+
+    Hide 'bestellen' button, conditional if name has been filled out
+
+[33mcommit 48078b94560c292fb2fcf42dc3b044c79004538d[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 1 18:53:47 2020 +0200
+
+    Import fontawesome icons in reactApp.js
+
+[33mcommit 604d9b32830844286f8c0926e6399c38cc9131b0[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 1 15:34:47 2020 +0200
+
+    Break long line over multiple lines
+
+[33mcommit 7a0af9904c7a310381803e1e85a1daa88b1922ce[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 1 15:32:28 2020 +0200
+
+    Change orderlink with hash from ?parameter to /parameter
+
+[33mcommit 10e308687b0f4d04bcbf7cd3cf490b334bdbf388[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 1 12:38:32 2020 +0200
+
+    Change VettigeVrijdag methods to check if it's closed
+
+[33mcommit 8c76750c8b5620d043de5bad795de7ddf7e54f02[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 1 12:37:33 2020 +0200
+
+    Add check to SubmitOrderController to only allow open VV's
+
+[33mcommit 05bcf91d53cc92a960fa27ba56e1bd341283af27[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 1 12:34:58 2020 +0200
+
+    Restrict access to SubmitOrder by requiring vettigeVrijdag slug
+
+[33mcommit ad94a9dee016e7e53a146e97de40708c1de204d4[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 1 11:52:25 2020 +0200
+
+    Add slug to state and send it along with order after confirm
+
+[33mcommit 11715df60e5bfb5846b3984f1e8f7f61b866d641[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jul 1 11:26:16 2020 +0200
+
+    Add separate entry for in webpack.config for reactApp.js
+    
+    If reactApp.js is imported in app.js, it gives problems on non-react
+    pages: doesn't render correctly. E.g. the order link with unique slug is
+    not visible on index page.
+
+[33mcommit 318920b14598b33f45ebbd8186b4fc86eb4cf9e4[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 30 20:20:43 2020 +0200
+
+    Improve naming of confirm and submit routes, controllers etc.
+
+[33mcommit 1263978e60a125c0e1c6f352d2738acd6a7709d4[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 30 20:19:37 2020 +0200
+
+    Correct order of arguments on first page
+
+[33mcommit b8881aeca1cd271218f4b9b082c14fa95a0ee8fc[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 30 19:40:55 2020 +0200
+
+    Comment out starting transaction to have working api endpoint
+
+[33mcommit 899a84afb90764543e027a7351d2466b170e7c02[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 30 19:37:27 2020 +0200
+
+    Correct console.log error message
+
+[33mcommit 02cb6835e3ffa8a22ab28258b7e6092071e94be7[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 30 19:30:07 2020 +0200
+
+    Correct sending of order via axios
+
+[33mcommit 747acbfa5d52e76ed42b92f028f43e5d411a2f46[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 30 17:13:06 2020 +0200
+
+    Merge orders into frontend, part 2
+
+[33mcommit 7c1daa321e4976863d6f0e38d9fa7bc574fda78f[m
+Merge: c78286c 176c417
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 30 17:05:22 2020 +0200
+
+    Merge branch 'orders' of https://git.sumocoders.be/vettige-vrijdag/jan-de-clercq into frontend
+
+[33mcommit c78286c999d335ddd87a517a3ae423f53c879606[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 30 16:55:49 2020 +0200
+
+    Clean up tempalte change-menu
+
+[33mcommit 861e1ccd49048b83f52d2f57611f3e41aaf2cc45[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 30 16:42:02 2020 +0200
+
+    Clean up code a bit
+
+[33mcommit 5f3aa244126a7b7d33015d4adeb32284cf00db4c[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 30 16:39:30 2020 +0200
+
+    Typecast json string properties to integer for conditonals
+
+[33mcommit 277cb1dc9fec32f2b312f63a5b8079729b750a31[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 30 16:39:13 2020 +0200
+
+    Clean up code a bit
+
+[33mcommit bad5fadab7fcc93e78d76b7f72347119b4a05701[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 30 16:37:13 2020 +0200
+
+    Clean up code a bit
+
+[33mcommit ab3b78fd080333d3dd382d4bfe5853bbe90efe91[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 30 15:34:21 2020 +0200
+
+    Populate state with data from api/categories
+
+[33mcommit 6f332a9a6cda2b4ced333e27025073f4c4bb7627[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 30 14:14:40 2020 +0200
+
+    Redirect to confirmation page after succesful order
+
+[33mcommit 2d2d44e61f816e08ec2fca2f1fa39ca7a1e5a746[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 30 13:31:48 2020 +0200
+
+    Change customAttribute to custom-attribute
+
+[33mcommit 348c3de0595899bd90b826411dfcc10cc390e6e0[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 30 13:12:49 2020 +0200
+
+    Send api request after click on confirmation button
+
+[33mcommit e61df66d48e04ac2f1f02cc6e30b43622044ff68[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 29 17:58:14 2020 +0200
+
+    Add proptypes to callback functions passed as props
+
+[33mcommit f810095a640df3dd5af39ecd893dfaa5b268306f[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 29 17:55:49 2020 +0200
+
+    Clean up code a bit by removing console logs etc.
+
+[33mcommit 99910fa5122ebb104c00201ca850ee534e32e651[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 29 17:42:07 2020 +0200
+
+    Add remove from basket functionality
+    
+    Does not yet work as intedended. Direct click on svg image of trash bin
+    does not result in removal.
+
+[33mcommit f002150a3dec0fe179b1a4f118799d5a990e6185[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 29 15:53:34 2020 +0200
+
+    Pass orderBasket state to form component
+
+[33mcommit d77dbecb46284e778ae738d0bb0a9e1decf03974[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 29 15:47:29 2020 +0200
+
+    Add check to increment amount of product in basket if already in it
+
+[33mcommit ba572734d1eb7719f8329041a7d8a59664d2c3d2[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 29 15:08:24 2020 +0200
+
+    Add check to differ between prods already in basket and new ones
+
+[33mcommit beef0e4cbe8627b14000657b60638424bc8c2dc0[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 29 14:57:34 2020 +0200
+
+    Add functionality to add product to basket
+    
+    No amount registration
+
+[33mcommit c03ec93503555cd2980562620e4bd48ef7c5e517[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 29 13:29:53 2020 +0200
+
+    Add categories to state on first mount
+
+[33mcommit e92aba0356d45e87a0135dafd644fe7b584617f5[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 29 12:02:05 2020 +0200
+
+    Add functionality: click on nav element and get corresponding products
+
+[33mcommit 5fa3c4cb5323bc72a8f4616fa502fb70e8d1fe34[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 29 11:57:45 2020 +0200
+
+    Add custom attribute on nav element to pass category id
+
+[33mcommit 12398c8aba84072c3a7e79208b6b83a4fc1cf860[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 29 10:46:47 2020 +0200
+
+    Change state of name field on input and render result
+
+[33mcommit e6f10a36b03c6c9db1809141bcf9e517d04e2afc[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 26 15:52:14 2020 +0200
+
+    Add id to div to change with react
+
+[33mcommit 6f595a94893509282245db64c7b0b1c1fd38d7b7[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 26 15:21:19 2020 +0200
+
+    Enable strictmode
+
+[33mcommit f3341864524f09725b3d4165254b574a890b77d4[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 26 15:18:06 2020 +0200
+
+    Display Bestellen! button only if products in basket
+
+[33mcommit 8c8759893cec17da27ef57444721c77f6922e190[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 26 15:04:43 2020 +0200
+
+    Add 'Bestellen!' button in case products have been selected
+
+[33mcommit 7624fba25c07b009ba0e16f9e5f7f65c8e5a79b9[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 26 14:58:57 2020 +0200
+
+    Add props to display name
+
+[33mcommit a0937d7a902d0fa99c472659b4b0d6ce97e493f1[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 26 14:49:00 2020 +0200
+
+    Display empty right column or filled in version
+
+[33mcommit e767a80b57e1d3d91ca7df896cf4749c2b397b05[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 26 14:02:32 2020 +0200
+
+    Add keys to map function and proptype for CategorySelected
+
+[33mcommit cc11478d4e2e275fbca4a0837a6a25fbc48b0083[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 26 13:57:15 2020 +0200
+
+    Display products of category if selected or empty order screen
+
+[33mcommit bab27c6b43776dda992c31702d7a69bbafafcc37[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 26 13:24:42 2020 +0200
+
+    Loop through categories and render nav element blocks
+
+[33mcommit d93fbab3e3a84be5b29ebf429c382acf2c822abd[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 26 13:23:17 2020 +0200
+
+    Format Categories json to array and pass as prop
+
+[33mcommit fc2c053623b52f4cc73d9dc5566271c20dace7f3[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 26 11:50:12 2020 +0200
+
+    Move form and nav from OrderPage.js to new components
+
+[33mcommit a9c66a988dc17691978495bfad24a18ccf41f2d5[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 26 11:39:41 2020 +0200
+
+    Create OrderPage react component with static jsx
+
+[33mcommit 0afe6bb84cb6e13ebd17247982ddbcde4ec24fa4[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 26 11:37:03 2020 +0200
+
+    Create OrderPage.js react file and import in app.js
+
+[33mcommit 70ebabce27540e810bf7609a4a3e4827411f8201[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 26 09:18:01 2020 +0200
+
+    Install babel-preset-react
+    
+     yarn add babel-preset-react
+
+[33mcommit 4561d5db0e1f472b5ebf7e22b6b998ed5a7b6a0b[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 26 09:16:17 2020 +0200
+
+    Install and configure eslint for react
+    
+    yarn add eslint-plugin-react --dev
+
+[33mcommit 5dbab38cfda594b74e27fd105f59e2e5e61c43c6[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 26 09:14:52 2020 +0200
+
+    Install and configure prop types
+    
+    yarn add babel-plugin-transform-react-remove-prop-types --dev
+
+[33mcommit 84b9df5a3797ecfb201f372b659ca1577530c48e[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 24 15:47:45 2020 +0200
+
+    Install and enable React
+    
+    yarn add @babel/preset-react --dev
+    yarn add react react-dom prop-types
+
+[33mcommit f38c86f290fd74f08b6ba905664bcf1e0c06fcb1[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 24 15:31:11 2020 +0200
+
+    Add name of category to h1 in update_category twig
+
+[33mcommit a3d4577734f42757383b8d8c16ce816a08eebd55[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 24 15:21:27 2020 +0200
+
+    Add sad smiley to order-empty twig
+
+[33mcommit 7988fa6cee2c56b9701083e24c3d37e014d09aa4[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 24 15:13:31 2020 +0200
+
+    Replace hardcoded values right bar with variables
+
+[33mcommit 1d6d976be0ede45f05b2bad7c3cdadeb5e5bb360[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 24 15:02:49 2020 +0200
+
+    Replace placeholder product choices per category with database values
+
+[33mcommit 37908b60894a282882e2ef788ca692775aee957e[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 24 14:22:21 2020 +0200
+
+    Add div and move part of change-menu to new middle_column
+
+[33mcommit ff9be65b7380c9399504c3997d3ced8787c86109[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 24 14:21:43 2020 +0200
+
+    Correct position row div 3 columns template
+
+[33mcommit c8a9a20b3bfc215ec74d5cb4e1bbf4d2ffbcf5a6[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 24 13:46:38 2020 +0200
+
+    Add 404 template
+
+[33mcommit b6a221ffec19a32a1b6c44b0b43c9798a631fd71[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 24 13:45:58 2020 +0200
+
+    Replace placeholder category names dark left bar with real cats
+
+[33mcommit 0a964934667d7f9ce52ce14ed34d531072603b40[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 24 13:43:50 2020 +0200
+
+    Add checks to admin index in case vettige_vrijdag is not open
+    
+    Not relevant for end user, but if not, the page gives errors.
+
+[33mcommit 1f0e2b95ea4b820f028f49cafefe2be56e680add[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 24 13:03:35 2020 +0200
+
+    Add slug to shareable order-link
+
+[33mcommit c71ec7cbe53977d9ba45c70157cdd9881d30912b[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 24 12:43:11 2020 +0200
+
+    Correct position of label
+
+[33mcommit 759a8eeefe74d4595de95f54e121b8b3c29787b6[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 24 11:59:44 2020 +0200
+
+    Replace placeholder images with database images of categories
+
+[33mcommit 021db4643560223bc48e243e3b8112ab6c9f290c[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 24 11:50:56 2020 +0200
+
+    Pass variable path to fragment
+
+[33mcommit 31d1d3e15bc06554ae4969859bc7eff046e514ab[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 24 11:36:14 2020 +0200
+
+    Make delete modals show name of product/category to be deleted
+
+[33mcommit be227925d2b5a09988bfa65565b1618f836197d7[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 24 11:26:35 2020 +0200
+
+    Improve naming of pdf route to create_pdf route name
+
+[33mcommit dab8f9a2ed25d20433ae86e74d605de86a1c0147[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 24 11:25:53 2020 +0200
+
+    Add working link to previous twig template to download pdf's
+
+[33mcommit 1ae38c82b737210ca2abb585a24138c712e89cdb[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 24 11:10:16 2020 +0200
+
+    Move add and update buttons to fragments
+
+[33mcommit 6f4460e9c29befc9bf5621e9e9c23ba1fb66d508[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 24 10:55:57 2020 +0200
+
+    Integrate working form in Product twig template
+
+[33mcommit 8bb05ee4f5b0db66da68f71c9a86f374df4448b3[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 24 09:37:42 2020 +0200
+
+    Display database categories and products in change_menu
+
+[33mcommit e733f6bad92d9e35559151e84a96997a9dc75916[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 24 09:25:11 2020 +0200
+
+    Added image to confirmed twig page
+
+[33mcommit b22a009ba36925219095511daacf7170c612c290[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 24 09:24:02 2020 +0200
+
+    Added some path() tags to twig file
+
+[33mcommit d97d5d9e9af6e3d723e90326d5c8bc256775a5db[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 23 22:33:22 2020 +0200
+
+    Move toggler from parent template to few templates where it's used
+
+[33mcommit 8e14d274d030ff5ef001ab59b448603bb856bdfe[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 23 22:32:30 2020 +0200
+
+    Create change-menu twig template
+
+[33mcommit 71cfd8e6bc31d215f480ef3a6aba6481051120d9[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 23 22:32:15 2020 +0200
+
+    Create confirmed twig file
+
+[33mcommit a03c701aad6602d8f75a2ff38d42af86e9307efe[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 23 21:44:57 2020 +0200
+
+    Correct twig link in GetVettigeVrijdagsController
+
+[33mcommit 393b04ec8d821b3cb40535b8168ecd4513dbaf00[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 23 21:44:00 2020 +0200
+
+    Create twig for when a category has been chosen by user
+
+[33mcommit 8cd54ae60380fb0cfcfe241c04f6092911e39a88[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 23 21:43:37 2020 +0200
+
+    Create twig for starting order-empty/bestel-home route
+
+[33mcommit 5737152587a9d1acea5c79f9640cd8a746b2c1af[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 23 21:43:15 2020 +0200
+
+    Create 3 column twig template
+
+[33mcommit db5568f0bd272e1441fa84c6f63a40e547a84bb0[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 23 21:42:52 2020 +0200
+
+    Remove double form opening tag category twig file
+
+[33mcommit 92dd3219e21f4b3b403a83eb61eb2ba266876427[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 23 21:42:08 2020 +0200
+
+    Remove title tag from 'inbetween' twig template
+
+[33mcommit 809ca95fb0074b3c5f3e4761471c7b4b02228370[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 23 19:30:40 2020 +0200
+
+    Temporarily save slice html files in public directory (again)
+    
+    Again, because I did tinker with the previous files and it's the
+    easiest way to be sure to have the right files.
+    These files need to be removed after creation of twig templates
+
+[33mcommit 269fadab5aad6640366e44d44c52c34aed5ab64a[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 23 19:29:09 2020 +0200
+
+    Create previous (pdf) twig file with specific values
+
+[33mcommit 51bd69c83258f0e014bd861b54ab783c8b372ea8[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 23 19:28:19 2020 +0200
+
+    Create index.html twig with on/off button and specific body class
+
+[33mcommit 119c39480aedf6cc84bf093af19feda090a40296[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 23 19:27:42 2020 +0200
+
+    Create UpdateProduct twig with only specific values
+
+[33mcommit d8f399edfcaef53aa95520e23cfc6231b0e054e0[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 23 19:26:42 2020 +0200
+
+    Create CreateProduct twig with only specific values
+
+[33mcommit a059154b0804be3fb2f40dd9635941b7a663ba75[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 23 19:26:16 2020 +0200
+
+    Create UpdateCategory twig with only specific values
+
+[33mcommit 8fada6bd99a4b346cb70ecd7a6b944d3aefb4942[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 23 19:24:53 2020 +0200
+
+    Create CreateCategory twig with only specific values
+
+[33mcommit b032fc44038e032a099e6876c9a849116652ab75[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 23 19:23:53 2020 +0200
+
+    Create arrowback fragment
+
+[33mcommit c92746591bb4a327458b4076d330fea2fc1f740e[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 23 19:23:36 2020 +0200
+
+    Create Product template with variable fields
+
+[33mcommit 400711ddcfbb413b310a4df0d96d41388185ca17[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 23 19:22:49 2020 +0200
+
+    Create improved Category template with variable fields
+
+[33mcommit 1b0ac6e5725467dbc7dfb0bf3feaf184d94314af[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 23 19:22:13 2020 +0200
+
+    Create 2_columns template to replace light_blue...
+
+[33mcommit a5615060db54c3aaa457fd35249584428a90d9e6[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 23 19:21:06 2020 +0200
+
+    Add variable class body and icon asset to base twig
+
+[33mcommit b8922dbcb83660f8803dc53ab63acde26ae9f73f[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 23 15:44:40 2020 +0200
+
+    Remove old commented out code from category.html.twig
+
+[33mcommit 7c1b95c9476a9b4113a051f26cfda193558d800a[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 23 15:39:07 2020 +0200
+
+    Add images via asset() to twig files
+
+[33mcommit 7cc0406a214baaa3806ea23aa39f561c349ee244[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 23 15:34:51 2020 +0200
+
+    Add accepted svg mimetype to CategoryDataTransferObject
+
+[33mcommit e7220738a2115828d14a6034e1e285a36f2de217[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 23 11:58:23 2020 +0200
+
+    Make automatic adding images from assets to build
+
+[33mcommit 6fa94faddc04f616b1ce6d0de28066a5b57f3f92[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 23 11:31:15 2020 +0200
+
+    Make images publicly available by require'ing them in js file
+
+[33mcommit 176c4177d0b501d1025788735fb9a3d08c3f659f[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 22 22:06:42 2020 +0200
+
+    Return excepctions in JSON responses
+
+[33mcommit 6787defc04a2d24ea32d12fcf4c53fe577ae79e4[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 22 18:23:06 2020 +0200
+
+    Create OrderLineDataTransferObject
+
+[33mcommit 91d7faa7372cbaca47679fe6ca6a2f657da4cce6[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 22 18:16:42 2020 +0200
+
+    Change logic ProcessOrder and handler to handle prepared data
+
+[33mcommit be359eb6f53b0c4fba11fc3d07879889f98a688f[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 22 18:15:57 2020 +0200
+
+    Move logic from ProcessHandler to SubmitOrderController
+
+[33mcommit cfc166e3cb450aff824993a3baca2d951cc560f4[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 22 16:25:40 2020 +0200
+
+    Change repo methods VettigVrijdag to query by Status
+    
+    Using STATUS::CLOSED and STATUS::OPEN is more clear, I find.
+
+[33mcommit 4cfb83e8d55985dbcab4944139691cb8fa35a3ed[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 22 15:52:07 2020 +0200
+
+    Create custom repo method getPreviousVettigeVrijdags
+    
+    Also reflects changed logic of Status value object, now stored in db via
+    custom DBAL StatusType
+
+[33mcommit 596f5d6317a3965410bd33fc88c99f0df2421cb1[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 22 14:52:20 2020 +0200
+
+    Remove obsolete whitespace
+
+[33mcommit 82070d08df1c5965e3c6721f4c2f081921709c61[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 22 14:24:33 2020 +0200
+
+    Remove whitespace between properties of non-entity classes
+
+[33mcommit 116e00179436af34675a1e8e2a11c3522909c899[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 22 14:19:08 2020 +0200
+
+    Create migration to reflect use of custom DBAL StatusType
+    
+    Took input from Doctrine:schema:update --dump-sql as make:migration did
+    not do the job
+
+[33mcommit 62c64ceacd32b6884e4a5678c9006b8aafba7678[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 22 14:07:20 2020 +0200
+
+    Change repo method to find open VettigeVrijdag
+
+[33mcommit d2ea27235e46738241b4dc4ab03a47cc5b82ebab[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 22 14:06:05 2020 +0200
+
+    Apply StatusType logic to VettigeVrijdag and Status
+    
+    Includes removing now obsolete methods
+
+[33mcommit bf38f3abd1c604574036531c9e4997c5549984cb[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 22 14:02:14 2020 +0200
+
+    Create and register custom DBALType StatusType
+
+[33mcommit 24a8e22fd7bb670ae5a9b2cbbd5ec49c92bc3f49[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 23:36:55 2020 +0200
+
+    Move logic of createOrderLine to ProcessOrderHandler
+
+[33mcommit e16e0de4254dee467c37a50c148fc610532ce07d[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 23:32:01 2020 +0200
+
+    Use objects, not arrays in CreateOrderLineHandler and move check earlier
+
+[33mcommit 956f3063926f980123836988bc4a26c879d181fe[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 23:31:29 2020 +0200
+
+    Change CreateOrderline to contain objects, not arrays
+
+[33mcommit 378062e879a976b39307ee0dbaa5d474ddc8dd14[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 23:14:25 2020 +0200
+
+    Change $submittedOrderName to $customerName
+
+[33mcommit d7f3edb553a31f1f38cc458c60f87a696cfe4d85[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 23:05:27 2020 +0200
+
+    Change $newOrder and $newOrderline to $order and $orderline
+
+[33mcommit 4c1a56bf18cdd825a6eb4402e19b216eb38dd973[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 23:03:47 2020 +0200
+
+    Change $newOrder to $order in CreateOrderHandler as well
+
+[33mcommit 3b0cf7c8af656677aefabdc119e373d540614ec9[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 23:00:46 2020 +0200
+
+    Change $newOrder to $order, also in CreateOrderHandler
+
+[33mcommit 0202b34dba7fcce7bdddc81d17802e2cebfc4e75[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 22:56:46 2020 +0200
+
+    Change $openVettigeVrijdag to $vettigeVrijdag in CreateOrder
+
+[33mcommit 41abe6ba81405a5f958a87d467e037abdf8a4d59[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 22:51:26 2020 +0200
+
+    Set updatedOn also at and equal to createdOn time (part 2)
+
+[33mcommit e7ce07fa3a013b221a6f79856d963d5397083baf[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 22:48:10 2020 +0200
+
+    Correct usage cases of Status asString() to __toString
+
+[33mcommit f02f19773c8bce13ad071670bcd7294d4ee4a49c[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 22:42:59 2020 +0200
+
+    Remove persist annotations that should not exists in OrderLine
+
+[33mcommit b6c9b82debc288fee1df5f35ec5cb1b5cce1ce9f[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 22:27:42 2020 +0200
+
+    Have methods directly access properties and use Collection methods
+
+[33mcommit 1bc7b2aade7f7e9d5b4b94d1da9c19dd7c2fdbe2[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 22:21:02 2020 +0200
+
+    Correct exception type in CreateOrderLineHandler
+
+[33mcommit 517c9980547f974fbc156c44bec01978aa8f37ef[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 22:09:12 2020 +0200
+
+    Remove variables that only serve as pretty containers
+
+[33mcommit 897f0af2590c7f5b384a6b684bdc3bb2427acce0[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 22:07:14 2020 +0200
+
+    Remove unused use-statements
+
+[33mcommit a8dd54f65b9761f33bdbdefa26f9e87dca057ab3[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 22:03:31 2020 +0200
+
+    Simplify catching and throwing of earlier exceptions
+
+[33mcommit 7514b662feadfd520a7e64e4c77f9adb25a7e7e7[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 21:58:59 2020 +0200
+
+    Include object typehint and variable in update signature repo's
+
+[33mcommit 17b902e800150c24ea906de63b4239d1cfaa5e5c[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 21:49:07 2020 +0200
+
+    Improve naming of constants of Status value object
+
+[33mcommit cca4ffcabf93cc2b17d51d1ea487b3e24fd0ab60[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 21:45:29 2020 +0200
+
+    Add whitespace after if-check in Status
+
+[33mcommit 1ed6feccdae63a1d6dae4fb01e50068c4a083351[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 21:43:21 2020 +0200
+
+    Use __toString() instead of custom asString() method
+
+[33mcommit b8148c6def82bdb7339f8289c62552774e572ccc[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 21:29:44 2020 +0200
+
+    Add trailing komma's to controller responses
+
+[33mcommit ff7fc0b3b0906a1ae09be1e4f5e8fd38775f5c76[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 21:22:53 2020 +0200
+
+    Rename CreateOpenVettigeVrijdag to CreateVettigeVrijdag
+    
+    A VettigeVrijdag object always has the status open. There's no reason to
+    create one that is not open.
+
+[33mcommit a04602b820e59b42f1fc256288fc88d47d203eb3[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 21:19:21 2020 +0200
+
+    Limit hash of VettigeVrijdag prop to 5 characters
+
+[33mcommit eadcfe22cefc58b184e2edd2fd268c3e827f18cb[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 21:18:45 2020 +0200
+
+    Remove argument from creation instance of VettigeVrijdag
+
+[33mcommit 165c5665ff4f8199a5b9fcf70469305bdd78f20f[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 21:18:18 2020 +0200
+
+    Change constructor status to open on creation of VettigeVrijdag
+
+[33mcommit 303a34abde133f5fb9db3c6b1f87ccfaab890e79[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 21:06:29 2020 +0200
+
+    Change constructor status to open on creation of VettigeVrijdag
+
+[33mcommit 99db46e498b9023389a52af6eb911ae27f244071[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 21:03:20 2020 +0200
+
+    Move declaration new ArrayCollection to end of constructor
+
+[33mcommit 05ff084b2c2c8973df58f69be89ab395f76f308a[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 21:01:11 2020 +0200
+
+    Set updatedOn also at and equal to createdOn time
+
+[33mcommit c73531225d6ad07ec0c5b8bbeba708cbf9bfca43[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 20:58:47 2020 +0200
+
+    Move ending parenthesis of expanded style to next line
+
+[33mcommit b89a28f3a3752470190d7edb1afecd219e535e60[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 20:54:16 2020 +0200
+
+    Remove obsolete whitespace
+
+[33mcommit 3681372cee406f927fa8538c3bb54affdc510816[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 20:52:45 2020 +0200
+
+    Move check if a VettigeVrijdag is currently open to twig
+
+[33mcommit cb7ae4f2df955d2fcf086bbe60df7fbd7e999d97[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 20:45:29 2020 +0200
+
+    Reduce error checks, use try/catch excp and return JsonReponse
+
+[33mcommit c3b11ca108a2db12189b1c793b8f35b0e4487d5a[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 20:34:45 2020 +0200
+
+    Improve naming to consistent variations of submit-order
+    
+    Kept naming of ProcessOrder message
+
+[33mcommit 3849f3e34e64ef046f6c3cd0a07b6c632001a805[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 20:29:24 2020 +0200
+
+    Use provided constant for status message GetCategoriesController
+
+[33mcommit 3994483624b618877efa6dc31ca48de553b96557[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 20:27:11 2020 +0200
+
+    Improve error handling and change return type controller to json
+
+[33mcommit d66c18369094d52298711af456f2ab580391c2d4[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 20:16:32 2020 +0200
+
+    Remove unnecessary safey check on GetCategoriesController
+
+[33mcommit 7a52f8208c250e50c73f27d9a28af0f938dc08b9[m
+Merge: 1ef2b5c fae1c42
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 18:56:00 2020 +0200
+
+    Merge branch 'orders' of https://git.sumocoders.be/vettige-vrijdag/jan-de-clercq into orders
+
+[33mcommit 1ef2b5cf44f9297fbddcce9c76c8926df35f4da0[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 18:48:05 2020 +0200
+
+    Redo of commit CloseVettigeVrijdagController
+    
+    Not sure what happened, but appears I have to commit this once again
+
+[33mcommit fae1c420befa5230910f533da75d6096c6997f13[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 18:16:10 2020 +0200
+
+    Change wildcard name to reflect passed in id variable
+    
+    Does not work with {vettige-vrijdag}
+
+[33mcommit d80c4db8133d1910484127ac0346eadebd01215d[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 18:14:54 2020 +0200
+
+    Rename variables to better reflect logic vettige_vrijdag_previous
+
+[33mcommit b7a3abe7b2f2a82ef96b7b9024104aad37c38fa8[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 18:11:18 2020 +0200
+
+    Add download link to twig file, also changed twig file name
+    
+    Changed twig file name from vettige_vrijdag/vettige_vrijdags.html.twig
+    to vettige_vrijdag/previousVettigeVrijdags.html.twig
+
+[33mcommit 57cf3f2db39922ad23be44b8a8a41c3f8b322215[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 17:55:41 2020 +0200
+
+    Rename GetVettigeVrijdagsController to ViewPreviousVettigeVrijdagsController
+    
+    Also improved codestyles
+
+[33mcommit f377ff77b9069c469b6d33e792ca75ee9406008c[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 17:46:57 2020 +0200
+
+    Remove incorrect check to allow pdf's of closed VettigeVrijdag
+
+[33mcommit 636a471f30ceafcbec7725cd110ef13612df9c31[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 17:46:33 2020 +0200
+
+    Improve codestyles CreatePdfOfVettigeVrijdagController
+
+[33mcommit d5e82fbeadb5ca4da8460aaea321d72be5afe42f[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 17:37:00 2020 +0200
+
+    Change CloseVettigeVrijdagHandler to return void
+    
+    Reflects changed CloseVettigeVrijdagController
+
+[33mcommit 2e406cc36b4548518d34cd76f8a4bb0fa78720dd[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 17:34:19 2020 +0200
+
+    Change CloseVettigeVrijdag to return Json and handle errors
+
+[33mcommit 9f0542e84ae3886538940e8607ba135d04e3e8a6[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 17:30:26 2020 +0200
+
+    Change CloseVettigeVrijdag to return Json and handle errors
+
+[33mcommit 82a54d060f851a2f7ff6be830ed2f201837197b4[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 17:17:14 2020 +0200
+
+    Add favicons to public
+    
+    Generated by encore
+
+[33mcommit c49fab7517c2cfa2381a3f7ed2b998f13b6a79a8[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 17:14:08 2020 +0200
+
+    Move product twig files
+
+[33mcommit cee2849d7623b595c3ef26363885d784a8cee77c[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 16:51:17 2020 +0200
+
+    Update UpdateCategory twig with style elements
+
+[33mcommit c1703979781e0480951938dc9fc522a1567d1397[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 16:16:03 2020 +0200
+
+    Update controller to reflect changed twig structure
+
+[33mcommit 7d39282656436107678d17881ead324d9cbca155[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 16:12:51 2020 +0200
+
+    Add counting of amounts of orderlines with same productname
+
+[33mcommit 49190a93578300a6899ea2a568eceaeb14a156ee[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 16:12:12 2020 +0200
+
+    Add style to create pdf over multiple pages
+
+[33mcommit 5eb5176c5da0eb510dac725f080ad1b27a747db5[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 14:02:47 2020 +0200
+
+    Add html files of slices to public directory (temporary)
+    
+    Changed nam eof index.html to slice-index.html
+
+[33mcommit 79a5608d18514730a3baa1d39c75254d6620c77f[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 10:33:47 2020 +0200
+
+    Add form_widget to category twig render name field
+    
+    Update route will also this field and then the name needs to be
+    populated.
+
+[33mcommit e51686a2768b9831fd3759fd5f27c5691e6fa462[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 19 10:28:19 2020 +0200
+
+    Add form widget to category twig to render name field
+    
+    Reason: this template will also be used by the category_update route and
+    then the fields need to be populated
+
+[33mcommit f2b0815772e72cf69b675d34342035d523694816[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 18 21:52:16 2020 +0200
+
+    Move create_category to folder of relevant template
+
+[33mcommit 58e7ac684efd6345f49e3f391bc59c6fdfc33ed0[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 18 21:49:29 2020 +0200
+
+    Change path in de controlelr
+
+[33mcommit 8b5d3470fe0796af51bf6d01f5aea44b57409dcc[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 18 21:48:32 2020 +0200
+
+    Create another level of inbetween template for category
+
+[33mcommit 14d5e4cb72bf3d7a4a2f813d620805f9d97115bc[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 18 17:49:07 2020 +0200
+
+    Create twig files for 2 states of customer interaction
+    
+    May be better to reduce to 1 file to do both
+
+[33mcommit aaa9518d6e6cf8818e9d0669e313d0080fe09e3e[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 18 17:48:19 2020 +0200
+
+    Add styling to change-menu route
+    
+    No functionality yet
+
+[33mcommit ed834f6aecace25cac21bd5700797991e5626d68[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 18 17:47:33 2020 +0200
+
+    Move twig file to file of similar twig files
+
+[33mcommit 9a693edb85bc4b060dcb56d4da1139670122e3ab[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 18 17:46:43 2020 +0200
+
+    Use browser eerror message from parent base
+
+[33mcommit 7540f5cea8d6da9466d46cace3cd4b1f2d3d7e3b[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 18 17:43:46 2020 +0200
+
+    Change name to of unclear vettige_vrijdagS to previous
+
+[33mcommit 1d0e0282becbba3eeac6eae871e25d4b217f1679[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 18 17:41:13 2020 +0200
+
+    Create twig file for confirmed order page to be made
+
+[33mcommit e4cde34a9ed948b4afcee8eedb09e0ee9180be60[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 18 17:39:32 2020 +0200
+
+    Create inbetween template for pages with dark left bar
+
+[33mcommit efd0fed9fe40620927f5ff5a1a15af18eebab68a[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 18 17:39:03 2020 +0200
+
+    Create inbetween template for pages with light left bar
+
+[33mcommit 7bc28fad961508e315215932ff8ac0dca674030e[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 18 17:38:32 2020 +0200
+
+    Add browserupgrade message to base twig
+
+[33mcommit bba239bf5fb714a559870db45f751f7153f3785b[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 18 17:38:01 2020 +0200
+
+    Add naming to endblock tags in twig base
+
+[33mcommit b5b7ee29411be22b1d994be3bb30fe1b0c66ed85[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 17 17:59:22 2020 +0200
+
+    Enable jquery
+
+[33mcommit 993795986eb3f1a4de091013602ca9b43a1d6ae4[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 17 17:58:34 2020 +0200
+
+    Add getter for createdOn VettigeVrijdag entity, formatted
+
+[33mcommit 89093ec6f84c2e317f474955c6aea157751db291[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 17 17:58:04 2020 +0200
+
+    Move head and scripts to base twig
+
+[33mcommit 186503c27bdcc3e52a1ae4792aef35ae69eb0306[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 17 17:56:16 2020 +0200
+
+    Create new index twig that pastes some of the slice
+    
+    New index twig was old vettige_vrijdag.html.twig
+
+[33mcommit d9425069607b9a0a1256e06ec4eb182d369269a0[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 17 14:48:05 2020 +0200
+
+    Install requestanimationframe
+    
+     yarn add requestanimationframe@0.0.23
+
+[33mcommit 9292cfcf1c392fc9b8953fd8aa083eb0d34dd4eb[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 17 14:39:15 2020 +0200
+
+    Add images
+
+[33mcommit 90007853090c8f088d367adcac1000d44b9b3204[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 17 14:38:26 2020 +0200
+
+    Add bootstrap.sass to yarn.lock
+
+[33mcommit d63751a83f93740b40a3437c4098c094a523e2ae[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 17 14:36:57 2020 +0200
+
+    Install bootstrap-sass
+
+[33mcommit 9de60b4b2ba06bc45b6ee0fc67f180454e25c041[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 17 14:35:07 2020 +0200
+
+    Configure fileNames images, fonts
+
+[33mcommit 1e39582f3b3c7190fec740e3e33b7d2677e77ad8[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 16 21:43:42 2020 +0200
+
+    Add custom css class to deal with sticky
+
+[33mcommit 84eddbce256941343b51f965824beaf817f4256e[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 16 21:40:43 2020 +0200
+
+    Add basic bootstrap structure, position sticky menu
+
+[33mcommit af2a57f659702a34366c9214db32255c86da4e1f[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 16 20:43:37 2020 +0200
+
+    Configure webpack to copy icons to root
+
+[33mcommit cbf21ae2e5f9d52964fb5f1e4fffc9ac7165f63b[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 16 20:43:05 2020 +0200
+
+    Add icons
+
+[33mcommit ecbea3750cfd822b583c4faf4b0df3fcf9bb2e04[m[33m ([m[1;32mff-save-vettige-vrijdag-alles-gepikt[m[33m)[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 16 18:21:47 2020 +0200
+
+    Add fonts
+
+[33mcommit f60bc58d786d82cf98a2c10fc06f66c9c264c1a7[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 16 18:19:08 2020 +0200
+
+    Add images to folder
+
+[33mcommit 93c1bc17a6c1a1feb922ac419c960f20425bb61e[m[33m ([m[1;32mfront-end-bad-try[m[33m)[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 17:58:39 2020 +0200
+
+    Split check dispactched message over multiple checks
+
+[33mcommit 9122423569ac5dc41fbc3f9d12112062164dfa78[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 17:49:28 2020 +0200
+
+    Give default values to props that may not get used
+
+[33mcommit 46987e54c010d3c22e0ee39aa062e7f5cc6cabdf[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 17:39:32 2020 +0200
+
+    Make openVettigeVridjag check more explicit
+
+[33mcommit 8f0c4bfd913a53337c00e7abf1ed4cb80c873dbf[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 17:38:06 2020 +0200
+
+    Divide check after sending message in multiple parts
+
+[33mcommit 235c80dd3bb8cbf51cc79ff0c4df154941200e3f[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 16:40:03 2020 +0200
+
+    Rename various incoming messages to message
+    
+    For uniformity and it also makes clear when the actual content of the
+    message is actually used in the handler or not
+
+[33mcommit 9d936334bf08ceee31875052b35b379bf78e60a4[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 16:14:40 2020 +0200
+
+    Move relevant files to Controller/Everyone
+
+[33mcommit 8d3f957e6d8bfc4201016e6cdf72c2581c54fa54[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 16:12:48 2020 +0200
+
+    Move relevant files to Controller/Admin
+
+[33mcommit a069509a2babf8c6fc99fcba0447be39a6722b3c[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 15:25:37 2020 +0200
+
+    Change symfony.lock for phpstan
+    
+    vendor/bin/phpstan analyse src tests
+
+[33mcommit 880f34e2d1f84bf413ffd81a54c3615d43c8ef11[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 15:25:01 2020 +0200
+
+    Change login twig to display flash mesages
+
+[33mcommit 6d4680a601067263cf86b1352510f44b18cf3a6a[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 15:24:21 2020 +0200
+
+    Change vettige_vridjag twig display flash messages
+
+[33mcommit c7da573ead912c3328bde0e8d09e36ef29bc5650[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 15:23:51 2020 +0200
+
+    Add flash message after succesful login
+
+[33mcommit a40c72ee89a07d3f0b681a8fce99b702a3bb54aa[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 15:21:59 2020 +0200
+
+    Create repo method that gets open VettigeVrijdag
+
+[33mcommit bc7ae5ce6ecad3be5ee5b18fc9511d5442889d0b[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 15:19:15 2020 +0200
+
+    Add flash message after opening new VettigeVrijdag
+
+[33mcommit 790e88f49897eb91025c6a1fdd25bb5162018a98[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 15:18:04 2020 +0200
+
+    Add flash message after closing VettigeVrijdag
+
+[33mcommit fbc854d0edbd3fbdb6e9b0b47a95a3569a309b73[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 15:12:01 2020 +0200
+
+    Install PHP Stan
+    
+    composer require --dev phpstan/phpstan
+
+[33mcommit 4b007e85e4dfbc2b90e66294abab4ed44761556f[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 15:11:16 2020 +0200
+
+    Remove obsolete construct declaration in Product
+
+[33mcommit 07b036ac8d2b4d2dd59bc197b3d55cc042770899[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 15:10:45 2020 +0200
+
+    Add forgotten property to ProcessOrder message
+
+[33mcommit f007a2cca2b725e0b188e8fda3192c62f532d83a[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 15:08:00 2020 +0200
+
+    Add remove cascade to product prop of Orderline
+
+[33mcommit d5fe739b27c5fefef43c8ba4eb6abb5095191d86[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 11:59:17 2020 +0200
+
+    Move long one line annotation to multiple lines
+
+[33mcommit 963cefce1162c4ca59ed77bd13ba78e804b56d49[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 11:58:37 2020 +0200
+
+    Remove internal style block from twig file
+
+[33mcommit d98f3413188f4c8995a92b667391074c0d6ac036[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 11:56:55 2020 +0200
+
+    Remove unused getter methods from Product
+
+[33mcommit 59ed07712d76c9497d7e40fb8b29b09fc76cad0d[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 11:56:24 2020 +0200
+
+    Add missing use statements
+
+[33mcommit 932dbdaee10aabdbdd809497948c2fac8c3f5df9[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 11:54:52 2020 +0200
+
+    Move check from controller to message handler
+
+[33mcommit a7a2e219cdc22d5788cc091de8da84570f8c90f8[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 11:54:07 2020 +0200
+
+    Move check from Controller to message handler
+
+[33mcommit dd4b4dcaac05d57ba6cb5d8172ded30fe660cda6[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 11:10:10 2020 +0200
+
+    Add symfony.lock
+
+[33mcommit c02781c18a30b5c5cfc5fa13990e5dc64f9f8438[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 11:09:50 2020 +0200
+
+    Add composer.lock
+
+[33mcommit 8d3b8a625bcc5d897fb3a9164d2ed75574d859d9[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 11:06:21 2020 +0200
+
+    Change charset to utf8mb4
+
+[33mcommit db2298dcf23b27eb8ed3706abb142af203de44b6[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 11:04:27 2020 +0200
+
+    Create Migration for orders branch
+
+[33mcommit 393481de79ee4d3586997561feaa3f4ae25169bd[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 11:03:13 2020 +0200
+
+    Reset to migraions of master branch
+    
+    Wil create one migration per feature branch
+
+[33mcommit 0bcea82ebe06e7a67195308248415bfc693aa02b[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 11:00:57 2020 +0200
+
+    Display products in ordered list in 2nd table
+
+[33mcommit 54e7fa6b62788f5d9ef3cb75361ed22943df7223[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 10:36:24 2020 +0200
+
+    Change create PDF route to admin section
+
+[33mcommit a18a0c266b0e92eb75ee3fca8d400506f3038d29[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 10:35:27 2020 +0200
+
+    Add getClosed time method to VetigeVrijdag
+
+[33mcommit 1927f219f67289a907a4cd9e1fa5605c21f17e0a[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 09:56:10 2020 +0200
+
+    Create vettige_vrijdags.html.twig
+    
+    Plural
+
+[33mcommit 3cdcee99910bfec5f5442be1a8c9bf1e012d914a[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 15 09:55:41 2020 +0200
+
+    Create GetVettigeVrijdagsController
+    
+    Plural
+
+[33mcommit a7c91cadd42881885234d7bb458841af6f61f998[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 12 22:14:07 2020 +0200
+
+    Add standard config for knp_snappy
+
+[33mcommit 2ace48fda438c631c75e3fe5469c2895225a7a32[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 12 22:13:41 2020 +0200
+
+    Add getOrderLines method to Order
+
+[33mcommit 70cf4383e3104f0112d7f7e26fbfea209c9fe7cd[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 12 22:12:07 2020 +0200
+
+    Created twig that's the template for the pdf
+
+[33mcommit 434bc3f8e9894562d718ad1196ab13923b04b057[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 12 22:11:21 2020 +0200
+
+    Create CreatePdfOfVettigeVrijdagController
+
+[33mcommit 7e02012cc5e43fff349763e2aa5275905582663e[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 12 15:57:20 2020 +0200
+
+    Install wkhtmltopdf
+    
+    composer require h4cc/wkhtmltopdf-amd64 "0.12.4"
+
+[33mcommit bc770daba06bb69155acff06fd8dd86bf951a9f2[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 12 15:54:49 2020 +0200
+
+    Install wkhtmltopdf
+    
+    composer require h4cc/wkhtmltopdf-amd64 "0.12.4"
+
+[33mcommit 345b38df5ed2bae4e75bfddba46221d1c24ea30a[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 12 14:16:58 2020 +0200
+
+    Divide CheckVettigeVrijdag logic over more controllers
+
+[33mcommit f6d6cda3b0c4968b73d7ff42ff97126570096014[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 12 13:16:36 2020 +0200
+
+    Rename $url VettigeVrijdag property to $slug
+
+[33mcommit 1a8bc5224b5a5e9d17d4f720f8fe984de39165f2[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 12 12:59:44 2020 +0200
+
+    Remove check that limits order name per vrijdag
+
+[33mcommit 684d13de405aba9ac83c829d3eb023077c6be844[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 12 12:57:36 2020 +0200
+
+    Move logout route out of LoginController
+
+[33mcommit a67ef20066d611019bf228aac7eb073d3446a47c[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 12 12:57:09 2020 +0200
+
+    Create LogoutController
+
+[33mcommit 8d30572dff90d1b9ae4d7131c6e1d08718dedd6c[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 12 12:53:28 2020 +0200
+
+    Add Redirect after sucessful login
+
+[33mcommit 92d0032d03b29c97b609c0e173f10754e016d32a[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 12 10:14:04 2020 +0200
+
+    Add .svg ext check for new Category images
+
+[33mcommit a22e002931a84c47b5d4fac0c63b94133ec66de4[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 12 10:13:02 2020 +0200
+
+    Add check in message handler to check image ext
+
+[33mcommit e67d7435f927bde85914a0a25ba36abf585de727[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 12 09:43:28 2020 +0200
+
+    Make all VettigeVrijdagController responses uniform
+
+[33mcommit edc09e10458dce13a2c51557e8e2a479e2c1ca8b[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 12 09:41:56 2020 +0200
+
+    Hide vettige vrijdag order linked not logged in
+
+[33mcommit 894360155282df804598b291d957eeb9139ac292[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 11 20:39:44 2020 +0200
+
+    Correct style
+
+[33mcommit a2b22675cd5d463b0ab6c0756a90e15cfb5d345b[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 11 20:37:32 2020 +0200
+
+    Correct check unique name PER vettigeVrijdag
+    
+    The same name can be used in different VettigeVrijdag instances, but not
+    in the same one
+
+[33mcommit 942d1fde60dca65c9d7d46c7836c28e8f69a937f[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 11 16:46:56 2020 +0200
+
+    Change message to only return new open VettigeVrijdag
+
+[33mcommit 8ec0debd14d8e842c2ce82582f394462fe0802a4[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 11 16:43:22 2020 +0200
+
+    Remove obsolete parameter in Update repo methods
+
+[33mcommit 1306592e52141d8a2dd4f02889a5e8e6e47f2a8e[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 11 16:35:30 2020 +0200
+
+    Create (admin) homepage twig file
+
+[33mcommit 93058914f7bb069cb45c3976c1b28d348a4e4689[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 11 16:34:37 2020 +0200
+
+    Add close method and register that time as prop
+
+[33mcommit 61807c9b4a6f5acbc4d9d95931ecd4c2c9c52ea5[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 11 16:33:55 2020 +0200
+
+    Add Create and Update methods to VettigeVrijdag repo
+
+[33mcommit c03d55e7fd9c80016a30dc3a3a4376cd2ddfa120[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 11 16:33:17 2020 +0200
+
+    Create CloseVettigeVrijdag message and handler
+
+[33mcommit 0770aa1548331e66f83dbd468e185552d72fb700[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 11 16:28:44 2020 +0200
+
+    Check possible scenario's admin 'homepage'
+    
+    Includes notes on what each checks does
+    Includes dummy variables that can be altered to simulate actual
+    fronten user/admin behaviour
+
+[33mcommit 841e01e216be9e65eb2266ae6eb53e25a7843071[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 11 14:05:02 2020 +0200
+
+    Rename and rework OpenVettigeVrijdagController
+
+[33mcommit 3adb2b968ac124a351407b683a591fb3af3dc266[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 11 11:56:19 2020 +0200
+
+    Make language SubmitOrderController clearer
+
+[33mcommit 50450043bff63884ef96c70eeaffa258862869d0[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 11 11:52:56 2020 +0200
+
+    Use OrderLine repo create method
+
+[33mcommit d1ffccc4bae53dd4041809da2916a2446d6e3a24[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 11 11:51:17 2020 +0200
+
+    Move logic of controller to message
+
+[33mcommit 3c553a4c385ffbe947efe9a4eac28475b493a9e4[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 11 11:28:04 2020 +0200
+
+    Use custom Create method to CreateOrder
+
+[33mcommit cfdbcf3733f2ab58a5aff1762dab75428137c058[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 11 11:15:26 2020 +0200
+
+    Add Create / remove FindOneBy VettigeVrijdag repo
+
+[33mcommit 4a4f61bb65d96e94a52d83b5fe791da87f8082de[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 11 11:11:51 2020 +0200
+
+    Create OpenVettigeVrijdagController
+    
+    Part of /admin/ routes and privileges
+
+[33mcommit 12b59eb125b550c48c47049da4f585269da4f2b5[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 10 17:56:32 2020 +0200
+
+    Rearrange ProcessOrderHandler
+    
+    Move part to ProcessOrder command
+    Remove checks that make more sense in unit tests
+    Throw and catch exceptions instead of returning false
+
+[33mcommit 50f79c52ded75ef2d0f9e5ab44938182f8190af8[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 10 17:54:42 2020 +0200
+
+    Move flush to message handlers
+    
+    Using explicit transactions now. Therefore flush can be used more freely
+
+[33mcommit 8f8a60c7378233b254094548be1bf4510294c2f9[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 10 17:53:34 2020 +0200
+
+    Move data from handler to message
+
+[33mcommit 6813beebed0cc3db807c929d92a0277f97ebc450[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 10 17:51:42 2020 +0200
+
+    Add CreateOn and $url property
+
+[33mcommit 5ec9543c78519354a5b8352f36da28438e69cda7[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 10 13:30:45 2020 +0200
+
+    Append json to not return an unsafe array
+
+[33mcommit 164fe86ad3faa41f5d3b6aab0571b19043e29a0e[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 10 13:14:56 2020 +0200
+
+    Correct JsonResponse to return pretty print
+
+[33mcommit 10b1517727a7d3ea8ec95d01aa50d6f9ed378ccc[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 10 11:59:43 2020 +0200
+
+    Replace Serializer with JsonSerializable
+
+[33mcommit 575e6b331f775d4c5075a9d345afbdeb1904907d[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 10 11:58:46 2020 +0200
+
+    Implement JsonSerializable on Product
+
+[33mcommit 2a8bfc6ad1abf14fd2273d27ea46ad0f7ab6fb1d[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 10 11:58:07 2020 +0200
+
+    Implement JsonSerializable on Category
+
+[33mcommit 9a62d5b178613bee557412ff4b9ad09ec93a12f2[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 10 11:55:25 2020 +0200
+
+    Wrap creation Order, Orderlines explicitly in transaction
+
+[33mcommit 21a8fbc3d57b3a5eb829fe78aaae7b4b72fcbc5e[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 9 18:10:55 2020 +0200
+
+    Remove unused code
+
+[33mcommit 32cbdee3e6dc92dc2a9e412246459682744e7d77[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 9 18:06:55 2020 +0200
+
+    Add redirects to several controllers upon success
+
+[33mcommit e292aeb8e6bcb3cff7215fbdd942c6e2c1c21e09[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 9 18:03:11 2020 +0200
+
+    Refactor products and categories endpoints
+
+[33mcommit 6676e9b261781e3031062c54b06abe2291a17c39[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 9 18:01:09 2020 +0200
+
+    Create EncoderHelpder
+    
+    Configured in order to deal with circular references
+
+[33mcommit 5eaa58045b8cc7e2b4f06fe9a8d48124584a0cd6[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 9 16:21:05 2020 +0200
+
+    Check only valid Order, Orderline are flushed
+
+[33mcommit b2b211c960c3d403c43ced2e79613d14dc7178e1[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 9 16:19:29 2020 +0200
+
+    Return created OrderLine for future use
+
+[33mcommit 25b18c85f4c41c3ccfd5490709ab94c05acbf6e1[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 9 16:17:40 2020 +0200
+
+    Add amount check to CreateOrderLineHandler
+    
+    Make sure that only numbers greater or equal to 1 are accepted amounts
+    of products.
+
+[33mcommit da4cd806969322f4cbc1aa603a07704353132d32[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 9 14:05:24 2020 +0200
+
+    Change typehints to allow nullable updateOn
+
+[33mcommit bbef4a6e9ad133115846e9a6d14ca808039ed81e[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 9 14:04:05 2020 +0200
+
+    Create GetProductsController API endpoint
+
+[33mcommit 2efe460d981ca93eb7405ded6bcfd223f4492623[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 9 14:03:28 2020 +0200
+
+    Create GetCategoriesController API endpoint
+
+[33mcommit c3bff707631dcb5a8e2d28c4ad651d2004d16aca[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 9 14:02:59 2020 +0200
+
+    Install serializer bundle
+    
+     composer require symfony/serializer
+
+[33mcommit d19f8b58482b8cd621ec8ab9a4aa66c2eaae8542[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 9 14:02:02 2020 +0200
+
+    Install serializer bundle
+    
+     composer require symfony/serializer
+
+[33mcommit 1b4062140cd55127f2c4e6df7f7aab361472cc85[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 8 17:58:08 2020 +0200
+
+    Create CreateOrderLineHandler
+
+[33mcommit 83c2cbefe242a7b9932b42c1c8ef46343bc20ede[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 8 17:57:39 2020 +0200
+
+    Create CreateOrderLine command
+
+[33mcommit 11d8606470cb71dc904e7587b1dd206e2beddfa6[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 8 17:57:01 2020 +0200
+
+    Create ProcessOrderHandler
+
+[33mcommit edd9698a4a7ddb3d745fb860f2e3964e006c9aad[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 8 17:56:23 2020 +0200
+
+    Create command ProcessOrder
+
+[33mcommit fb76574417f4532d5fb2da93d765e3eb1b882eef[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 8 17:55:41 2020 +0200
+
+    Create CreateOrderHandler
+
+[33mcommit 17b22c2b8c4167b2dcae7b8ebf2bde8c08518533[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 8 17:55:02 2020 +0200
+
+    Create command CreateOrder
+
+[33mcommit a392472bbe68950182c8f9a0e861fbbc2f6803e9[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 8 17:52:37 2020 +0200
+
+    Refactor SubmittedOrderController's name and use messages
+
+[33mcommit 36768515a364faa3ecf6b0380db3611ad0a5b40d[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 8 14:41:46 2020 +0200
+
+    Change ConfirmedOrderController to handle POST only
+
+[33mcommit 7cdb864259a4ca454ab82e11c4c13b9e37e52439[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 8 14:17:29 2020 +0200
+
+    Creat ConfirmedOrderController
+    
+    Transforms dummy json-object, does some checks and creates new Order
+
+[33mcommit d37432af0aae8384908611cd78a7394de2d64a14[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 8 14:15:08 2020 +0200
+
+    Create shorthand VettigeVrijdag repo existsById
+
+[33mcommit fbfb6939beb7c782d01e0794016765b93dbfc3c1[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 8 14:13:51 2020 +0200
+
+    Change name of getStatus to be more precise
+    
+    Returns object, not a string. Therefore: getStatusObject
+
+[33mcommit 74bce7139de970ab391919c5692613c45b050504[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon Jun 8 14:13:20 2020 +0200
+
+    Create toString method for Product entity
+
+[33mcommit d85e40a22bcfbbb31bd22e5d7524fed885d14e35[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 5 21:33:42 2020 +0200
+
+    Create OrderLineRepository
+
+[33mcommit 80a4a7c67c2f32eeaedf14634088d35097d9f461[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 5 21:33:22 2020 +0200
+
+    Create VettigeVrijdagRepository
+
+[33mcommit ffd87802351272d96f869a1eb5fe21297ce34b31[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 5 21:32:15 2020 +0200
+
+    Create Status valueObject for VettigeVrijdag
+
+[33mcommit 016ce4b3f7d764a58386c3cf3ff31db655174173[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 5 21:31:50 2020 +0200
+
+    Create VettigeVrijdag entity
+
+[33mcommit f04899df8275eb8ae8195875bb419d6493b62ddc[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 5 21:31:15 2020 +0200
+
+    Create Migration for VettigeVrijdag entity
+
+[33mcommit 8242e3d043a17fc55b05f036ea15ce8006c327a6[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 5 21:30:32 2020 +0200
+
+    Create Migration from 0 up to Order
+    
+    Due to errors due to creating migration on top of earlier migrations
+    Vettige vrijdag not created yet
+
+[33mcommit 628429735f5c95274bc1f02417f717a2f0dc9dde[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 5 21:21:34 2020 +0200
+
+    Create Migration from 0 up to Order
+    
+    Due to errors due to creating migration on top of earlier migrations
+    Vettige vrijdag not created yet
+
+[33mcommit 5feb47d089a369129255d9703833a37844ec17bb[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 5 21:20:46 2020 +0200
+
+    Remove unncessary OrderLine property
+
+[33mcommit 7c63169263f9135859cffba040f75045f2c521ca[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 5 21:19:25 2020 +0200
+
+    Add variable amount parameter to constructor
+
+[33mcommit cbc5199b4f421472db7d912dae8d44f619c3ff2b[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 5 21:17:35 2020 +0200
+
+    Correct typehint
+
+[33mcommit e089d2da040d826aaed9d6b5ec1eae1b82ba5f12[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 5 21:16:01 2020 +0200
+
+    Change name of CustomerOrder to previous Order
+    
+    Reserved keyword can be used by using backticks
+
+[33mcommit f270cafcb480c891a42f1933627b455156709970[m
+Merge: 61ebc90 7ad3ad2
+Author: Stijn Vrolijk <stijn.o.vrolijk@gmail.com>
+Date:   Fri Jun 5 12:19:06 2020 +0200
+
+    Merge branch 'login' into 'master'
+    
+    Login
+    
+    See merge request vettige-vrijdag/jan-de-clercq!3
+
+[33mcommit 61ebc9058bb7a4645018102ccfdb3f799b756cbc[m
+Merge: 5ba028b cf14335
+Author: Stijn Vrolijk <stijn.o.vrolijk@gmail.com>
+Date:   Fri Jun 5 12:18:55 2020 +0200
+
+    Merge branch 'product-crud' into 'master'
+    
+    Product crud
+    
+    See merge request vettige-vrijdag/jan-de-clercq!2
+
+[33mcommit 1e0eff8add4588ce1a80cc4653ed3db165e6c447[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 5 10:05:30 2020 +0200
+
+    Add orphan removal on OrderLines of CustomerOrder
+
+[33mcommit 5522790b930447ba108b91a2dfc6054f4306fe2c[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 5 09:26:34 2020 +0200
+
+    Make migration to reflect change in Orderline name
+
+[33mcommit d16ee33a3fd8edea50cc49d83eb8f22d21405a75[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri Jun 5 09:25:44 2020 +0200
+
+    Change name to start second word with Capital
+
+[33mcommit f30f95c3239e2bb00c98640846eba82848773a4c[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 4 20:44:15 2020 +0200
+
+    Create CustomerOrderRepository
+
+[33mcommit 03923f573999351fdde960b073ff3ba463509557[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 4 20:42:54 2020 +0200
+
+    Create migrations for Orderline and CustomerOrder
+
+[33mcommit ce898e298f532d7821658043742ea00215c290a5[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 4 20:41:37 2020 +0200
+
+    Create CustomerOrder entity
+
+[33mcommit 680860df8e9cc73b69114258884e601bf9be0a5e[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 4 20:41:01 2020 +0200
+
+    Create Orderline Entity
+
+[33mcommit 72bc3a34d0f6d25fb3f39750f53a4c855d7bc86a[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu Jun 4 20:40:17 2020 +0200
+
+    Add relation to Orderline relation to Product
+
+[33mcommit cf143356d50d3c0dea62752616ced7726c447abe[m[33m ([m[1;31morigin/product-crud[m[33m, [m[1;32mproduct-crud[m[33m)[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 3 15:10:16 2020 +0200
+
+    Query and sort Category options directly in ProductType
+
+[33mcommit 4b7e11b62fe71dec40f637f6014db3134d00c6fd[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 3 15:04:58 2020 +0200
+
+    Remove repo method that is only used once
+    
+    In favor of implimenting it directly in ProductType
+
+[33mcommit bc7776e601df41bd4e944159d547723ee304c15b[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 3 14:37:47 2020 +0200
+
+    Remove superfluous column name declaration
+
+[33mcommit 7ad3ad2e369bc3f5e66be3dbb6413ca2cf826abb[m[33m ([m[1;31morigin/login[m[33m)[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 3 14:20:05 2020 +0200
+
+    Remove unused use-statement
+
+[33mcommit b68bc75caf0fc834c0d02c4e39c875462a096d18[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 3 14:06:57 2020 +0200
+
+    Add /login as target after logging out
+
+[33mcommit aa283bf0113919cb3e6847ec3b029a2f6b5e2a0f[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 3 14:06:09 2020 +0200
+
+    Add route to enable logout
+
+[33mcommit 6c353e9e0e02fdfd580829192e954b1f090f92bc[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 3 13:55:01 2020 +0200
+
+    Translate to en 'Invalid credentials'
+
+[33mcommit 128e05ff11e3ec6a62e9d9664bda1d7c3d2ce780[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 3 13:54:43 2020 +0200
+
+    Translate to nl 'Invalid credentials.'
+
+[33mcommit 15a8456f11a852f2d4756d0f5d4a849cbb635e33[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 3 13:53:44 2020 +0200
+
+    Enable translations in framework.yaml
+    
+    Set nl as default locale
+
+[33mcommit fc7ec50d354bcaa3880b278783447f17abce269e[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 3 13:53:02 2020 +0200
+
+    Update translations bundle
+    
+     composer require symfony/translation
+
+[33mcommit 60f9d2ffd2dd8d3f5ea6d95e9f7b1c0cce9195c3[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 3 13:18:42 2020 +0200
+
+    Bundle all admin onyl routes under /admin path
+
+[33mcommit a005fd5f6b9a19a1daa999c6290a19cf3cc7fcb9[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 3 13:16:07 2020 +0200
+
+    Add prefilled name field functionality login form
+
+[33mcommit 97a6942f9a53babc6e72ec8b6a4e291deea7e771[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 3 13:14:27 2020 +0200
+
+    Make LoginController only render twig only form
+    
+    Because I think it's cleaner than using a LoginType form
+
+[33mcommit 81ab2d335159ba274c432b6bfb692c376cad81e5[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 3 13:12:10 2020 +0200
+
+    Replace LoginType with plain html form
+    
+    Because I think this will make the LoginController more clean
+
+[33mcommit 726ab86a7127f3fdc95c1c7fe7c4cb1910bbb12a[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 3 13:04:13 2020 +0200
+
+    Change authentication to Memory User Provider
+    
+    For /admin paths
+    Includes csrf-token
+    Global environment variable to be set in .env file
+    Plain text encoder
+
+[33mcommit 721dd16b2cc423617c9e3a92214a85c2e24d072a[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 3 09:38:44 2020 +0200
+
+    Add logout path in security.yaml
+
+[33mcommit 0ab387d033e3ab0eeb7bd0d42300807a6d9fb66b[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed Jun 3 09:36:46 2020 +0200
+
+    Create LogoutController
+    
+    Preferred to have all my routes under src/Controller instead of also
+    having it in routes.yaml
+
+[33mcommit a32837d64e4057fc33c34d2257d03d42f805b80d[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 2 21:49:59 2020 +0200
+
+    Create LoginController
+
+[33mcommit 34210d273248ef46b8f0ecd2654181b7b7f6d55f[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 2 21:49:22 2020 +0200
+
+    Create LoginFormAuthenticator
+
+[33mcommit c1a898a2a809c3cd541801bed3a76bd8761ef07b[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 2 21:48:35 2020 +0200
+
+    Create migration for User entity
+
+[33mcommit f695854fef29c4053a967d710b2b5c128977f579[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 2 21:47:17 2020 +0200
+
+    Create User entity
+
+[33mcommit 900b72f7f17889426340036429b36d33977bb19a[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 2 21:46:42 2020 +0200
+
+    Install security bundle
+    
+    composer require symfony/security-bundle
+
+[33mcommit 05cf95e31346ccc8cc05565fa3082d6edddad0bb[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 2 21:43:57 2020 +0200
+
+    Set config for LoginInFormAuthenticator
+
+[33mcommit f2ef7e9e06a47dbb898b2959f848c183bbcee0a6[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 2 21:41:34 2020 +0200
+
+    Enable csrf-support
+
+[33mcommit 4d1632336afeb5aac6786d919a6bd23215397e9e[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 2 21:40:38 2020 +0200
+
+    Create UserRepository
+
+[33mcommit 4311cfca4cc9bd3b06cc15803862176740de381c[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 2 19:51:47 2020 +0200
+
+    Create template for /login
+    
+    Manually set id of token to assist token check in LoginFormAuthenticator
+
+[33mcommit f30f88c569f19eee2b1c098c7eec3c73d46a6d52[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 2 13:25:54 2020 +0200
+
+    Remove space before opening parenthesis of function call
+
+[33mcommit 2cd0c37593acd4e04d003d7a13c3fbc2d755e71d[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 2 13:24:49 2020 +0200
+
+    Move bracket to next line
+
+[33mcommit 3df267caa0f61f3b7c6053d77cfe8cd86322fd75[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 2 13:22:56 2020 +0200
+
+    Remove unnecessary tabs
+
+[33mcommit 24805ea587c782518a6901ca26301f89c8f22ff7[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 2 12:52:29 2020 +0200
+
+    Correct naming of CategoryRepository method
+
+[33mcommit b6cddbdc6c7816f024009fd824cd730d0abff3e5[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 2 12:44:22 2020 +0200
+
+    Add invalid Entity Exception CreateArrayNamedForms
+
+[33mcommit 9ac5c7829a1ba9fbdb570923a00e56ceb010ff69[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 2 12:43:50 2020 +0200
+
+    Added typehints to methods of controller
+
+[33mcommit a0ce6a035473624bb4cb38d1637cfe15c3f5829f[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 2 12:39:48 2020 +0200
+
+    Sort Category choices alphabetically
+
+[33mcommit f20a7654e10b497abada7f0c8a9402f3694cf270[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 2 12:38:51 2020 +0200
+
+    Sort Category choices alphabetically
+
+[33mcommit 37896d91ee463a76f0606fbe619043b66e244222[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 2 12:17:45 2020 +0200
+
+    Refactor ChangeMenuController in private methods
+    
+    Chosen to keep RedirectResponse in controller body although this is more
+    verbose.
+
+[33mcommit d21e66b03fc383622892073aed24a4b2bafb82fa[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue Jun 2 12:16:11 2020 +0200
+
+    Rename product property to reflect OneToMany relation
+
+[33mcommit 01213e3f42b8cfd31a3bede2ed91ff7839bbefaf[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri May 29 19:32:13 2020 +0200
+
+    Add orphan removal to Products assocation of Category
+
+[33mcommit 5fe50542dc8a7eeac8d2dd9a3683e5418e875671[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri May 29 19:31:40 2020 +0200
+
+    Add getter method to Category for Products prop
+
+[33mcommit 6a5076456fa4172d70a4fee52733cc953e38adf1[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri May 29 19:30:59 2020 +0200
+
+    Add typehints to Products prop of Category entity
+
+[33mcommit 3035360d8c855e6f091f83040b61d3f9ea92b17c[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri May 29 19:28:49 2020 +0200
+
+    Add NotBlank assertion to Category field
+
+[33mcommit 2d6d0fc9782a71241ce68d4171ce71359e4cd316[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri May 29 19:26:38 2020 +0200
+
+    Display products under categories, including buttons
+
+[33mcommit f0a7ea650173c02352b5945538053cb1a682f620[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri May 29 19:25:58 2020 +0200
+
+    Add remove method to ProductRepository
+
+[33mcommit 6d48aaef7b59b427468be789e07e46b1afe65cc8[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri May 29 19:25:27 2020 +0200
+
+    Create RemoveProduct message handler
+
+[33mcommit c2938c0b11d171028cb09decda3ace8bc74f49b9[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri May 29 19:25:06 2020 +0200
+
+    Creaete RemoveProduct command message
+
+[33mcommit d9a02dda3e6efa4713a7a5374709fb5b3d71d587[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri May 29 19:23:21 2020 +0200
+
+    Remove Submit out of RemoveCategoryType form
+    
+    Will be handled by twig.
+
+[33mcommit 2001fb4bd342c67c67cbfc6f2a96046941590dc0[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri May 29 19:22:33 2020 +0200
+
+    Create RemoveProductType form
+
+[33mcommit 975b9d70a9bddecb4480b1dab3cd370d59cf5c5c[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri May 29 19:20:28 2020 +0200
+
+    Add Exception to CreateProductController
+    
+    A Product cannot exist without a Category. Therefore one must first
+    create the Category
+
+[33mcommit 3428395662a825d66cb4a23748f3f9336f986e1a[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri May 29 19:18:58 2020 +0200
+
+    Create and handle array of remove_product_forms
+
+[33mcommit 0de3826a5d4fe1f0742837b442f8b45cec6d0e6f[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Fri May 29 19:16:29 2020 +0200
+
+    Add keys to array of remove_category_forms
+    
+    If not, there is no differentiation and even when clicking e.g. button
+    5 or button 123, entity 1 will be removed.
+
+[33mcommit 1f557d0a686ad12cbd3df3054306ffb86d147838[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 28 21:45:56 2020 +0200
+
+    Inject FlashBag directly instead of calling Session
+
+[33mcommit f186592910cd54539b789d39a008bbbfdb4109b7[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 28 19:27:55 2020 +0200
+
+    Remove obsolete persist annotation
+
+[33mcommit 3a70b9e8dc2f4b4c29c725b552649a730529799c[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 28 19:10:13 2020 +0200
+
+    Add check that allow Product to keep name when updating
+
+[33mcommit ec901a6342666a54385f976334566117cb7459c0[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 28 19:09:14 2020 +0200
+
+    Create UpdateProductHandle message handler
+
+[33mcommit 86642799b1dc2a038310284e13c7a5169824b061[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 28 19:08:43 2020 +0200
+
+    Add update method to ProductRepository
+
+[33mcommit da67ee60d30ae239d5bc1aa61387b46278810e7b[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 28 19:07:47 2020 +0200
+
+    Create src/Message/Command/UpdateProduct.php
+
+[33mcommit 3a72ac3a0b1a9b8f8d4a3da6db00183b9076324b[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 28 19:06:20 2020 +0200
+
+    Create /update_product.html.twig
+
+[33mcommit 9aa927a4fff4c9669f239d25d232a81cc74551cb[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 28 19:05:52 2020 +0200
+
+    Create UpdateProductController
+
+[33mcommit 65d87121d70d7942aa1a76502f038a3bbc2ad062[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 28 18:30:27 2020 +0200
+
+    Create create_product twig file
+
+[33mcommit b0923c59e68a8c1d09ebd65e33fc5b4aed977652[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 28 18:29:05 2020 +0200
+
+    Create base_category twig template
+    
+    Will serve product_new and product_update routes
+
+[33mcommit bdbd940a08793554ba3c41e88012445ff81786f4[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 28 18:28:03 2020 +0200
+
+    Correct custom validator name
+
+[33mcommit 48c44f4c8b7c6b0001d8f39abe7993a7fdab4ad8[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 28 18:26:40 2020 +0200
+
+    Create IsUniqueProductNameOrSameCategoryValidator
+    
+    Does not yet include check if updated product name is the name of the
+    séame category, even though the name already says so.
+
+[33mcommit 02e5a8ae6e6f5f52338f6ec67ee02f925ecf0fee[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 28 18:26:11 2020 +0200
+
+    Create IsUniqueProductNameOrSameCategoryValidator.php
+
+[33mcommit 90af4658800759186b6c882e8201f41db5b064b7[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 28 18:19:36 2020 +0200
+
+    Create IsUniqeProductNameOrSameCategoryValidator
+
+[33mcommit bd2710cbe49adab4fdae1cbcc94fe53bb017bbb8[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 28 18:19:13 2020 +0200
+
+    Create /IsUniqueProductNameOrSameCategory constraint
+
+[33mcommit 636165a7cf9708bb1bc5a6ec66c5f1bc75d708cb[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 28 18:18:01 2020 +0200
+
+    Add __toString() method to Category
+
+[33mcommit 28dcb358d7f13de8216a2bb505f5beac9b1d6de2[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 28 18:17:33 2020 +0200
+
+    Create ProductType form
+
+[33mcommit a1e18ec7c0b07fdcd6cc71c05e5751d252d23d91[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 28 18:15:46 2020 +0200
+
+    Create CreateProductHandler message handler
+
+[33mcommit 039548217e1146bcd2cea7f21097a0e7dfce1bfd[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 28 18:14:38 2020 +0200
+
+    Create CreateProduct message
+
+[33mcommit 6c2b34447b17c2228ed6e79ba7422090e8b2b314[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 28 18:14:12 2020 +0200
+
+    Create ProductDataTransferObject
+
+[33mcommit a6d2c52e612491225ea996ce1dd690f13d8ce3be[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 28 18:13:29 2020 +0200
+
+    Create CreateProductController
+
+[33mcommit 08639da26597fa5b8c68ebc8066d9e1c9ae49d31[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 28 18:10:27 2020 +0200
+
+    Correct class that ProductRepository constructs in parent
+
+[33mcommit 6a2d180e45dc25b0b9996c4cd735b99ad7efdec0[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 28 16:42:47 2020 +0200
+
+    Remove obsolete white line
+
+[33mcommit 5e92a6298eb0a7a012c9543cbbfb59fea0a79208[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 28 16:34:33 2020 +0200
+
+    Create ProductRepository
+
+[33mcommit fb1a5d0cf5938cab7b0248daa1219bf172728a66[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 28 16:33:15 2020 +0200
+
+    Add products property to Category entity
+
+[33mcommit 49ce5083c2655fdd77b00d4e8794f96a77d8f3ea[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 28 16:32:47 2020 +0200
+
+    Remove obsolete use-statement
+
+[33mcommit 9a7668549fabf4152abb941b86ac31c9c17211d2[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 28 16:32:06 2020 +0200
+
+    Create Product entity class
+
+[33mcommit 5ba028bd26fbb94f44ab1e460f3e234334a175fe[m[33m ([m[1;32mmaster[m[33m)[m
+Merge: 85fe5e1 49541ed
+Author: StijnVrolijk <stijn.o.vrolijk@gmail.com>
+Date:   Thu May 28 12:24:09 2020 +0200
+
+    Merge branch 'category-crud'
+
+[33mcommit 85fe5e1b88b112986e0670651da513e8b152dc28[m
+Merge: 0648d5f 90b1330
+Author: Stijn Vrolijk <stijn.o.vrolijk@gmail.com>
+Date:   Thu May 28 12:22:28 2020 +0200
+
+    Merge branch 'category-crud' into 'master'
+    
+    Category crud
+    
+    See merge request vettige-vrijdag/jan-de-clercq!1
+
+[33mcommit 49541edbf42f697f7ed5c79bfbe30099a90cf043[m[33m ([m[1;31morigin/category-crud[m[33m)[m
+Author: StijnVrolijk <stijn.o.vrolijk@gmail.com>
+Date:   Thu May 28 12:20:33 2020 +0200
+
+    Method extract checking if category exists by name
+
+[33mcommit 90b133079a3fad8e213393491fd3c0fc9a6196bf[m
+Author: StijnVrolijk <stijn.o.vrolijk@gmail.com>
+Date:   Thu May 28 12:15:33 2020 +0200
+
+    Simplify FQN
+
+[33mcommit 4a570e36d0b70d5594f415494c968ab2af13e978[m
+Author: StijnVrolijk <stijn.o.vrolijk@gmail.com>
+Date:   Thu May 28 12:05:46 2020 +0200
+
+    Handle removing of categories in the overview of categories
+
+[33mcommit eb6623f3108127d1437aca5c7a971297c8fd1b3c[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 27 21:11:54 2020 +0200
+
+    Correct order of arguments RuntimeException
+    
+    Correction of commit 68c0523c
+
+[33mcommit cc7083094a868d68354206e54e377612e498f7e7[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 27 21:09:44 2020 +0200
+
+    Reverse state Category before due to bad commit
+    
+    Bad commit: e461e07d137fa60ca0586cd90fc0e4cf144b8394
+
+[33mcommit e461e07d137fa60ca0586cd90fc0e4cf144b8394[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 27 19:18:07 2020 +0200
+
+    Set @DateTimeImmutableType directly
+    
+    Instead of passing it as an attribute to @column.
+
+[33mcommit 1860ed45dd5843daf2de768ac0004fe29f6281c5[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 27 19:10:54 2020 +0200
+
+    Remove passing image and icon file to updateform
+
+[33mcommit 9d377e91fce052a8b9d34170e70d7eae505300dd[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 27 19:04:15 2020 +0200
+
+    Set RedirectResponse after remove Category
+
+[33mcommit 13004e06dec8f028e72197f5befd9b28c3608591[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 27 18:57:47 2020 +0200
+
+    Remove unused use statements
+
+[33mcommit bbbad007871c56430da73103a2b68211d5a198fb[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 27 18:31:46 2020 +0200
+
+    Make default value $name null
+    
+    Just like the other properties.
+
+[33mcommit 893c3ad7fb6506290e252b0a0e8eb43e6b19c9d3[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 27 18:28:30 2020 +0200
+
+    Add NotBlank assert on name property
+
+[33mcommit 974230050103fdfee670307ed7a33b5febbf6e14[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 27 18:09:50 2020 +0200
+
+    Improve instanceof check unique Category validator
+
+[33mcommit 02b70802eba5250fe800c58271d2a2b0d865dbd4[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 27 18:03:37 2020 +0200
+
+    Include custom error message
+
+[33mcommit 68c0523c0debe3d5ae06698593dd160ce0216bb8[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 27 17:58:08 2020 +0200
+
+    Correct error message
+
+[33mcommit 78b0c37aab7ba3ea2ce4b3d7d609b6166a86a3b6[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 27 17:39:02 2020 +0200
+
+    Add string typehint to global env variables uses
+
+[33mcommit 56052d07be61f9a8fedff0eec69640a509e7ddc1[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 27 17:21:25 2020 +0200
+
+    Change bad RemoveCategory response to exception
+
+[33mcommit 3325f1383b1cb2dbced887ccda3fb3b11ec96b20[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 27 17:17:35 2020 +0200
+
+    Improve codestyles by moving && to next line
+
+[33mcommit dab0b2f9f786cfb7aa006b7890f64427ab38ca18[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 27 17:06:17 2020 +0200
+
+    Remove superfluous 200 http status codes response
+
+[33mcommit d7bdec9c5352c02d93298c5aaca566aafcd0b8a9[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 27 16:37:45 2020 +0200
+
+    Set parenthesis, typehint, bracket on same line
+
+[33mcommit c0cddfa50e1d8c1bab20fcbc7dc278b962da2ca4[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 27 14:13:38 2020 +0200
+
+    Inject service to deal with file upload logic
+
+[33mcommit 0f12634ef8b6cff62c63a7d1494e9c4e79671b72[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 27 14:12:59 2020 +0200
+
+    Inject service to deal with file upload logic
+
+[33mcommit cb645531fd30211c9c3d276980bcd10bebb9a27b[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 27 14:12:12 2020 +0200
+
+    Inject service to deal with file uploads
+
+[33mcommit fb85e67e78d9cf61103070f3b3b31c564ded3252[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 27 14:10:54 2020 +0200
+
+    Create FileUploadsHelper to allow re-use
+
+[33mcommit e88dbfdb1ae7cb8b0a864e4724de28b99b57db73[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 27 13:48:49 2020 +0200
+
+    Change properties type to DateTimeImmutable
+
+[33mcommit 49537f76937c603f58d722a334d8e48e84c4cbfe[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 27 13:42:32 2020 +0200
+
+    Add removeFile method to RemoveCategoryHandler
+
+[33mcommit d8a931b6a97f3014401b614550b527f38a45c8e1[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 27 13:26:27 2020 +0200
+
+    Change UpdateCategoryHandler to deal with images
+    
+    Includes method to save new image and icon files.
+    And method to remove the old file from the system.
+
+[33mcommit 042d9d4f653f4247d87370e34856c8e4419d939b[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 27 13:24:59 2020 +0200
+
+    Pass image directory env variables to UpdateCategory message
+
+[33mcommit 1f1c4294ba54fa0f7edcf745870e7dabb395ac99[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 27 13:23:22 2020 +0200
+
+    Change update datatransfer object strings to uploads
+
+[33mcommit 5709153fe39cd6314feea4f6743b7f4383c25463[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 27 12:26:54 2020 +0200
+
+    Add typehints to saveFileToDirectoryAndReturnNewFileName method
+
+[33mcommit 6ab88f8d33d4a47dada69475050de6cd83822034[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 22:24:16 2020 +0200
+
+    Add yarn.lock
+
+[33mcommit 4476b1c7dcaa0665f463af88a28fbc3c7eec5c8b[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 22:23:42 2020 +0200
+
+    Add symfony.lock
+
+[33mcommit d2658272b7bba241a5b81ea34bb251743bd711af[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 22:22:47 2020 +0200
+
+    Add composer.lock
+
+[33mcommit 4ba81a1bab9e84a63ed35582594a1267a38017dc[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 22:20:15 2020 +0200
+
+    Add .gitignore
+
+[33mcommit ab527c984e5ad9512e52bff9692faeb07422ceaa[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 22:15:14 2020 +0200
+
+    Add migration file Category only
+
+[33mcommit 9aea1ac271ba681bfa60025fb6aa9578aa99592e[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 22:14:30 2020 +0200
+
+    Add phpcs.xml.dist file
+
+[33mcommit 783448d73cb6e00a7b14db4f29acd99b6dbb4fc5[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 22:13:33 2020 +0200
+
+    Add basic webpack_encore.yaml file
+
+[33mcommit 3b3b4b0a151fffeefd48eafbbfe00e6771acdd33[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 22:12:41 2020 +0200
+
+    Add basic webpack_encore.yaml test file
+
+[33mcommit c64bfac0dc734af0ef1a77b0e6a4ba9c959b34bd[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 22:10:21 2020 +0200
+
+    Add basic stof_doctrine_extensions.yaml file
+    
+    composer require stof/doctrine-extensions-bundle:1.2
+
+[33mcommit aecea42dfc28f8bb646baa3b4b735e72e121e75f[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 22:09:00 2020 +0200
+
+    Add basic webpack_encore.yaml prod file
+
+[33mcommit baeff2986b5d0008fa6ae11bfcf88d453f0750dd[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 22:08:01 2020 +0200
+
+    Add basis messenger.yaml file
+    
+    composer require symfony/messenger
+
+[33mcommit b04990e2118f581fc43c48ca94c1c64d76b8ca1f[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 22:07:05 2020 +0200
+
+    Add basic encore asset.yaml file
+
+[33mcommit 4f74711cb00329e9c4b63d93a8580f1b885c2e9f[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 22:05:23 2020 +0200
+
+    Add css classes for underlined and italic
+
+[33mcommit 518c63cb36210f5d87c9dad385f4d4de9c4356ba[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 21:59:23 2020 +0200
+
+    Create basic PostCSS config file
+
+[33mcommit 0d273eb1bc015cd609f189d7e05ef17caa3359c8[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 21:56:18 2020 +0200
+
+    Create shared base_category twig for update and create category
+
+[33mcommit 40ed5322ec9c476f8b1326533f46a159caa7eaa5[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 21:54:23 2020 +0200
+
+    Create twig files change-menu route, including remove category
+
+[33mcommit edf7e3efaa38cf0082582c027a72ed9d459d5c28[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 21:51:23 2020 +0200
+
+    Install sass-loader and node-sass
+    
+    yarn add sass-loader@^7.0.1 node-sass --dev
+
+[33mcommit 06ad8f350a5d917ff89b00fc2f5e0891f4b66bee[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 21:48:58 2020 +0200
+
+    Add fontawesome
+    
+    yarn add font-awesome --dev
+
+[33mcommit 1a829f88dacc4a381de36acacc6c4a6d28109b98[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 21:46:22 2020 +0200
+
+    Enable SASS and PostCssLoader
+
+[33mcommit 16ad2814420e59cfd49f26dbb95d604b2bb6c3e2[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 21:44:49 2020 +0200
+
+    Move form logic to shared base template bsae_category.html.twig
+
+[33mcommit 044ea2912eb3676d4ab6627b9bc0aec796623b70[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 21:44:00 2020 +0200
+
+    Move form logic to shared base template bsae_category.html.twig
+
+[33mcommit fb73f254adb6c796cbbedf73368ff6334ba2222f[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 21:42:06 2020 +0200
+
+    Add encore css and js-links to base twig file
+
+[33mcommit d9895d1a23203638e1192841df015ce003e56b63[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 21:35:27 2020 +0200
+
+    Add symfony/webpack-encore-bundle
+    
+     composer require symfony/webpack-encore-bundle
+
+[33mcommit fe9d24f21a23d2147c08556d27feb77ca3586c04[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 21:33:21 2020 +0200
+
+    Add symfony/dotenv
+    
+    Composer require symfony/dotenv
+
+[33mcommit ad79deed1dd884e5874ce78e34c12a98872ae1b1[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 21:32:21 2020 +0200
+
+    Add "antishov/doctrine-extensions-bundle": "^1.4",
+    
+    composer require antishov/doctrine-extensions-bundle
+
+[33mcommit ff8905ddaedcc9cae0fe88041433fb1e308e285d[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 21:27:56 2020 +0200
+
+    Add global environment variables for upload directories
+
+[33mcommit 39ce72c56084f15b6d08675633a551e55daa4866[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 21:25:43 2020 +0200
+
+    Add StofDoctrineExtensionsBundle and WebpackEncoreBundle
+
+[33mcommit c5bdd20c112a2495ed4703b3b0d6967e87a7180c[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 21:24:05 2020 +0200
+
+    Remove superfluous use statement, spacing,
+
+[33mcommit d281ae9d6ea2ed86fd64216dc9c2c8a921b36d8c[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 21:21:03 2020 +0200
+
+    Change CategoryType FormType from text to file
+
+[33mcommit 3d2b5851cec04a7e58a531ee2fb3dbb9ea614c34[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 21:19:25 2020 +0200
+
+    Include missing use statement for RemoveCategoryType
+
+[33mcommit 370f6e76d95cc8e0e5f9a30f9bc298c2fb162a16[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 21:14:42 2020 +0200
+
+    Add method to CreateCategoryHandler to save files
+
+[33mcommit f9c20dbb10c28ec274d0a427dddd54abb92b9b98[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 17:04:43 2020 +0200
+
+    Change name message property UpdateCategoryHandler
+
+[33mcommit c55587a45bf9706fe5360560fbf8fbe59171f137[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 17:02:12 2020 +0200
+
+    Replace dataTransferObject string properties as UploadedFilePropetis
+
+[33mcommit f88400059add93f85ec4ab5ca5da446f02b04273[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 16:56:44 2020 +0200
+
+    Add code to save icon/image file to CreateCategoryHandler
+    
+    On local machine error for image only: The "/tmp/phpvweseZ" file does
+    not exist or is not readable.
+
+[33mcommit 864cdfdae8ca7c1c5bd6494487e61b06e2cca529[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 14:14:21 2020 +0200
+
+     Change name of message object in RemoveCategoryHandler
+    
+     Generic naming improves maintainabiltiy
+
+[33mcommit 6cf2c93e01da073d76d7bf392558a26d4111c237[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 14:10:47 2020 +0200
+
+    Change name of message object in CreateCategoryHandler
+    
+    Generic naming improves maintainabiltiy
+
+[33mcommit a0c73bb0f738f9993dbc1711e91a70873ad587a5[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 14:07:44 2020 +0200
+
+    Wrap Category in UpdateCategory message
+    
+    Reduces database call by passing around object instead of primitive
+    types.
+
+[33mcommit c9ffbc4583cd15a72369c07a22ba993c8018fe2c[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 14:06:29 2020 +0200
+
+    Make UpdateController use shared CategoryType form
+    
+    Shared with CreateController
+
+[33mcommit 46689ef4df8fe6968ad4fb166f91243814692896[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 14:04:15 2020 +0200
+
+    Populate UpdateCategory command with whole Category object
+
+[33mcommit 3c87eb745215f3eba1e7632e17f7b67ce885f404[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 14:02:13 2020 +0200
+
+    Make CreateController use shared CategoryType form
+    
+    Shared with UpdateController.
+
+[33mcommit 1942f46170116849da7159229a7af904123e4580[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 13:57:38 2020 +0200
+
+    Change validator for unique name check on create and update
+
+[33mcommit 41bc7763c23325d18696b4460f824cc48611dffa[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 13:54:32 2020 +0200
+
+    Reduce custom validators on DataTransferObject from 2 to 1
+    
+    Single validator contains logic that was done by 2 validators before.
+
+[33mcommit 5e28f9f4c6955de2025c41a31b2b90ba70f179bd[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 13:53:04 2020 +0200
+
+    Change CategoryType data resolver class to DataTransferObject
+
+[33mcommit 4379470dd79abce4101b7f1f128f649e8ab62a43[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 13:50:08 2020 +0200
+
+    Change CategoryType labels depending on create or update
+    
+    Also remove superfluous form elements.
+
+[33mcommit 773f5e76a5c75db8d40f11f0071c986c39b8f1bb[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 26 13:47:53 2020 +0200
+
+    Create single CatgoryType form for creat and update
+
+[33mcommit 13475ae252f660af503dd81c336e5c3701544b7a[m[33m ([m[1;32mff-saven[m[33m, [m[1;32mff-save-create[m[33m)[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon May 25 15:47:12 2020 +0200
+
+    Add supported browsers to browserslist
+
+[33mcommit 3f128c15bf99df0faee4842b5dfff1a0165e2597[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon May 25 14:58:45 2020 +0200
+
+    Create AJAX request to remove category via modal
+    
+    Adapted bootstrap modal Jquery to vanilla Javascript.
+    Used axios to send and handle request
+
+[33mcommit 011c4266731cf003e334f48ca6a0a2c02c2fd70b[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon May 25 14:50:22 2020 +0200
+
+    Add links to javascript and css in base twig
+
+[33mcommit 77ebbd7242d7950f2bba86a30eaed313e672d3d8[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon May 25 14:46:13 2020 +0200
+
+    Create ChangeMenuController
+    
+    Includes the forms to remove categories, which, in turn, will call the
+    RemoveCategoryController
+
+[33mcommit a6932740e5a91f96e75c20d7936dac243042eb39[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon May 25 14:41:54 2020 +0200
+
+    Create RemoveCategory message handler
+
+[33mcommit 6479782b2440de3ce0535401282d668905b50ddc[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon May 25 14:40:42 2020 +0200
+
+    Create RemoveCategoryController
+
+[33mcommit 08c3740392b6236534f0fd0a5fc98cb9aa76c990[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon May 25 14:30:36 2020 +0200
+
+    Create RemoveCategoryType form
+
+[33mcommit a8e8e262402b204f794eac303714414e61eda5fa[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon May 25 14:28:52 2020 +0200
+
+    Create RemoveCategoryType
+
+[33mcommit 9b745e982664b92c7ede9f45802f2184fde932ff[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon May 25 14:26:23 2020 +0200
+
+    Create RemoveCategory message
+    
+    Unlike other Category messages, RemoveCategory doesn't extend
+    CategoryDataTransferObject
+
+[33mcommit fdaae15134a205a5b86765bb6e44528a59d6fbb7[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 21 00:52:18 2020 +0200
+
+    Add getId method to Category entity
+
+[33mcommit 36cab5ebfe6cd27239e2f8d9bce5f8965723d126[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 21 00:50:17 2020 +0200
+
+    Create custom validator that checks category_update action
+    
+    Takes an data tranfer object, fetches 2 category objects, one on the
+    basis of the id, one on the basis of name, and makes sure a Category's
+    name cannot be changed to a name that is already registered (except for
+    its own, which is allowed).
+
+[33mcommit e4978dba076c140d1e592414a4b00be77aca16d5[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 21 00:41:17 2020 +0200
+
+    Add custom class level constraint
+
+[33mcommit f57fbc2dda3d07f9e50fbf3ba6a3b92b07b18de8[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 21 00:35:22 2020 +0200
+
+    Add validation annotation and modify existing one
+    
+    Add 2 custom validations in 2 validations groups
+    1. property name-level check that serves CreateCategory-route
+    2. class-level check that serves UpdateCategory-route that makes sure
+    a Category can not be changed to an already existing Categoryname other
+    than its own name.
+
+[33mcommit 1befb730d4bc4c6a2d5bff3884c85410666eab16[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 21 00:33:27 2020 +0200
+
+    Create twig file for category_update route
+
+[33mcommit 36dc6ec304797586df591e436d30635dab2bcc84[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 21 00:30:53 2020 +0200
+
+    Create controller for category_update route
+
+[33mcommit 2abf6d87c875fe8eb26bdb9447220f59c9e91679[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 21 00:27:59 2020 +0200
+
+    Create message handler for update command
+    
+    Includes check that makes sure that a Category name can not be changed
+    to an already existing Category name other than its own.
+
+[33mcommit f9f3799a7bbcd93e89ba56fc698ba93370c51917[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 21 00:26:04 2020 +0200
+
+    Create command message to update Category
+
+[33mcommit e20025a1d3d957894d1239ba8eb195591495ee5c[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 21 00:17:05 2020 +0200
+
+    Update use statements of changed filenames
+    
+    Changed filenames:
+    1. CategoryType -> CreateCategoryType
+    2. add_category.html.twig -> update_category.html.twig
+
+[33mcommit bc16633b913f1c54bc7e7e1c4db07f8fcf45d8dd[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Thu May 21 00:15:20 2020 +0200
+
+    Rename CategoryType to CreateCategoryType
+
+[33mcommit 5bcee100a3d545b79f59cbf1591868ef21987622[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 20 22:47:26 2020 +0200
+
+    Rename inconsistently named Twig file
+
+[33mcommit 3832c7a8536c63f0b198f4830e20135c05e37325[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 20 22:44:35 2020 +0200
+
+    Remove 'test' files
+
+[33mcommit ecd1733808e3553ec888796bf38d927cea67d84f[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 20 17:37:57 2020 +0200
+
+    Add messenger to composer.json
+
+[33mcommit f78d1809236995ae407f8724b62b1c62a1faf221[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 20 17:35:49 2020 +0200
+
+    Add annotations to composer.json
+
+[33mcommit 858289656c2143670851bf9f114d645a47950e74[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 20 17:06:57 2020 +0200
+
+    Enable annotations validation in yaml file
+
+[33mcommit f6ff786372262d89ec7fbc1fe1b93f87ef59382a[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 20 17:04:34 2020 +0200
+
+    Create TWIG file with category form
+
+[33mcommit 95dcd0abce4079f245321e977aaa0308d7a12c2d[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 20 17:01:44 2020 +0200
+
+    Create custom validator for unique category
+
+[33mcommit 0c2e1abffba4d4fbea1f2c40c80e8d9898261b51[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 20 16:55:33 2020 +0200
+
+    Create custom validator to
+
+[33mcommit 42e98ddf2d7d9b6e7048a7303502a7d3e60e3d39[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 20 16:54:12 2020 +0200
+
+    Create custom constraint for Category name property
+
+[33mcommit 3d7690bb8d6f4b33fd9ae068e79a959176ec0d8a[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 20 16:52:10 2020 +0200
+
+    Add contraints to data transfer object via annotations
+
+[33mcommit 8b462c87c031cf039fbed25e0ebf69c9bc5aa2ea[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 20 16:48:03 2020 +0200
+
+    Create CategoryType form fields
+    
+    Required set to false as to show contraint error messages.
+    Empty data set to default '' string as not to throw 'null must be
+    string' exceptions
+
+[33mcommit 8e20ec104ac903402c2520a7d15014e8bbba4d08[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 20 16:44:08 2020 +0200
+
+    Create CreateCategoryController
+
+[33mcommit 8da6c2bcfc15a0dd40ddfdbdc143ad73e4ac45f4[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 20 14:38:24 2020 +0200
+
+    Add default empty string values to CategoryDataTransferObject
+    
+    Otherwise error
+    The property "App\DataTransferObject\CategoryDataTransferObject::$name"
+    is not readable because it is typed "string". You should initialize it
+    or declare a default value instead.
+
+[33mcommit 90a287620528b78c62dbbe244399ecbdb01b7872[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 20 11:55:58 2020 +0200
+
+    Correct use path as used element changed name
+
+[33mcommit 0329c31df010539d6c1452bb508334a9288e989b[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 20 11:50:13 2020 +0200
+
+    Remove superfluous unique annotation
+
+[33mcommit 387ec84823030b2e5b60e3577183481999cd686c[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Wed May 20 11:43:17 2020 +0200
+
+    Add return and correct return type CreateCategoryHandler
+
+[33mcommit 3f36f987aaab3dbc4d88331938c8dd586471da76[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 19 22:19:07 2020 +0200
+
+    Correct call to database to check if category already exists
+    
+    To reflect use of public properties in CategoryDataTransferObject
+
+[33mcommit 002b0ca471c25f7793aa7ab9508d98d781637c73[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 19 22:16:08 2020 +0200
+
+    Replace return with Exception
+    
+    More clear for developer when Category already exists.
+
+[33mcommit 563f8dfceee741e43b6f3086f004ae119d98b641[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 19 22:11:35 2020 +0200
+
+    Replace CategoryCreateFormModel with CategoryDataTransferObject
+    
+    Change name, change directory. Replace private properties and
+    constructor, getters and setters with public properties.
+
+[33mcommit b3602d740006439220e3849fea14e393c3557d2b[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 19 22:04:21 2020 +0200
+
+    Change Typed Properties and annotations to be more consistent
+    
+    Instead of using string as typed property, DateTimeImmutable is used. As
+    this is also what
+    the property setter uses.
+    
+    Annotations changed from type datetime to datetime_immutable
+
+[33mcommit 71f7ee6eb5f3934534d6b426d2b5fa425df6a033[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 19 22:00:45 2020 +0200
+
+    Use Lifecycle Callbacks to set createdOn and updatedOn properties
+
+[33mcommit a6a2513a832f6893aa5d865a248144cac1c1858c[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 19 16:12:03 2020 +0200
+
+    Create message handler CreateCategoryHandler
+    
+    Checks if Category object with the same name already exists or not as an
+    extra line of defense. Creates new Category if not.
+
+[33mcommit 6420adb989126d67258e4aaf99277cec426f4b06[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 19 15:47:32 2020 +0200
+
+    Add getter methods to data object CategoryCreateFormModel
+    
+    Will need these to create new Category instance
+
+[33mcommit a4376c5bb7bfaab86308bbad6d253464a0eb9c96[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 19 15:28:04 2020 +0200
+
+    Create command message to create instance of Category
+    
+    Extends data transfer object
+
+[33mcommit 9b2aead7342058880de2830a80a590edd4cb5f30[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Tue May 19 15:21:03 2020 +0200
+
+    Create data transfer object for create category
+    
+    No annotations for validations yet. Makes more sense to do this when
+    creating form, IMO.
+
+[33mcommit b5c062344a9466cfc2dfd67aae5ff3363f13e102[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon May 18 22:22:44 2020 +0200
+
+    Set annotation of createdOn property to datetime instead of string
+    
+    correction of error
+
+[33mcommit 8a7ea3779540e4e330144cb7715619d0731fd291[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon May 18 16:58:51 2020 +0200
+
+    Create Repository for Category
+
+[33mcommit 562c6bd3887709ee02e173c0f7da13d78d0ec79f[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon May 18 16:57:04 2020 +0200
+
+    Create Category Entity
+    
+    Relations to Products has not been defined yet, because that Entity has not been created yet"
+
+[33mcommit 19e8a1a6d0cadaa5e6500043781e4fba566964ae[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon May 18 16:55:11 2020 +0200
+
+    Change PHP version to 7.4
+
+[33mcommit 0648d5fbb4502a1aeb1736e49225d6868e4abaee[m[33m ([m[1;31morigin/dev[m[33m)[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon May 18 11:05:56 2020 +0200
+
+    add README
+
+[33mcommit 8fe2d69804a9906695c95a02ceee142c3cf33360[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon May 18 11:03:06 2020 +0200
+
+    test123
+
+[33mcommit 3c81778678aa8c609d7128cc230df52ce5ad0b8a[m
+Author: Jan <declercqjan@gmail.com>
+Date:   Mon May 18 10:51:36 2020 +0200
+
+    Add initial set of files

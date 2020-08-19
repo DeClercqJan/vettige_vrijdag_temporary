@@ -1,0 +1,44 @@
+@charset 'UTF-8';
+
+// Bootstrap
+@import "~bootstrap/scss/functions";
+@import '~bootstrap/scss/variables';
+@import 'bootstrap-variables';
+@import 'bootstrap-imports';
+
+// Icon font generated from icon-sources/ through grunt
+@import 'icons';
+
+// Plugin styling
+// eg. @import 'fancybox/dist/scss/jquery.fancybox';
+// eg. @import 'fancybox/dist/helpers/scss/jquery.fancybox-thumbs';
+
+// Base styles
+@import 'base/base';
+
+// Components
+@import 'components/adminpage';
+@import 'components/arrows';
+@import 'components/bg-images';
+@import 'components/card';
+@import 'components/cookiebar';
+@import 'components/dropdown';
+@import 'components/footer';
+@import 'components/form';
+@import 'components/menu';
+@import 'components/modal';
+@import 'components/navbar';
+@import 'components/order';
+@import 'components/ordered';
+@import 'components/switch';
+@import 'components/table';
+@import 'components/tooltip';
+@import 'components/type';
+
+// Custom page styling
+// eg. @import 'pages/footer';
+
+// to do: move to separate class
+#target-template-javascript-contenteditable-name, #flash-messages-sync {
+  max-height: 100px;
+}

@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Vettige vrijdag | Goed gedaan!{% endblock %}
+
+{% block body %}
+
+    {% block outdated_browser %}
+        {{ parent() }}
+    {% endblock outdated_browser %}
+    <!-- Add your site or application content here -->
+
+<div class="ordered no-nav-shadow mh-100vh">
+    <div class="container-fluid">
+
+        <div class="row mh-100vh bg-wrapper bg-image bg-ordered">
+            <nav class="col-md-4 fixed-bottom d-md-flex flex-row nav navbar-dark h-md-100vh p-0 navbar-menu">
+                <div class="h-100 w-100 d-md-flex flex-md-column">
+                    <div class="fixed-top bg-light p-md-static bg-md-none">
+                        <a href="{{ path('vettige_vrijdag') }}" class="navbar-brand d-flex justify-content-center pt-3 pt-md-0 my-md-5 mx-md-2 w-100">
+                            <div class="d-flex align-items-center flex-column">
+                                <img src="{{ asset('build/assets/images/sumos_dark.svg')}}" alt="Sumo's">
+                                <p class="text-center text-dark"><span class="d-md-none">Vettige vrijdag</span><span class="d-none d-md-inline">Vettige<br />vrijdag</span></p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="col-md-8 offset-md-4">
+                <div class="content mt-md-4">
+                    <h1 class="mt-5">Goed gedaan {% if not customerName is empty %} {{ customerName }} {% else %} $name {% endif %}, je bestelling is doorgegeven.</h1>
+                    <p>Nu nog ongeduldig afwachten tot het 12:00 is...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

@@ -1,0 +1,90 @@
+{# to do: handle order-empty and order-category-chosen together as they represent varying states of the same #}
+
+{% extends '3_columns/3_columns.html.twig' %}
+
+{% block title %}Vettige vrijdag | Hamburgers{% endblock %}
+
+{% block firstdivclass %}class="mh-100vh overflow-hidden position-relative"{% endblock firstdivclass %}
+
+{% block statusclass %}active{% endblock statusclass %}
+
+{% block ordertoggler %}
+    <div class="order-toggler d-lg-none" data-toggle="toggler">
+        <span class="sr-only">Toggle order</span>
+        <div class="d-flex flex-row">
+            <div class="dots">
+                <span class="icon-dot top-dot"></span>
+                <span class="icon-dot middle-dot"></span>
+                <span class="icon-dot bottom-dot"></span>
+            </div>
+            <div class="bars">
+                <span class="icon-bar top-bar"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+            </div>
+        </div>
+    </div>
+{% endblock ordertoggler %}
+
+{% block middle_column%}
+<div class="col-md-8 col-lg-5 offset-md-4">
+    <div class="content content-category mt-md-4 mb-md-0">
+        <h1>Kies je {{ categoryChosen.name }}</h1>
+
+        <!-- Items should be added to the list when clicked, and the page should stay on the same scroll-position -->
+        {% for product in categoryChosen.products %}
+        <a href="" class="card menu-item mb-3 d-flex flex-row align-items-center" data-order="add">
+            <span class="menu-item-name mr-auto p-2">{{ product.name }}</span>
+            <div class="btn btn-outline-primary align-self-stretch d-flex justify-content-center align-items-center">Da wil ik!</div> <!-- add to list when clicked -->
+        </a>
+        {% endfor %}
+    </div>
+</div>
+{% endblock middle_column%}
+
+{% block right_columncontent %}
+<form action="" class="my-5">
+    <fieldset>
+        <legend class="text-center form-intro">Bestelling van</legend>
+        <div class="form-group"> <!-- Add class has-danger when form is not filled in on submit -->
+            <label for="name" class="sr-only">Naam</label>
+            <input type="text" class="form-control name-field" name="name" id="name" aria-describedby="helpId" placeholder="">
+            <!-- Add code below when form is not filled in on submit -->
+            <!--<span class="form-control-feedback">VUL JE NAAM HIER IN!!!!!!!!</span>-->
+        </div>
+    </fieldset>
+
+    <div class="order-list-wrapper bg-white text-dark mb-3 mt-5 p-3 p-xl-4">
+        <!-- when there is no chosen item -->
+        <!--<p class="mb-0 text-muted">Je hebt nog niets gekozen <img src="images/sad-sumo.svg" class="sad-sumo ml-2" alt=""></p>-->
+
+        <!-- when there are items chosen -->
+        <table class="table order-list mb-0" data-order="table">
+            <tbody>
+            {% for addedProduct in orderBasket  %}
+            <tr>
+                <td class="order-list-item order-list-item-hamburger">{{ addedProduct.amount }} x {{ addedProduct.product.name }}</td>
+                <td class="text-right" data-order="remove-button"><span class="sr-only delete">Delete</span><i class="far fa-trash-alt" aria-hidden="true"></i></td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <label for="add" class="d-block">Toevoegen aan mijn bestelling</label>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="" aria-label="Add" id="add" aria-describedby="button-addon" data-order="input-add">
+        <div class="input-group-append">
+            <button class="btn btn-primary mb-3 px-3 h-100" type="button" id="button-addon" data-order="input-add-button">+</button>
+        </div>
+
+    </div>
+
+    <div class="d-flex justify-content-end">
+        <div class="btn-submit-wrapper">
+            <a href="besteld.html" type="submit" class="btn btn-submit btn-lg">Bestellen!</a>
+        </div>
+    </div>
+
+</form>
+{% endblock right_columncontent %}

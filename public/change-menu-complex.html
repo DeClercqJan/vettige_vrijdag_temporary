@@ -1,0 +1,492 @@
+
+
+<!--
+
+      This is a more complex version of the change-menu page, if you are up for a challenge.
+      Editing items or categories happens in a modals.
+      Adding items is also in a modal, with tabs to choose between adding an item or a category.
+      You can change the name of the items without opening the edit-modal (contenteditable="true").
+
+       -->
+
+
+
+
+<!doctype html>
+<html class="no-js" lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Vettige vrijdag | Menu aanpassen</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" href="../../vettige_vrijdag_slice/slice-master/apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/screen.css">
+  <!--[if lt IE 9]>
+  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+  <![endif]-->
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Rancho|Source+Sans+Pro&display=swap" rel="stylesheet">
+
+  <script src="http://localhost:35729/livereload.js?snipver=1"></script>
+</head>
+<body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please
+  <a href="http://browsehappy.com/">upgrade your browser</a>
+  to improve your experience and security.
+</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+
+<div class="bg-light mh-100vh overflow-hidden position-relative">
+  <div class="container-fluid">
+
+    <div class="row">
+      <nav class="col-md-4 fixed-bottom d-md-flex flex-row bg-dark nav navbar-dark h-md-100vh p-0 navbar-menu">
+        <div class="h-100 w-100 d-md-flex flex-md-column">
+          <div class="fixed-top bg-light p-md-static bg-md-dark">
+            <a href="/" class="navbar-brand d-flex justify-content-center pt-3 pt-md-0 my-md-5 mx-md-2 w-100">
+              <div class="d-flex align-items-center flex-column">
+                <img src="images/sumos_dark.svg" alt="Sumo's" class="d-md-none">
+                <img src="images/sumos_white.svg" alt="Sumo's" class="d-none d-md-inline-block">
+                <p class="text-center"><span class="d-md-none">Vettige vrijdag</span><span class="d-none d-md-inline">Vettige<br />vrijdag</span></p>
+              </div>
+            </a>
+          </div>
+
+          <div class="navbar-nav w-100 flex-row flex-md-column d-md-flex flex-grow-1">
+            <a data-scroll data-offset="90" data-md-offset="0" href="#edit-hamburger" class="flex-fill d-flex align-items-center nav-link nav-link-big nav-link-hamburger">
+              <span class="icon icon-hamburger-big d-none d-md-block"></span><span class="d-md-none icon mx-auto icon-hamburger-small"></span><span class="d-none d-md-block text">Hamburgers</span>
+            </a>
+            <a data-scroll data-offset="90" data-md-offset="0" href="#edit-snacks" class="flex-fill d-flex align-items-center nav-link nav-link-big nav-link-snack">
+              <span class="icon icon-snack-big d-none d-md-block"></span><span class="d-md-none icon mx-auto icon-snack-small"></span><span class="d-none d-md-block text">Snacks</span>
+            </a>
+            <a data-scroll data-offset="90" data-md-offset="0" href="#edit-fries" class="flex-fill d-flex align-items-center nav-link nav-link-big nav-link-fries">
+              <span class="icon icon-fries-big d-none d-md-block"></span><span class="d-md-none icon mx-auto icon-fries-small"></span><span class="d-none d-md-block text">Frietjes</span>
+            </a>
+            <a data-scroll data-offset="90" data-md-offset="0" href="#edit-sauce" class="flex-fill d-flex align-items-center nav-link nav-link-big nav-link-sauce">
+              <span class="icon icon-sauce-big d-none d-md-block"></span><span class="d-md-none icon mx-auto icon-sauce-small"></span><span class="d-none d-md-block text">Sausje</span>
+            </a>
+            <a data-scroll data-offset="90" data-md-offset="0" href="#edit-drinks" class="flex-fill d-flex align-items-center nav-link nav-link-big nav-link-drink">
+              <span class="icon icon-drink-big d-none d-md-block"></span><span class="d-md-none icon mx-auto icon-drink-small"></span><span class="d-none d-md-block text">Drankjes</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="col-md-8 col-lg-5 offset-md-4">
+        <div class="content content-category mt-md-4 mb-md-0">
+
+          <div class="btn-wrapper w-100 d-flex">
+            <a href="/" class="btn mb-3"><i class="fa fa-arrow-left mr-2" aria-hidden="true"></i>Terug</a>
+            <button href="" class="btn btn-primary ml-auto mb-3" data-toggle="modal" data-target="#add-item"><i class="fa fa-plus mr-2" aria-hidden="true"></i>Toevoegen</button>
+          </div>
+
+          <!-- Modal add item -->
+          <div class="modal fade" id="add-item" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+
+                <div class="modal-header">
+                  <nav class="w-100">
+                    <div class="nav nav-tabs w-100" id="tabs-tab" role="tablist">
+                      <a href="#tab-category" class="nav-item nav-link mr-1" id="nav-tab-category" data-toggle="tab" aria-controls="tab-category" aria-selected="false">Categorie toevoegen</a>
+                      <a href="#tab-item" class="nav-item nav-link active" id="nav-tab-item" data-toggle="tab" aria-controls="tab-category" aria-selected="true">Item toevoegen</a>
+                    </div>
+                  </nav>
+
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+
+                <div class="modal-body">
+                  <div class="tab-content mt-3" id="tabs-tabContent">
+                    <div class="tab-pane fade" id="tab-category" role="tabpanel" aria-labelledby="pills-home-tab">
+                      <form action="" class="form-with-borders">
+                        <div class="row mb-4">
+                          <div class="col-12 col-sm-6 input-group file-with-preview d-flex flex-column">
+                            <div class="custom-file w-100">
+                              <input type="file" class="custom-file-input" id="image-input" aria-describedby="inputGroupFileAddon01">
+                              <label class="custom-file-label p-0 w-100" for="image-input">
+                                <div class="p-3 d-flex justify-content-center bg-light-gray">
+                                  <img class="image-preview" src="https://placehold.it/600x600" alt="">
+                                </div>
+                                <p class="mb-0 p-3">Kies afbeelding (svg)</p>
+                              </label>
+                            </div>
+                          </div>
+
+                          <div class="col-12 col-sm-6 input-group file-with-preview d-flex flex-column">
+                            <div class="custom-file w-100">
+                              <input type="file" class="custom-file-input" id="icon-input" aria-describedby="inputGroupFileAddon01">
+                              <label class="custom-file-label p-0 w-100" for="icon-input">
+                                <div class="p-3 d-flex justify-content-center bg-light-gray">
+                                  <img class="image-preview" src="https://placehold.it/600x600" alt="">
+                                </div>
+                                <p class="mb-0 p-3">Kies icoon (svg)</p>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+
+                        <label for="add" class="d-block">Naam</label>
+                        <div class="input-group mb-3">
+                          <input type="text" class="form-control" placeholder="Naam" aria-label="Add" id="add" aria-describedby="button-addon">
+                        </div>
+
+                        <div class="d-flex justify-content-end">
+                          <button type="button" class="btn btn-primary"><i class="fa fa-plus mr-2" aria-hidden="true"></i>Toevoegen</button>
+                        </div>
+                        <!-- When succesfull -->
+                        <!--<small>$categorienaam is toegevoegd!</small>-->
+                        <!-- Also when successfull: stay on same page but make the field empty again -->
+                      </form>
+
+                    </div>
+                    <div class="tab-pane fade show active" id="tab-item" role="tabpanel" aria-labelledby="pills-profile-tab">
+                      <form action="" class="form-with-borders">
+                        <div class="form-group">
+                          <p>Categorie</p>
+
+                          <div class="container">
+                            <div class="radio-with-images row">
+                              <div class="col-6 col-md-4 custom-control custom-radio custom-control-inline mb-4">
+                                <input type="radio" id="edit-hamburger-cat-hamburgers" name="customRadioInline" class="custom-control-input" checked>
+                                <label class="custom-control-label bg-light-gray w-100" for="edit-hamburger-cat-hamburgers">
+                                  <div class="p-3 d-flex justify-content-center image-wrapper mx-auto">
+                                    <img class="image-preview" src="../images/hamburger-big.svg" alt="">
+                                  </div>
+                                  <p class="mb-0 p-3">Hamburgers</p>
+                                </label>
+                              </div>
+                              <div class="col-6 col-md-4 custom-control custom-radio custom-control-inline mb-4">
+                                <input type="radio" id="edit-hamburger-cat-snacks" name="customRadioInline" class="custom-control-input">
+                                <label class="custom-control-label bg-light-gray w-100" for="edit-hamburger-cat-snacks">
+                                  <div class="p-3 d-flex justify-content-center image-wrapper mx-auto">
+                                    <img class="image-preview" src="../images/snack-big.svg" alt="">
+                                  </div>
+                                  <p class="mb-0 p-3">Snacks</p>
+                                </label>
+                              </div>
+                              <div class="col-6 col-md-4 custom-control custom-radio custom-control-inline mb-4">
+                                <input type="radio" id="edit-hamburger-cat-fries" name="customRadioInline" class="custom-control-input">
+                                <label class="custom-control-label bg-light-gray w-100" for="edit-hamburger-cat-fries">
+                                  <div class="p-3 d-flex justify-content-center image-wrapper mx-auto">
+                                    <img class="image-preview" src="../images/fries-big.svg" alt="">
+                                  </div>
+                                  <p class="mb-0 p-3">Frietjes</p>
+                                </label>
+                              </div>
+                              <div class="col-6 col-md-4 custom-control custom-radio custom-control-inline mb-4">
+                                <input type="radio" id="edit-hamburger-cat-sauce" name="customRadioInline" class="custom-control-input">
+                                <label class="custom-control-label bg-light-gray w-100" for="edit-hamburger-cat-sauce">
+                                  <div class="p-3 d-flex justify-content-center image-wrapper mx-auto">
+                                    <img class="image-preview" src="../images/sauce-big.svg" alt="">
+                                  </div>
+                                  <p class="mb-0 p-3">Sausjes</p>
+                                </label>
+                              </div>
+                              <div class="col-6 col-md-4 custom-control custom-radio custom-control-inline mb-4">
+                                <input type="radio" id="edit-hamburger-cat-drinks" name="customRadioInline" class="custom-control-input">
+                                <label class="custom-control-label bg-light-gray w-100" for="edit-hamburger-cat-drinks">
+                                  <div class="p-3 d-flex justify-content-center image-wrapper mx-auto">
+                                    <img class="image-preview" src="../images/drink-big.svg" alt="">
+                                  </div>
+                                  <p class="mb-0 p-3">Drankjes</p>
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <label for="add" class="d-block">Naam</label>
+                        <div class="input-group mb-3">
+                          <input type="text" class="form-control" placeholder="Naam" aria-label="Add" id="add" aria-describedby="button-addon">
+                        </div>
+                        <div class="d-flex justify-content-end">
+                          <button type="button" class="btn btn-primary"><i class="fa fa-plus mr-2" aria-hidden="true"></i>Toevoegen</button>
+                        </div>
+                        <!-- When succesfull -->
+                        <!--<small>$itemnaam is toegevoegd aan categrie $categrienaam!</small>-->
+                        <!-- Also when successfull: stay on same page but make the field empty again -->
+                      </form>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card menu-item-edit mb-3 mt-3 d-flex flex-row align-items-center" id="edit-hamburger">
+            <h1 class="menu-item-name mr-auto p-2 mb-0" contenteditable="true">Hamburgers</h1>
+            <div class="btn btn-outline-primary align-self-stretch d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#edit-cat"><i class="fas fa-pencil-alt" aria-hidden="true"></i></div>
+            <div class="btn btn-outline-primary align-self-stretch d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#delete-category"><i class="far fa-trash-alt" aria-hidden="true"></i></div>
+          </div>
+
+          <!-- Modal edit category-->
+          <div class="modal fade" id="edit-cat" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Categorie aanpassen</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form action="" class="form-with-borders">
+                    <div class="row mb-4">
+                      <div class="col-12 col-sm-6 input-group file-with-preview d-flex flex-column">
+                        <div class="custom-file w-100">
+                          <input type="file" class="custom-file-input" id="image-input" aria-describedby="inputGroupFileAddon01">
+                          <label class="custom-file-label p-0 w-100" for="image-input">
+                            <div class="p-3 d-flex justify-content-center bg-light-gray">
+                              <img class="image-preview" src="../images/hamburger-big.svg" alt="">
+                            </div>
+                            <p class="mb-0 p-3">Pas afbeelding aan (svg)</p>
+                          </label>
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-sm-6 input-group file-with-preview d-flex flex-column">
+                        <div class="custom-file w-100">
+                          <input type="file" class="custom-file-input" id="icon-input" aria-describedby="inputGroupFileAddon01">
+                          <label class="custom-file-label p-0 w-100" for="icon-input">
+                            <div class="p-3 d-flex justify-content-center bg-light-gray">
+                              <img class="image-preview" src="../images/hamburger-small.svg" alt="">
+                            </div>
+                            <p class="mb-0 p-3">Pas icoon aan (svg)</p>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <label for="add" class="d-block">Naam</label>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="Naam" aria-label="Add" id="add" aria-describedby="button-addon" value="Hamburgers">
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Opslaan</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card menu-item-edit mb-3 d-flex flex-row align-items-center">
+            <span class="menu-item-name mr-auto p-2" contenteditable="true">Hamburger</span>
+            <div class="btn btn-outline-primary align-self-stretch d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#edit-item"><i class="fas fa-pencil-alt" aria-hidden="true"></i></div>
+            <div class="btn btn-outline-primary align-self-stretch d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#delete-item"><i class="far fa-trash-alt" aria-hidden="true"></i></div>
+          </div>
+
+          <!-- Modal edit item -->
+          <div class="modal fade" id="edit-item" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Item aanpassen</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form action="" class="form-with-borders">
+                    <label for="add" class="d-block">Naam</label>
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="Naam" aria-label="Add" id="add" aria-describedby="button-addon" value="Hamburgers">
+                    </div>
+
+                    <div class="form-group">
+                      <p>Categorie</p>
+                      <div class="container">
+                        <div class="radio-with-images row">
+                          <div class="col-6 col-md-4 custom-control custom-radio custom-control-inline mb-4">
+                            <input type="radio" id="edit-hamburger-cat-hamburgers" name="customRadioInline" class="custom-control-input" checked>
+                            <label class="custom-control-label bg-light-gray w-100" for="edit-hamburger-cat-hamburgers">
+                              <div class="p-3 d-flex justify-content-center image-wrapper mx-auto">
+                                <img class="image-preview" src="../images/hamburger-big.svg" alt="">
+                              </div>
+                              <p class="mb-0 p-3">Hamburgers</p>
+                            </label>
+                          </div>
+                          <div class="col-6 col-md-4 custom-control custom-radio custom-control-inline mb-4">
+                            <input type="radio" id="edit-hamburger-cat-snacks" name="customRadioInline" class="custom-control-input">
+                            <label class="custom-control-label bg-light-gray w-100" for="edit-hamburger-cat-snacks">
+                              <div class="p-3 d-flex justify-content-center image-wrapper mx-auto">
+                                <img class="image-preview" src="../images/snack-big.svg" alt="">
+                              </div>
+                              <p class="mb-0 p-3">Snacks</p>
+                            </label>
+                          </div>
+                          <div class="col-6 col-md-4 custom-control custom-radio custom-control-inline mb-4">
+                            <input type="radio" id="edit-hamburger-cat-fries" name="customRadioInline" class="custom-control-input">
+                            <label class="custom-control-label bg-light-gray w-100" for="edit-hamburger-cat-fries">
+                              <div class="p-3 d-flex justify-content-center image-wrapper mx-auto">
+                                <img class="image-preview" src="../images/fries-big.svg" alt="">
+                              </div>
+                              <p class="mb-0 p-3">Frietjes</p>
+                            </label>
+                          </div>
+                          <div class="col-6 col-md-4 custom-control custom-radio custom-control-inline mb-4">
+                            <input type="radio" id="edit-hamburger-cat-sauce" name="customRadioInline" class="custom-control-input">
+                            <label class="custom-control-label bg-light-gray w-100" for="edit-hamburger-cat-sauce">
+                              <div class="p-3 d-flex justify-content-center image-wrapper mx-auto">
+                                <img class="image-preview" src="../images/sauce-big.svg" alt="">
+                              </div>
+                              <p class="mb-0 p-3">Sausjes</p>
+                            </label>
+                          </div>
+                          <div class="col-6 col-md-4 custom-control custom-radio custom-control-inline mb-4">
+                            <input type="radio" id="edit-hamburger-cat-drinks" name="customRadioInline" class="custom-control-input">
+                            <label class="custom-control-label bg-light-gray w-100" for="edit-hamburger-cat-drinks">
+                              <div class="p-3 d-flex justify-content-center image-wrapper mx-auto">
+                                <img class="image-preview" src="../images/drink-big.svg" alt="">
+                              </div>
+                              <p class="mb-0 p-3">Drankjes</p>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Opslaan</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card menu-item-edit mb-3 mt-5 d-flex flex-row align-items-center" id="edit-snacks">
+            <h1 class="menu-item-name mr-auto p-2 mb-0" contenteditable="true">Snacks</h1>
+            <div class="btn btn-outline-primary align-self-stretch d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#edit-cat"><i class="fas fa-pencil-alt" aria-hidden="true"></i></div>
+            <div class="btn btn-outline-primary align-self-stretch d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#delete-category"><i class="far fa-trash-alt" aria-hidden="true"></i></div>
+          </div>
+
+
+          <div class="card menu-item-edit mb-3 d-flex flex-row align-items-center">
+            <span class="menu-item-name mr-auto p-2" contenteditable="true">Bitterballen</span>
+            <div class="btn btn-outline-primary align-self-stretch d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#edit-item"><i class="fas fa-pencil-alt" aria-hidden="true"></i></div>
+            <div class="btn btn-outline-primary align-self-stretch d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#delete-item"><i class="far fa-trash-alt" aria-hidden="true"></i></div>
+          </div>
+
+
+          <div class="card menu-item-edit mb-3 mt-5 d-flex flex-row align-items-center" id="edit-fries">
+            <h1 class="menu-item-name mr-auto p-2 mb-0" contenteditable="true">Frietjes</h1>
+            <div class="btn btn-outline-primary align-self-stretch d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#edit-cat"><i class="fas fa-pencil-alt" aria-hidden="true"></i></div>
+            <div class="btn btn-outline-primary align-self-stretch d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#delete-category"><i class="far fa-trash-alt" aria-hidden="true"></i></div>
+          </div>
+
+
+          <div class="card menu-item-edit mb-3 d-flex flex-row align-items-center">
+            <span class="menu-item-name mr-auto p-2" contenteditable="true">Grote friet</span>
+            <div class="btn btn-outline-primary align-self-stretch d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#edit-item"><i class="fas fa-pencil-alt" aria-hidden="true"></i></div>
+            <div class="btn btn-outline-primary align-self-stretch d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#delete-item"><i class="far fa-trash-alt" aria-hidden="true"></i></div>
+          </div>
+
+
+          <div class="card menu-item-edit mb-3 mt-5 d-flex flex-row align-items-center" id="edit-sauce">
+            <h1 class="menu-item-name mr-auto p-2 mb-0" contenteditable="true">Sausjes</h1>
+            <div class="btn btn-outline-primary align-self-stretch d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#edit-cat"><i class="fas fa-pencil-alt" aria-hidden="true"></i></div>
+            <div class="btn btn-outline-primary align-self-stretch d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#delete-category"><i class="far fa-trash-alt" aria-hidden="true"></i></div>
+          </div>
+
+
+          <div class="card menu-item-edit mb-3 d-flex flex-row align-items-center">
+            <span class="menu-item-name mr-auto p-2" contenteditable="true">Tomatenketchup</span>
+            <div class="btn btn-outline-primary align-self-stretch d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#edit-item"><i class="fas fa-pencil-alt" aria-hidden="true"></i></div>
+            <div class="btn btn-outline-primary align-self-stretch d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#delete-item"><i class="far fa-trash-alt" aria-hidden="true"></i></div>
+          </div>
+
+
+          <div class="card menu-item-edit mb-3 mt-5 d-flex flex-row align-items-center" id="edit-drinks">
+            <h1 class="menu-item-name mr-auto p-2 mb-0" contenteditable="true">Drankjes</h1>
+            <div class="btn btn-outline-primary align-self-stretch d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#edit-cat"><i class="fas fa-pencil-alt" aria-hidden="true"></i></div>
+            <div class="btn btn-outline-primary align-self-stretch d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#delete-category"><i class="far fa-trash-alt" aria-hidden="true"></i></div>
+          </div>
+
+
+          <div class="card menu-item-edit mb-3 d-flex flex-row align-items-center">
+            <span class="menu-item-name mr-auto p-2" contenteditable="true">Minute maid</span>
+            <div class="btn btn-outline-primary align-self-stretch d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#edit-item"><i class="fas fa-pencil-alt" aria-hidden="true"></i></div>
+            <div class="btn btn-outline-primary align-self-stretch d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#delete-item"><i class="far fa-trash-alt" aria-hidden="true"></i></div>
+          </div>
+
+
+          <!-- Modal delete categorie -->
+          <div class="modal fade" id="delete-category" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Categorie verwijderen</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Ben je zeker dat je de categorie $naam en alle items erin wil verwijderen? </p>
+                  <div class="d-flex justify-content-center">
+                    <button class="btn btn-sm mx-2">Ja, doe maar</button>
+                    <button class="btn btn-primary mx-2" data-dismiss="modal">Nee, zot!</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal delete item -->
+          <div class="modal fade" id="delete-item" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Item verwijderen</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Ben je zeker dat je $item wil verwijderen? </p>
+                  <div class="d-flex justify-content-center">
+                    <button class="btn btn-sm mx-2">Ja, doe maar</button>
+                    <button class="btn btn-primary mx-2" data-dismiss="modal">Nee, zot!</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.0.min.js"
+  integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendors/jquery.min.js"><\/script>')</script>
+<script src="js/bundle.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function() {ga.q.push(arguments)}
+  ga.q = []
+  ga.l = +new Date
+  ga('create', 'UA-XXXXX-Y', 'auto')
+  ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+</html>

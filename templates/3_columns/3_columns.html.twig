@@ -1,0 +1,57 @@
+{# to do: handle order-empty and order-started together as they represent varying states of the same #}
+
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% block outdated_browser %}
+        {{ parent() }}
+    {% endblock outdated_browser %}
+    <!-- Add your site or application content here -->
+
+    <div {% block firstdivclass %}{% endblock firstdivclass %}    {% block firstdivid %} id="reactApp" {% endblock firstdivid %}>
+        <div class="container-fluid">
+
+                {% block ordertoggler %}
+                {% endblock ordertoggler %}
+
+            <div class="row" >
+            {% block left_column %}
+                    <nav class="col-md-4 fixed-bottom d-md-flex flex-row bg-dark nav navbar-dark h-md-100vh p-0 navbar-menu">
+                        <div class="h-100 w-100 d-md-flex flex-md-column">
+                            <div class="fixed-top bg-light p-md-static bg-md-dark">
+
+                                <a href=""
+                                   class="navbar-brand d-flex justify-content-center pt-3 pt-md-0 my-md-5 mx-md-2 w-100">
+                                    <div class="d-flex align-items-center flex-column">
+                                        <img src="{{ asset('build/assets/images/sumos_dark.svg') }}" alt="Sumo's" class="d-md-none">
+                                        <img src="{{ asset('build/assets/images/sumos_white.svg') }}" alt="Sumo's" class="d-none d-md-inline-block">
+                                        <p class="text-center"><span class="d-md-none">Vettige vrijdag</span><span class="d-none d-md-inline">Vettige<br/>vrijdag</span></p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="navbar-nav w-100 flex-row flex-md-column d-md-flex flex-grow-1 {% block statusclass %}{% endblock statusclass %}">
+                                {% for category in categories %}
+                                <a href="" class="flex-fill d-flex align-items-center nav-link nav-link-big nav-link-hamburger">
+                                    <span class="icon icon-hamburger-big d-none d-md-block"></span><span class="d-md-none icon mx-auto icon-hamburger-small"></span><span class="d-none d-md-block text">{{ category.name }}</span>
+                                </a>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </nav>
+                    {% endblock left_column %}
+
+                    {% block middle_column %}
+                    {% endblock middle_column %}
+
+                    {% block right_column %}
+                        <div class="col-lg-3 bg-secondary mh-100vh order text-white w-md-50 ml-md-auto w-lg-100 toggle-closed" data-toggle='toggling'>
+                            {% block right_columncontent %}
+                            {% endblock right_columncontent %}
+                        </div>
+                    {% endblock right_column %}
+                </div>
+            </div>
+        </div>
+{% endblock body %}
+

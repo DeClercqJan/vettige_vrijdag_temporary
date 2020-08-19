@@ -1,0 +1,9 @@
+{% for key, messages in app.flashes %}
+    <div id="flash-messages-sync" class="overflow-auto">
+        {% for message in messages %}
+            <div class="alert alert-{{ key }}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    </div>
+{% endfor %}

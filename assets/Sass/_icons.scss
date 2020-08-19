@@ -1,0 +1,172 @@
+@font-face {
+  font-family: "icons";
+  src: url('../fonts/icons.eot');
+  src: url('../fonts/icons.eot?#iefix') format('eot'),
+    url('../fonts/icons.woff') format('woff');
+    //url('../fonts/icons.ttf') format('truetype'),
+    //url('../fonts/icons.svg#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon-circle:before,
+.icon-drink-big:before,
+.icon-drink-small:before,
+.icon-fries-big:before,
+.icon-fries-small:before,
+.icon-hamburger-big:before,
+.icon-hamburger-small:before,
+.icon-sad-sumo:before,
+.icon-sauce-big:before,
+.icon-sauce-small:before,
+.icon-snack-big:before,
+.icon-snack-small:before,
+.icon-right-circle:after,
+.icon-right-drink-big:after,
+.icon-right-drink-small:after,
+.icon-right-fries-big:after,
+.icon-right-fries-small:after,
+.icon-right-hamburger-big:after,
+.icon-right-hamburger-small:after,
+.icon-right-sad-sumo:after,
+.icon-right-sauce-big:after,
+.icon-right-sauce-small:after,
+.icon-right-snack-big:after,
+.icon-right-snack-small:after {
+  font-family: "icons";
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  text-decoration: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-circle:before {
+  content: "\EA01"
+}
+
+.icon-drink-big:before {
+  content: "\EA02"
+}
+
+.icon-drink-small:before {
+  content: "\EA03"
+}
+
+.icon-fries-big:before {
+  content: "\EA04"
+}
+
+.icon-fries-small:before {
+  content: "\EA05"
+}
+
+.icon-hamburger-big:before {
+  content: "\EA06"
+}
+
+.icon-hamburger-small:before {
+  content: "\EA07"
+}
+
+.icon-sad-sumo:before {
+  content: "\EA08"
+}
+
+.icon-sauce-big:before {
+  content: "\EA09"
+}
+
+.icon-sauce-small:before {
+  content: "\EA0A"
+}
+
+.icon-snack-big:before {
+  content: "\EA0B"
+}
+
+.icon-snack-small:before {
+  content: "\EA0C"
+}
+
+
+.icon-right-circle:after {
+  content: "\EA01"
+}
+
+.icon-right-drink-big:after {
+  content: "\EA02"
+}
+
+.icon-right-drink-small:after {
+  content: "\EA03"
+}
+
+.icon-right-fries-big:after {
+  content: "\EA04"
+}
+
+.icon-right-fries-small:after {
+  content: "\EA05"
+}
+
+.icon-right-hamburger-big:after {
+  content: "\EA06"
+}
+
+.icon-right-hamburger-small:after {
+  content: "\EA07"
+}
+
+.icon-right-sad-sumo:after {
+  content: "\EA08"
+}
+
+.icon-right-sauce-big:after {
+  content: "\EA09"
+}
+
+.icon-right-sauce-small:after {
+  content: "\EA0A"
+}
+
+.icon-right-snack-big:after {
+  content: "\EA0B"
+}
+
+.icon-right-snack-small:after {
+  content: "\EA0C"
+}
+
+.menu-icon {
+  display: block !important;
+  max-height: 72px !important;
+  width: 24px !important;
+  height: 72px !important;
+  padding-top: 30px !important;
+}
+
+.menu-image {
+  display: none !important;
+}
+
+@media (min-device-width: 768px) {
+  .menu-icon {
+    display: none !important;
+  }
+  .menu-image {
+    display: block !important;
+    max-height: 40px;
+    margin-right: 20px;
+  }
+}
+
+.menu-icon-blackened {
+  filter: brightness(0);
+}

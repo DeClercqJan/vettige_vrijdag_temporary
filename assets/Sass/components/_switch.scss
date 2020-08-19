@@ -1,0 +1,143 @@
+$switch-height: 50px;
+$switch-width: 240px;
+$switch-offset: 6px;
+
+input[type="checkbox"].switch {
+  opacity: 0;
+  position: absolute;
+}
+
+/* Normal Track */
+input[type="checkbox"].switch + .switch-out {
+  background-color: $orange-gray;
+  border-radius: 999px;
+  height: $switch-height;
+  transition: background-color .4s;
+  vertical-align: middle;
+  width: $switch-width;
+}
+
+/* Checked Track */
+input[type="checkbox"].switch:checked + .switch-out {
+  background-color: $orange;
+  background-position: 0 0;
+  box-shadow: inset 0 0 0 10px rgba($orange,1);
+}
+
+/* Normal Knob */
+input[type="checkbox"].switch + .switch-out > .switch-in {
+  background: $white;
+  border-radius: inherit;
+  float: left;
+  height: $switch-height - $switch-offset * 2;
+  margin-left: $switch-offset;
+  margin-top: $switch-offset;
+  pointer-events: none;
+  transition-duration: 0.4s;
+  transition-timing-function: cubic-bezier(.54,1.85,.5,1);
+  transition-property: transform, background-color;
+  width: $switch-width / 2 - $switch-offset;
+}
+
+/* Checked Knob */
+input[type="checkbox"].switch:checked + .switch-out > .switch-in {
+  background-color: $white;
+  transform: translate3d(($switch-width / 2 - $switch-offset), 0, 0);
+}
+
+.switch-label {
+  cursor: pointer;
+  position: relative;
+}
+
+.switch-label-text {
+  height: $switch-height - $switch-offset * 2;
+  left: $switch-offset;
+  position: absolute;
+  top: $switch-offset;
+  width: $switch-width / 2 - $switch-offset;
+
+  p {
+    font-weight: $font-weight-bold;
+    margin-bottom: 0;
+  }
+
+  &.label-fries {
+    left: auto;
+    right: $switch-offset;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  $switch-height: 100px;
+  $switch-width: 300px;
+  $switch-offset: 15px;
+
+  /* Normal Track */
+  input[type="checkbox"].switch + .switch-out {
+    height: $switch-height;
+    width: $switch-width;
+  }
+
+  /* Normal Knob */
+  input[type="checkbox"].switch + .switch-out > .switch-in {
+    height: $switch-height - $switch-offset * 2;
+    margin-left: $switch-offset;
+    margin-top: $switch-offset;
+    width: $switch-width / 2 - $switch-offset;
+  }
+
+  /* Checked Knob */
+  input[type="checkbox"].switch:checked + .switch-out > .switch-in {
+    transform: translate3d(($switch-width / 2 - $switch-offset), 0, 0);
+  }
+
+  .switch-label-text {
+    font-size: $font-size-lg;
+    height: $switch-height - $switch-offset * 2;
+    left: $switch-offset;
+    top: $switch-offset;
+    width: $switch-width / 2 - $switch-offset;
+
+    &.label-fries {
+      right: $switch-offset;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  $switch-height: 150px;
+  $switch-width: 400px;
+  $switch-offset: 15px;
+
+  /* Normal Track */
+  input[type="checkbox"].switch + .switch-out {
+    height: $switch-height;
+    width: $switch-width;
+  }
+
+  /* Normal Knob */
+  input[type="checkbox"].switch + .switch-out > .switch-in {
+    height: $switch-height - $switch-offset * 2;
+    margin-left: $switch-offset;
+    margin-top: $switch-offset;
+    width: $switch-width / 2 - $switch-offset;
+  }
+
+  /* Checked Knob */
+  input[type="checkbox"].switch:checked + .switch-out > .switch-in {
+    transform: translate3d(($switch-width / 2 - $switch-offset), 0, 0);
+  }
+
+  .switch-label-text {
+    font-size: $font-size-base * 2;
+    height: $switch-height - $switch-offset * 2;
+    left: $switch-offset;
+    top: $switch-offset;
+    width: $switch-width / 2 - $switch-offset;
+
+    &.label-fries {
+      right: $switch-offset;
+    }
+  }
+}

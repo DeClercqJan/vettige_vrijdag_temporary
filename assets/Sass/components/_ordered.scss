@@ -1,0 +1,41 @@
+.no-nav-shadow {
+
+  .navbar-menu {
+    box-shadow: none;
+  }
+}
+
+.ordered {
+
+  p {
+    font-size: $font-size-lg;
+  }
+}
+
+@include media-breakpoint-up(md) {
+
+  .ordered {
+
+    h1 {
+      font-size: $font-size-base * 3;
+    }
+
+    p {
+      font-size: $font-size-base * 1.5;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+
+  .ordered {
+
+    h1 {
+      font-size: $font-size-base * 3.5;
+    }
+
+    p {
+      font-size: $font-size-base * 1.75;
+    }
+  }
+}

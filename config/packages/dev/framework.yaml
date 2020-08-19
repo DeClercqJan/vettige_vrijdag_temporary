@@ -1,0 +1,3 @@
+framework:
+    error_controller: error_controller
+

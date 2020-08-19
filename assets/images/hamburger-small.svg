@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#314A59;}
+</style>
+<g id="snack">
+</g>
+<g id="home">
+</g>
+<g id="drankje">
+</g>
+<g id="frieten">
+</g>
+<g id="hamburger">
+	<g>
+		<path class="st0" d="M90,73H10c-3.2,0-5.7,2.6-5.7,5.7v4.2c0,5,4.1,9.1,9.1,9.1h73.3c5,0,9.1-4.1,9.1-9.1v-4.2
+			C95.7,75.6,93.2,73,90,73z"/>
+		<path class="st0" d="M90.1,47.9H9.9c-5.5,0-9.9,4.4-9.9,9.9l0,0c0,5,4.1,9.1,9.1,9.1h81.8c5,0,9.1-4.1,9.1-9.1l0,0
+			C100,52.4,95.6,47.9,90.1,47.9z"/>
+		<path class="st0" d="M8.2,41.5h83.7c2.3,0,4.1-2.1,3.7-4.3C92.7,20.7,73.4,8,50.1,8S7.5,20.7,4.6,37.2C4.2,39.4,5.9,41.5,8.2,41.5
+			z M73.1,23.9c1.8,0,3.3,1.5,3.3,3.3s-1.5,3.3-3.3,3.3s-3.3-1.5-3.3-3.3C69.8,25.4,71.2,23.9,73.1,23.9z M50.5,18.4
+			c1.8,0,3.3,1.5,3.3,3.3S52.3,25,50.5,25s-3.3-1.5-3.3-3.3S48.7,18.4,50.5,18.4z M28,23.9c1.8,0,3.3,1.5,3.3,3.3s-1.5,3.3-3.3,3.3
+			s-3.3-1.5-3.3-3.3S26.2,23.9,28,23.9z"/>
+	</g>
+</g>
+</svg>

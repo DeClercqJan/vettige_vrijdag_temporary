@@ -1,0 +1,24 @@
+{% extends '3_columns/3_columns.html.twig' %}
+
+{% block title %}Vettige vrijdag{% endblock %}
+
+{% block left_column %}{% endblock left_column %}
+
+{% block right_column %}{% endblock right_column %}
+
+{% block javascripts %}
+    <script src="https://code.jquery.com/jquery-3.2.0.min.js"
+            integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendors/jquery.min.js"><\/script>')</script>
+    {{ encore_entry_script_tags('reactApp') }}
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () {ga.q.push(arguments)};
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+{% endblock javascripts %}

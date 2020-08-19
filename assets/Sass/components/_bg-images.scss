@@ -1,0 +1,73 @@
+.bg-image {
+  background-repeat: no-repeat;
+  background-position: bottom;
+  z-index: -1;
+}
+
+.bg-hungry {
+  background-image: url("../../images/hungry-mobile.svg");
+
+  .content {
+    min-height: 600px;
+  }
+}
+
+.bg-admin {
+  background-image: url("../../images/adminpage-fries.svg");
+
+  .content {
+    min-height: 590px;
+  }
+}
+
+.bg-ordered {
+  background-image: url("../../images/ordered.svg");
+
+  .content {
+    min-height: 530px;
+  }
+}
+
+.bg-404 {
+  background-image: url("../../images/hungry-mobile.svg");
+
+  .content {
+    min-height: 670px;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+
+  .bg-404 .content {
+    min-height: 780px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+
+  .bg-hungry {
+    background-image: url("../../images/hungry.svg");
+  }
+
+  .bg-404 {
+    background-image: url("../../images/404.svg");
+  }
+
+  .bg-admin .content {
+    min-height: 650px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .bg-admin .content {
+    min-height: 800px;
+  }
+
+  .bg-ordered .content {
+    min-height: 650px;
+  }
+
+  .bg-404 .content {
+    min-height: 750px;
+  }
+}

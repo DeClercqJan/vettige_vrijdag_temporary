@@ -1,0 +1,16 @@
+{% extends '2_columns/2_columns.html.twig' %}
+
+{% block title %}Vettige vrijdag | Vorige bestellingen{% endblock %}
+
+{% block content %}
+    {% for vettigeVrijdag in previousVettigeVrijdags|reverse %}
+
+        <a href="{{ path('vettige_vrijdag_create_pdf', {'id' : vettigeVrijdag.id}) }}" class="card previous-orders mb-3 d-flex flex-row align-items-center">
+            <span class="menu-item-name mr-auto p-2">{{ vettigeVrijdag.createdOn }}</span>
+            <div class="btn btn-outline-primary align-self-stretch d-flex justify-content-center align-items-center">
+                <i class="fa fa-download mr-2" aria-hidden="true"></i>Download
+            </div>
+        </a>
+    {% endfor %}
+{% endblock content %}
+

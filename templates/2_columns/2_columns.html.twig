@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% block outdated_browser %}
+        {{ parent() }}
+    {% endblock outdated_browser %}
+    <!-- Add your site or application content here -->
+
+    <div class="no-nav-shadow mh-100vh">
+        <div class="container-fluid">
+
+            <div class="row">
+                {% block left_column %}
+                    <nav class="col-md-4 fixed-bottom d-md-flex flex-row nav navbar-dark h-md-100vh p-0 navbar-menu">
+                        <div class="h-100 w-100 d-md-flex flex-md-column">
+                            <div class="fixed-top bg-light p-md-static bg-md-none">
+                                <a href="{{ path('vettige_vrijdag') }}" class="navbar-brand d-flex justify-content-center pt-3 pt-md-0 my-md-5 mx-md-2 w-100">
+                                    <div class="d-flex align-items-center flex-column">
+                                        <img src="{{ asset('build/assets/images/sumos_dark.svg') }}" alt="Sumo's">
+                                        <p class="text-center text-dark"><span class="d-md-none">Vettige vrijdag</span><span class="d-none d-md-inline">Vettige<br/>vrijdag</span></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
+                {% endblock left_column %}
+
+                {% block middle_column %}
+                    <div class="col-md-8 col-lg-5 offset-md-4">
+                        <div class="content mt-md-4">
+                            {% block content %}
+                            {% endblock content %}
+                        </div>
+                    </div>
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+{% endblock body %}

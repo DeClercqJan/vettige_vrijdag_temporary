@@ -1,0 +1,11 @@
+{% if app.request.get('errors') is defined and not app.request.get('errors') is null %}
+    {% for key, value in app.request.get('errors')[0] %}
+        {% if key is same as ('violations') %}
+            {% for violation in value %}
+                <div class="alert alert-danger">
+                    {{ violation.message }}<br>
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+{% endif %}

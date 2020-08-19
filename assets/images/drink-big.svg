@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#314A59;}
+</style>
+<g id="snack">
+</g>
+<g id="home">
+</g>
+<g id="drankje">
+	<g>
+		<ellipse class="st0" cx="40" cy="13.9" rx="6.3" ry="3"/>
+		<path class="st0" d="M48.5,0c-14.8,0-26,6-26,13.9v72.3c0,7.9,11.2,13.9,26,13.9s26-6,26-13.9V13.9C74.5,6,63.3,0,48.5,0z
+			 M69.2,86.1c0,4-8.8,8.5-20.7,8.5s-20.7-4.5-20.7-8.5V70.5c8.8,6.8,28,10.4,41.4,6.7V86.1z M69.2,38.7
+			c-8.3,6.8-28.6,12.4-41.4,13.8v-30c4.7,3.2,12.1,5.3,20.7,5.3s16-2,20.7-5.3V38.7z M48.5,22.4c-11.8,0-20.7-4.5-20.7-8.5
+			s8.8-8.5,20.7-8.5s20.7,4.5,20.7,8.5S60.3,22.4,48.5,22.4z"/>
+	</g>
+</g>
+<g id="frieten">
+</g>
+<g id="hamburger">
+</g>
+</svg>

@@ -1,0 +1,229 @@
+{% extends '3_columns/3_columns.html.twig' %}
+
+{% block title %}Vettige vrijdag | Menu aanpassen{% endblock %}
+
+{% block firstdivclass %}class="mh-100vh overflow-hidden position-relative"{% endblock firstdivclass %}
+
+{% block firstrowclass %}overflow-hidden position-relative{% endblock firstrowclass %}
+
+ {% block firstdivid %}{% endblock firstdivid %}
+
+{% block left_column %}
+    <!--
+
+          This is a more complex version of the change-menu page, if you are up for a challenge.
+          Editing items or categories happens in a modals.
+          Adding items is also in a modal, with tabs to choose between adding an item or a category.
+          You can change the name of the items without opening the edit-modal (contenteditable="true").
+
+           -->
+
+    <nav class="col-md-4 fixed-bottom d-md-flex flex-row bg-dark nav navbar-dark h-md-100vh p-0 navbar-menu">
+        <div class="h-100 w-100 d-md-flex flex-md-column">
+            <div class="fixed-top bg-light p-md-static bg-md-dark">
+                <a href="{{ path('vettige_vrijdag') }}"
+                   class="navbar-brand d-flex justify-content-center pt-3 pt-md-0 my-md-5 mx-md-2 w-100">
+                    <div class="d-flex align-items-center flex-column">
+                        <img src="{{ asset('build/assets/images/sumos_dark.svg') }}" alt="Sumo's" class="d-md-none">
+                        <img src="{{ asset('build/assets/images/sumos_white.svg') }}" alt="Sumo's"
+                             class="d-none d-md-inline-block">
+                        <p class="text-center"><span class="d-md-none">Vettige vrijdag</span><span
+                                    class="d-none d-md-inline">Vettige<br/>vrijdag</span></p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="navbar-nav w-100 flex-row flex-md-column d-md-flex flex-grow-1">
+                {% for category in categories %}
+                    <a  data-scroll="#anchor-{{ category.name }}" data-offset="90" data-md-offset="0" href="#anchor-{{ category.name }}"
+                       class="left_column_element flex-fill d-flex align-items-center nav-link nav-link-big nav-link-hamburger"
+                       left_column_icon={{ category.icon }}>
+                        <img class="menu-icon d-md-none icon mx-auto icon-hamburger-small"
+                             src="{{ asset('uploads/icons/'~category.icon) }}"/>
+                        <img class="menu-image" src="{{ asset('uploads/images/'~category.image) }}">
+                        <span class="d-none d-md-block text">{{ category.name }}</span>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    </nav>
+{% endblock left_column %}
+
+{% block middle_column %}
+    <div class="col-md-8 col-lg-5 offset-md-4">
+        <div class="content content-category mt-md-4 mb-md-0">
+            {% include '/fragments/_display_flash_messages_async.html.twig' %}
+            {% include '/fragments/_display_flash_messages.html.twig' %}
+            {% include '/fragments/_display_errors_request_parameterbag.html.twig' %}
+            <div class="btn-wrapper w-100 d-flex">
+                <a href="/" class="btn mb-3"><i class="fa fa-arrow-left mr-2" aria-hidden="true"></i>Terug</a>
+                <button href="" class="btn btn-primary ml-auto mb-3" data-toggle="modal" data-target="#add-item"><i
+                            class="fa fa-plus mr-2" aria-hidden="true"></i>Toevoegen
+                </button>
+            </div>
+
+            {% for category in categories %}
+                <div  id="anchor-{{ category.name }}" class="card menu-item-edit mb-3 mt-3 d-flex flex-row align-items-center" id="edit-hamburger">
+                    <h1 class="menu-item-name mr-auto p-2 mb-0 h1-category-contenteditable" contenteditable="true" data-category-id={{ category.id }}>{{ category.name }}</h1>
+                    <div class="btn btn-outline-primary align-self-stretch d-flex justify-content-center align-items-center"
+                         data-toggle="modal" data-target="#edit-cat" data-category-id={{ category.id }} data-category-name={{ category.name }}><i class="fas fa-pencil-alt"
+                                                                        aria-hidden="true"></i></div>
+                    <div id="delete-category-button" class="btn btn-outline-primary align-self-stretch d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#delete-category" data-category-id={{ category.id }} data-category-name={{ category.name }}><i class="far fa-trash-alt" aria-hidden="true"></i></div>
+                </div>
+
+                <!-- Modal delete categorie -->
+                <div class="modal fade" id="delete-category" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Categorie verwijderen</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Ben je zeker dat je de categorie <span
+                                            id="category-name-span">{{ category.name }}</span> <u><i>en alle items er
+                                            in</i></u> wil verwijderen? </p>
+                                <div class="d-flex justify-content-center">
+                                    <form class="delete-category-form">
+                                        <button id="delete-category-confirm" data-category-id="" type="submit"
+                                                class="btn btn-primary btn-sm mx-2">Ja, doe maar
+                                        </button>
+                                        <input type="hidden" name="_token" value="{{ csrf_token('delete-category') }}"
+                                               id="token-category-delete"/>
+                                    </form>
+                                    <button class="btn btn-outline-primary mx-2" data-dismiss="modal">Nee, zot!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {% for product in category.products %}
+                    <div class="card menu-item-edit mb-3 d-flex flex-row align-items-center">
+                        <span class="menu-item-name mr-auto p-2 span-item-contenteditable" contenteditable="true" data-product-id={{ product.id }}>{{ product.name }}</span>
+                        <div class="btn btn-outline-primary align-self-stretch d-flex justify-content-center align-items-center"
+                             data-toggle="modal" data-target="#edit-item" data-product-id={{ product.id }} data-product-name={{ product.name }}><i class="fas fa-pencil-alt"
+                                                                             aria-hidden="true"></i></div>
+                        <div class="btn btn-outline-primary align-self-stretch d-flex justify-content-center align-items-center"
+                             data-toggle="modal" data-target="#delete-item" data-product-id={{ product.id }} data-product-name={{ product.name }}><i class="far fa-trash-alt"
+                                                                               aria-hidden="true"></i></div>
+                    </div>
+
+                    <!-- Modal delete item -->
+                    <div class="modal fade" id="delete-item" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Item verwijderen</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Ben je zeker dat je <span id="item-name-span">{{ product.name }}</span> wil
+                                        verwijderen? </p>
+                                    <div class="d-flex justify-content-center">
+                                        <form class="delete-item-form">
+                                            <button id="delete-item-confirm" data-item-id="" type="submit"
+                                                    class="btn btn-primary btn-sm mx-2">Ja, doe maar
+                                            </button>
+                                            <input type="hidden" name="_token" value="{{ csrf_token('delete-item') }}"
+                                                   id="token-item-delete"/>
+                                        </form>
+                                        <button class="btn btn-outline-primary mx-2" data-dismiss="modal">Nee, zot!
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% endfor %}
+        </div>
+        <!-- Modal add item -->
+        <div class="modal fade" id="add-item" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <nav class="w-100">
+                            <div class="nav nav-tabs w-100" id="tabs-tab" role="tablist">
+                                <a href="#tab-category" class="nav-item nav-link mr-1" id="nav-tab-category"
+                                   data-toggle="tab" aria-controls="tab-category" aria-selected="false">Categorie
+                                    toevoegen</a>
+                                <a href="#tab-item" class="nav-item nav-link active" id="nav-tab-item"
+                                   data-toggle="tab" aria-controls="tab-category" aria-selected="true">Item
+                                    toevoegen</a>
+                            </div>
+                        </nav>
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="tab-content mt-3" id="tabs-tabContent">
+                            <div class="tab-pane fade" id="tab-category" role="tabpanel"
+                                 aria-labelledby="pills-home-tab">
+                                <form action="" class="add-category-form form-with-borders">
+                                </form>
+
+                            </div>
+                            <div class="tab-pane fade show active" id="tab-item" role="tabpanel"
+                                 aria-labelledby="pills-profile-tab">
+                                <form action="" class="form-with-borders add-item-form">
+{#                                    <!-- When succesfull -->#}
+{#                                    <!--<small>$itemnaam is toegevoegd aan categrie $categrienaam!</small>-->#}
+{#                                    <!-- Also when successfull: stay on same page but make the field empty again -->#}
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal edit category-->
+        <div class="modal fade" id="edit-cat" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Categorie aanpassen</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                        <div>
+                        <form action="" class="form-with-borders">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal edit item -->
+        <div class="modal fade" id="edit-item" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Item aanpassen</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div>
+                        <form action="" class="form-with-borders">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock middle_column %}
+
+{% block right_column %}
+{% endblock right_column %}
