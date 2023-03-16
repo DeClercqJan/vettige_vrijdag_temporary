@@ -12,3 +12,16 @@ IMAGE_DIRECTORY=%kernel.project_dir%/public/uploads/images
 4.1 if using example data, run sql script via e.g. DataGrip\
 4.2 if using example data, extract uploads.rar to /public/uploads/
 5. run webserver
+
+How to use
+
+- login as "admin" on e.g. https://127.0.0.1:8000/ with the password in .env variable
+- share the link with all users
+- on landing page, select items and confirm
+- back on https://127.0.0.1:8000/ admin can close the time window during which people can order
+- download pdf and hand it over to snackbar of your choice
+- see history on https://127.0.0.1:8000/admin/vettige-vrijdag/previous
+- change available options on https://127.0.0.1:8000/admin/change-menu-complex
+
+TODO:
+- button bokes / frieteuh does not respond as I would expect it
