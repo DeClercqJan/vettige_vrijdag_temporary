@@ -1,7 +1,7 @@
 How to run
 
 0. globally, install the wkhtmlimage binary for your system's architecture (amd64 e.g.). Note that, locally, the knsp snappy bundle gets installed. Both are needed
-1. fill out variables in .env files
+1. create .env.local and fill out empty variables in .env 
 1.1 if using example data, set database name to vettige_vrijdag\
 1.2 if using example data set .env.local variables as such:
 ICON_DIRECTORY=%kernel.project_dir%/public/uploads/icons
