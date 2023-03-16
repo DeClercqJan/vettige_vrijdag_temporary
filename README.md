@@ -15,6 +15,7 @@ IMAGE_DIRECTORY=%kernel.project_dir%/public/uploads/images
 
 How to use
 
+- concept: tool to coordinate team lunch orders that results in a single pdf which can be used to order at a snackbar. The pdf can then serve to distribute order over users
 - login as "admin" on e.g. https://127.0.0.1:8000/ with the password in .env variable
 - share the link with all users
 - on landing page, select items and confirm
