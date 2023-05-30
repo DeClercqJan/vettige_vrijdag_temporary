@@ -80,11 +80,13 @@ Encore
   .enableReactPreset()
   // .addEntry('admin', './assets/js/admin.js')
 
-  .configureFilenames({
-    images: '[path][name].[hash:8].[ext]',
-    fonts: '[path][name].[hash:8].[ext]',
+  .configureImageRule({
+    filename: '[path][name].[hash:8].[ext]',
   })
 
+  .configureFontRule({
+    filename: '[path][name].[hash:8].[ext]',
+  })
   .cleanupOutputBeforeBuild();
 
 module.exports = Encore.getWebpackConfig();
