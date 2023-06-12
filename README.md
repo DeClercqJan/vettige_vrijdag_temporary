@@ -8,10 +8,11 @@ ICON_DIRECTORY=%kernel.project_dir%/public/uploads/icons
 IMAGE_DIRECTORY=%kernel.project_dir%/public/uploads/images
 2. yarn install + composer install
 3. yarn run encore production
-4. php bin/console doctrine:migrations:migrate\
+4. create database
+5. php bin/console doctrine:migrations:migrate\
 4.1 if using example data, run sql script via e.g. DataGrip\
 4.2 if using example data, extract uploads.rar to /public/uploads/
-5. run webserver
+6. run webserver (e.g. symfony server:start)
 
 How to use
 
